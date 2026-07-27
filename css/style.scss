@@ -454,3 +454,13 @@ pre {
 	  width: 100%;
 	  height: auto;
 	}
+
+	
+	/* Reduce space between intro text and social buttons */
+	.hero-content p {
+	  margin: 1em 0 0.5em;
+	}
+	
+	.hero-content .hero-buttons button.btn {
+	  margin: 0.5em 0.5em;
+	}
