@@ -16,7 +16,6 @@ Oneira Archive is an original visual storytelling project exploring dreams, limi
 
 Through short-form videos, atmospheric sound, and surreal environments, the project documents quiet and dreamlike locations that seem to belong to a half-remembered world. The scenes are intended to feel peaceful and comforting, while occasionally carrying a subtle sense that something is slightly out of place.
 
-> You have been here before. You just do not remember.
 
 **Themes:** Dreamcore, liminal spaces, nostalgia, atmospheric storytelling  
 **Format:** Short-form visual videos  
@@ -30,11 +29,10 @@ Through short-form videos, atmospheric sound, and surreal environments, the proj
 
 *Astronomy and cosmology, with occasional existential consequences*
 
-Heidiverse is my astronomy and cosmology communication project. It uses illustrated and animated storytelling to introduce ideas about the universe in a way that is approachable, visually engaging, and scientifically grounded.
+Heidiverse is my astronomy and cosmology communication and daily life scketch project. It uses illustrated and animated storytelling to introduce ideas about the universe in a way that is approachable, visually engaging, and scientifically grounded.
 
 The project focuses on topics such as dark matter, cosmic structure, black holes, the early universe, and the limits of what we currently understand. My goal is to explain complex concepts clearly without removing the uncertainty, strangeness, or sense of wonder that makes cosmology compelling.
 
-The tone is calm, curious, and occasionally dry—because learning about the universe should be enjoyable, even when it accidentally causes an existential crisis.
 
 **Themes:** Astronomy, cosmology, physics, science communication  
 **Format:** Illustrated videos, animations, and explanatory content  
