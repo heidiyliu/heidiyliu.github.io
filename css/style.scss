@@ -544,3 +544,78 @@ pre {
 	    object-position: center;
 	  }
 	}
+
+	/* Better typography and spacing on phones */
+	@media (max-width: 767px) {
+	
+	  body {
+	    -webkit-text-size-adjust: 100%;
+	  }
+	
+	  /* Homepage title */
+	  .hero-content h1 {
+	    font-size: 36px;
+	    line-height: 1.15;
+	    margin-bottom: 0.8em;
+	  }
+	
+	  /* Homepage description */
+	  .hero-content > p {
+	    font-size: 16px;
+	    line-height: 1.65;
+	    margin: 0 0 1.2em;
+	  }
+	
+	  /* Research/project card */
+	  #portfolio .content-wrap .content {
+	    margin-top: 2em;
+	    margin-left: 0;
+	  }
+	
+	  /* Project title */
+	  #portfolio .content h3.title {
+	    font-size: 25px;
+	    line-height: 1.25;
+	    margin-top: 0;
+	    margin-bottom: 1.3em;
+	  }
+	
+	  /* Move the little underline below the whole title */
+	  #portfolio .content h3.title::after {
+	    top: auto;
+	    bottom: -0.55em;
+	    width: 2.5em;
+	  }
+	
+	  /* Project description */
+	  #portfolio .content .excerpt {
+	    width: 100%;
+	  }
+	
+	  #portfolio .content .excerpt p {
+	    font-size: 16px;
+	    line-height: 1.65;
+	    margin-bottom: 1em;
+	  }
+	
+	  /* Research button */
+	  #portfolio .content button {
+	    width: auto;
+	    padding: 9px 16px;
+	    font-size: 14px;
+	    margin: 0.5em 0 1em;
+	  }
+	
+	  /* Categories and tags */
+	  #portfolio .content .tags,
+	  #portfolio .content .categories {
+	    margin: 1em 0;
+	  }
+	
+	  #portfolio .content .tags span,
+	  #portfolio .content .categories span {
+	    padding: 6px 10px;
+	    margin: 0 4px 6px 0;
+	    font-size: 13px;
+	  }
+	}
