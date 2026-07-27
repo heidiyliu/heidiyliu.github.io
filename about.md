@@ -3,6 +3,28 @@ layout: inner
 title: About
 permalink: /about/
 ---
+
+---
+layout: inner
+title: Research
+permalink: /research/
+---
+
+# Research
+
+I am a Physics PhD student at the University of Arizona with research interests in theoretical cosmology, numerical methods, and tests of cosmological models.
+
+## Research interests
+
+- Cosmological perturbation theory
+- Structure formation
+- High-redshift galaxy populations
+- Numerical cosmology
+- Alternatives to the standard cosmological model
+
+
+
+
 ## Markdown
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
