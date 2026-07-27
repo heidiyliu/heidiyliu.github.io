@@ -206,12 +206,12 @@ button.btn, input.btn {
 	3.0 Posts
 --------------------------------------------------------------*/
 #portfolio .container {
-  margin-top: 3em;
+  margin-top: 5em;
   @include bp-xsmall {
-    margin-top: 2em;
+    margin-top: 3em;
   }
   .break {
-    margin: 5em 0;
+    margin: 3em 0;
     @include bp-xsmall {
       margin: 1em 0;
     }
