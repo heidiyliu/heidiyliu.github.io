@@ -4,11 +4,6 @@ title: About
 permalink: /about/
 ---
 
----
-layout: inner
-title: Research
-permalink: /research/
----
 
 # Research
 
