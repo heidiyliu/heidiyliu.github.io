@@ -488,3 +488,52 @@ pre {
 	  max-width: none !important;
 	  height: auto;
 	}
+
+	/* Phone layout */
+	@media (max-width: 767px) {
+	
+	  /* Smaller social-media buttons */
+	  .hero-buttons {
+	    display: flex;
+	    justify-content: center;
+	    flex-wrap: wrap;
+	    gap: 6px;
+	  }
+	
+	  .hero-content .hero-buttons a {
+	    margin: 0;
+	  }
+	
+	  .hero-content .hero-buttons button.btn {
+	    width: auto;
+	    min-width: 0;
+	    margin: 0;
+	    padding: 7px 10px;
+	    font-size: 12px;
+	    line-height: 1.2;
+	  }
+	
+	  .hero-content .hero-buttons button.btn i {
+	    margin-right: 5px;
+	    font-size: 13px;
+	  }
+	
+	  /* Make the banner nearly fill the phone screen */
+	  .home-banner {
+	    position: relative;
+	    left: 50%;
+	    width: calc(100vw - 20px);
+	    margin-top: 1em;
+	    transform: translateX(-50%);
+	  }
+	
+	  /* Crop some of the large blank left area */
+	  .home-banner img {
+	    display: block;
+	    width: 100%;
+	    max-width: none;
+	    height: 210px;
+	    object-fit: cover;
+	    object-position: 70% center;
+	  }
+	}
