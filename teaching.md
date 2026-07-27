@@ -24,7 +24,7 @@ A laboratory course centered on quantitative, illustrative, and exploratory expe
 
 My teaching focused on experimental reasoning, data collection and analysis, uncertainty, scientific communication, and connecting laboratory results with underlying physical principles.
 
-### Lectures Delivered
+### Lectures Taught
 
 #### PHYS 141 — Introductory Mechanics
 
