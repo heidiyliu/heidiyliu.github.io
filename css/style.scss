@@ -441,3 +441,16 @@ pre {
     .highlight .vg { color: #000000 } /* Name.Variable.Global */
     .highlight .vi { color: #000000 } /* Name.Variable.Instance */
     .highlight .il { color: #0000cf; font-weight: bold } /* Literal.Number.Integer.Long */
+
+
+	/* Custom homepage banner */
+	.home-banner {
+	  width: 100%;
+	  margin: 4em auto 0;
+	}
+	
+	.home-banner img {
+	  display: block;
+	  width: 100%;
+	  height: auto;
+	}
