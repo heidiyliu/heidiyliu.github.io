@@ -105,4 +105,4 @@ nav_item:
   - { url: '/research', text: 'Research' }
   - { url: '/teaching', text: 'Teaching' }
   - { file: "/heidi_cv_2026.pdf", text: "CV" }
-  - { url: '/creative', text: 'creative' }
+  - { url: '/creative', text: 'Projects' }
