@@ -466,3 +466,25 @@ pre {
 	.hero-content .hero-buttons button.btn {
 	  margin: 1em 1em;
 	}
+
+
+	/* Widen the visible homepage hero */
+	.hero-content {
+	  width: 85% !important;
+	  max-width: none !important;
+	}
+	
+	/* Allow the banner to fill the wider hero */
+	.home-banner {
+	  width: 100% !important;
+	  max-width: none !important;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	
+	.home-banner img {
+	  display: block;
+	  width: 100% !important;
+	  max-width: none !important;
+	  height: auto;
+	}
