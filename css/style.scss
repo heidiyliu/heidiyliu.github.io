@@ -489,51 +489,58 @@ pre {
 	  height: auto;
 	}
 
-	/* Phone layout */
+	/* Phone homepage layout */
 	@media (max-width: 767px) {
 	
-	  /* Smaller social-media buttons */
-	  .hero-buttons {
+	  /* Keep all three social buttons in one row */
+	  .hero-content .hero-buttons {
 	    display: flex;
+	    flex-wrap: nowrap;
 	    justify-content: center;
-	    flex-wrap: wrap;
+	    align-items: center;
 	    gap: 6px;
+	    width: 100%;
 	  }
 	
 	  .hero-content .hero-buttons a {
+	    display: block;
+	    flex: 1 1 0;
+	    min-width: 0;
 	    margin: 0;
 	  }
 	
 	  .hero-content .hero-buttons button.btn {
-	    width: auto;
+	    display: block;
+	    width: 100%;
 	    min-width: 0;
 	    margin: 0;
-	    padding: 7px 10px;
-	    font-size: 12px;
+	    padding: 8px 5px;
+	    font-size: 11px;
 	    line-height: 1.2;
+	    white-space: nowrap;
 	  }
 	
 	  .hero-content .hero-buttons button.btn i {
-	    margin-right: 5px;
-	    font-size: 13px;
+	    margin-right: 4px;
+	    font-size: 12px;
 	  }
 	
-	  /* Make the banner nearly fill the phone screen */
+	  /* Show the banner in its original aspect ratio */
 	  .home-banner {
 	    position: relative;
 	    left: 50%;
 	    width: calc(100vw - 20px);
-	    margin-top: 1em;
+	    max-width: none;
+	    margin: 1.5em 0 0;
 	    transform: translateX(-50%);
 	  }
 	
-	  /* Crop some of the large blank left area */
 	  .home-banner img {
 	    display: block;
-	    width: 100%;
-	    max-width: none;
-	    height: 210px;
-	    object-fit: cover;
-	    object-position: 70% center;
+	    width: 100% !important;
+	    max-width: none !important;
+	    height: auto !important;
+	    object-fit: contain;
+	    object-position: center;
 	  }
 	}
