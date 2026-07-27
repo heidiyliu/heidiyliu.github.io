@@ -122,17 +122,17 @@ button.btn, input.btn {
 }
 
 .hero-content {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   display: table;
   @include bp-medium {
-    width: 100%;
+    width: 90%;
   }
   @include bp-small {
-    width: 100%;
+    width: 95%;
   }
   @include bp-xsmall {
-    width: 100%;
+    width: 95%;
   }
   h1 {
     font-size: 48px;
