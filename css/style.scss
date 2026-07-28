@@ -572,7 +572,35 @@ pre {
     max-width: none !important;
     height: auto !important;
   }
-	
+
+
+  /* Homepage section title on phones */
+  #portfolio .section-title {
+    font-size: 22px !important;
+    line-height: 1.25 !important;
+    margin: 0 auto 1em !important;
+    padding: 0 15px;
+  }
+
+  #portfolio .section-title::after {
+    display: block !important;
+    top: auto !important;
+    bottom: -0.4em !important;
+    width: 2.5em !important;
+  }
+
+  /* Homepage section subtitle on phones */
+  #portfolio .section-subtitle {
+    width: 100% !important;
+    max-width: 420px;
+    padding: 0 12px;
+    margin: 1.4em auto 2em !important;
+    font-size: 13px !important;
+    line-height: 1.55 !important;
+    box-sizing: border-box;
+  }
+
+
 
   /* Stack project content rather than placing image beside text */
   #portfolio .post-row {
