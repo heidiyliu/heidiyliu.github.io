@@ -146,7 +146,7 @@ button.btn, input.btn {
   p {
 	font-size: 22px;
 	line-height: 1.6;
-	margin: 2em 0 3em 0;
+	margin: 2em 0 2em 0;
   }
 
 
@@ -232,7 +232,7 @@ button.btn, input.btn {
   position: relative;
   margin: 0 auto;
   margin-bottom: 1em;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.25;
   &:after {
     content: '';
@@ -251,7 +251,7 @@ button.btn, input.btn {
 .section-subtitle {
   width: 40%;
   margin: 1.5em auto 0;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.6;
   @include bp-xsmall {
     width: 100%;
