@@ -244,6 +244,7 @@ button.btn, input.btn {
 }
 
 .section-title {
+  color: $heading-color;
   position: relative;
   margin: 0 auto;
   margin-bottom: 1em;
@@ -264,6 +265,7 @@ button.btn, input.btn {
 }
 
 .section-subtitle {
+  color: $body-color;
   width: 40%;
   margin: 1.5em auto 1.5em;
   font-size: 20px;
@@ -302,6 +304,7 @@ button.btn, input.btn {
       position: relative;
       margin-bottom: 1.5em;
       &:after {
+		background-color: $border-color;
         content: '';
         position: absolute;
         top: 1.5em;
@@ -326,7 +329,7 @@ button.btn, input.btn {
     .tags, .categories {
       margin: 2em 0;
       span {
-        color: #9eb1bd;
+        color: $tag-color;
         background-color: #ECEFF1;
         padding: 0.5em 1.5em;
         display: inline-block;
