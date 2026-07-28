@@ -542,6 +542,28 @@ pre {
     margin-right: 3px !important;
     font-size: 11px !important;
   }
+
+
+
+  /* Space around the banner on phones */
+  .home-banner {
+    position: relative;
+    left: 50%;
+    width: calc(100vw - 20px);
+    max-width: none;
+
+    margin: 2em 0 2em !important;
+
+    transform: translateX(-50%);
+  }
+
+  .home-banner img {
+    display: block;
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+  }
+	
 	
 
   /* Stack project content rather than placing image beside text */
