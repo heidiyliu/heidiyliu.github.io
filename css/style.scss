@@ -493,137 +493,96 @@ pre {
 	  height: auto;
 	}
 
-	/* Phone homepage layout */
-	@media (max-width: 767px) {
-		
-	  /* Keep all three social buttons in one row */
-	  .hero-content .hero-buttons {
-	    display: flex;
-	    flex-wrap: nowrap;
-	    justify-content: center;
-	    align-items: center;
-	    gap: 6px;
-	    width: 100%;
-	  }
-	
-	  .hero-content .hero-buttons a {
-	    display: block;
-	    flex: 1 1 0;
-	    min-width: 0;
-	    margin: 0;
-	  }
-	
-	  .hero-content .hero-buttons button.btn {
-	    display: block;
-	    width: 100%;
-	    min-width: 0;
-	    margin: 0;
-	    padding: 8px 5px;
-	    font-size: 11px;
-	    line-height: 1.2;
-	    white-space: nowrap;
-	  }
-	
-	  .hero-content .hero-buttons button.btn i {
-	    margin-right: 4px;
-	    font-size: 10px;
-	  }
-	
-	  /* Show the banner in its original aspect ratio */
-	  .home-banner {
-	    position: relative;
-	    left: 50%;
-	    width: calc(100vw - 20px);
-	    max-width: none;
-	    margin: 1.5em 0 0;
-	    transform: translateX(-50%);
-	  }
-	
-	  .home-banner img {
-	    display: block;
-	    width: 100% !important;
-	    max-width: none !important;
-	    height: auto !important;
-	    object-fit: contain;
-	    object-position: center;
-	  }
-	}
 
-	
-	/* Mobile only: fix homepage research/project posts */
-	@media (max-width: 767px) {
-	
-	  /* Stop the text and image from sitting side by side */
-	  #portfolio .post-row {
-	    display: block !important;
-	    width: 100%;
-	  }
-	
-	  /* Make each post column use the full phone width */
-	  #portfolio .post-row > [class*="col-"] {
-	    display: block !important;
-	    float: none !important;
-	    width: 100% !important;
-	    max-width: 100% !important;
-	  }
-	
-	  /* Hide project images on phones */
-	  #portfolio .content-wrap img.img-responsive {
-	    display: none !important;
-	  }
-	
-	  /* Use the full available width for the text */
-	  #portfolio .content-wrap .content {
-	    width: 100% !important;
-	    margin: 0 !important;
-	    padding: 0 18px;
-	    box-sizing: border-box;
-	  }
-	
-	  /* Project title */
-	  #portfolio .content h3.title {
-	    font-size: 26px !important;
-	    line-height: 1.25 !important;
-	    margin: 0 0 1.4em !important;
-	  }
-	
-	  /* Keep the small line underneath the entire title */
-	  #portfolio .content h3.title::after {
-	    top: auto !important;
-	    bottom: -0.55em !important;
-	    width: 2.5em;
-	  }
-	
-	  /* Project description */
-	  #portfolio .content p.excerpt {
-	    width: 100% !important;
-	    max-width: none !important;
-	    font-size: 16px !important;
-	    line-height: 1.65 !important;
-	    margin: 0 0 1em !important;
-	  }
-	
-	  /* Project button */
-	  #portfolio .content .project-link button {
-	    width: auto !important;
-	    margin: 0.6em 0 1em !important;
-	    padding: 9px 15px !important;
-	    font-size: 14px !important;
-	  }
-	
-	  /* Smaller tags */
-	  #portfolio .content .tags {
-	    margin: 0.8em 0 2em !important;
-	  }
-	
-	  #portfolio .content .tags span {
-	    padding: 6px 10px !important;
-	    margin: 0 4px 6px 0 !important;
-	    font-size: 13px !important;
-	  }
-	
-	  /* Reduce space after each project */
-	  #portfolio .content-wrap {
-	    margin-bottom: 4em !important;
-	  }
-	}
+/* Mobile-only homepage styling */
+@media (max-width: 767px) {
+
+  /* Homepage title: "Hello, I'm Heidi Liu :)" */
+  .hero-content h1 {
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+    margin: 1em 0 0.6em !important;
+  }
+
+  /* Homepage introductory sentence */
+  .hero-content > p {
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+    margin: 0 0 1em !important;
+  }
+
+  /* Stack project content rather than placing image beside text */
+  #portfolio .post-row {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  /* Give the project columns the full phone width */
+  #portfolio .post-row > [class*="col-"] {
+    display: block !important;
+    float: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Hide project images on phones */
+  #portfolio .content-wrap img.img-responsive {
+    display: none !important;
+  }
+
+  /* Use the full width for project text */
+  #portfolio .content-wrap .content {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 15px !important;
+    box-sizing: border-box;
+  }
+
+  /* Project title */
+  #portfolio .content h3.title {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+    margin: 0 0 1.2em !important;
+  }
+
+  /* Line underneath project title */
+  #portfolio .content h3.title::after {
+    top: auto !important;
+    bottom: -0.5em !important;
+    width: 2.5em !important;
+  }
+
+  /* Project description */
+  #portfolio .content p.excerpt {
+    width: 100% !important;
+    max-width: none !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin: 0 0 1em !important;
+  }
+
+  /* Project button */
+  #portfolio .content .project-link button {
+    width: auto !important;
+    margin: 0.5em 0 1em !important;
+    padding: 8px 13px !important;
+    font-size: 13px !important;
+  }
+
+  /* Tag container */
+  #portfolio .content .tags {
+    margin: 0.7em 0 1.5em !important;
+  }
+
+  /* Individual tags */
+  #portfolio .content .tags span {
+    padding: 5px 9px !important;
+    margin: 0 4px 5px 0 !important;
+    font-size: 12px !important;
+  }
+
+  /* Space after each project */
+  #portfolio .content-wrap {
+    margin-bottom: 3em !important;
+  }
+}
