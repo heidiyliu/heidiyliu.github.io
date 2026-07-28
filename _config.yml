@@ -104,7 +104,7 @@ enable_contact: false
 enable_nav: true
 nav_item:
   - { url: '/', text: 'Home' }
-  - { url: 'about.md', text: 'About' }
+  - { url: '/about', text: 'About' }
   - { url: '/tabs/research.md', text: 'Research' }
   - { url: '/tabs/teaching.md', text: 'Teaching' }
   - { file: "heidi_cv_2026.pdf", text: "CV" }
