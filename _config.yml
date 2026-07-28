@@ -18,9 +18,12 @@ email: 'heidiliu.studio@gmail.com'
 description: "I'm an astrophysics PhD student, the website is currently under construction"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://heidiyliu.github.io" # the base hostname & protocol for your site, e.g. https://example.com
+twitter_username: ''
 instagram_username: 'heidi.lliu'
 github_username: 'heidiyliu'
 medium_username: ''
+section_title: "Latest Work"
+section_subtitle: "Selected projects in cosmology, astrophysics, and computational physics."
 
 # Build settings
 markdown: kramdown
