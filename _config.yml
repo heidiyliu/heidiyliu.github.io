@@ -104,8 +104,8 @@ enable_contact: false
 enable_nav: true
 nav_item:
   - { url: '/', text: 'Home' }
-  - { url: 'tabs/about', text: 'About' }
-  - { url: 'tabs/research', text: 'Research' }
-  - { url: 'tabs/teaching', text: 'Teaching' }
-  - { file: "tabs/heidi_cv_2026.pdf", text: "CV" }
-  - { url: 'tabs/creative', text: 'Creative' }
+  - { url: '/tabs/about', text: 'About' }
+  - { url: '/tabs/research', text: 'Research' }
+  - { url: '/tabs/teaching', text: 'Teaching' }
+  - { file: "/tabs/heidi_cv_2026.pdf", text: "CV" }
+  - { url: '/tabs/creative', text: 'Creative' }
