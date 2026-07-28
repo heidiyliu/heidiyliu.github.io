@@ -27,13 +27,15 @@
 
           <div class="hero-buttons">
 
+            {% if site.github_username != '' %}
+              <a href="https://github.com/{{ site.github_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-github fa-lg"></i>Github</button></a>
+            {% endif %}
             {% if site.twitter_username != '' %}
               <a href="https://twitter.com/{{ site.twitter_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-twitter fa-lg"></i>Twitter</button></a>
             {% endif %}
             {% if site.instagram_username != '' %}<a href="https://www.instagram.com/{{ site.instagram_username }}/"target="_blank" rel="noopener noreferrer"><button class="btn btn-default btn-lg"><i class="fa fa-instagram fa-lg"></i> Instagram</button></a>
             {% endif %}
-            {% if site.github_username != '' %}
-              <a href="https://github.com/{{ site.github_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-github fa-lg"></i>Github</button></a>
+            {% if site.rednote_url != '' %}<a href="{{ site.rednote_url }}"target="_blank"rel="noopener noreferrer"><button class="btn btn-default btn-lg"><i class="fa fa-book fa-lg"></i> RedNote</button></a>
             {% endif %}
             {% if site.medium_username != '' %}
               <a href="https://{{ site.medium_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-medium fa-lg"></i>Medium</button></a>
