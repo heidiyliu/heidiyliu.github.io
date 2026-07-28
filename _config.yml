@@ -105,7 +105,7 @@ enable_nav: true
 nav_item:
   - { url: '/', text: 'Home' }
   - { url: '/about', text: 'About' }
-  - { url: '/tabs/research.md', text: 'Research' }
-  - { url: '/tabs/teaching.md', text: 'Teaching' }
+  - { url: '/research', text: 'Research' }
+  - { url: '/teaching', text: 'Teaching' }
   - { file: "heidi_cv_2026.pdf", text: "CV" }
-  - { url: '/tabs/creative.md', text: 'Creative' }
+  - { url: '/creative', text: 'Creative' }
