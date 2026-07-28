@@ -464,7 +464,9 @@ pre {
       line-height: 1.6;
 	  margin: 2em 0 3em 0;
 	}
-	
+
+
+	/* space between the spcial box */
 	.hero-content .hero-buttons button.btn {
 	  margin: 2em 2em;
 	}
@@ -493,7 +495,23 @@ pre {
 
 	/* Phone homepage layout */
 	@media (max-width: 767px) {
+
+
+	  /* Phone homepage title */
+	  .hero-content h1 {
+	    font-size: 24px;
+	    line-height: 1.15;
+	    margin: 2em 0 1em;
+	  }
 	
+	  /* Phone homepage sentence */
+	  .hero-content > p {
+	    font-size: 10px;
+	    line-height: 1.55;
+	    margin: 1 0 1em;
+	  }
+	}
+		
 	  /* Keep all three social buttons in one row */
 	  .hero-content .hero-buttons {
 	    display: flex;
