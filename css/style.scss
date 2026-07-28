@@ -125,23 +125,40 @@ button.btn, input.btn {
   width: 80%;
   margin: 0 auto;
   display: table;
+
   @include bp-medium {
-    width: 90%;
+	width: 90%;
   }
+
   @include bp-small {
-    width: 95%;
+	width: 95%;
   }
+
   @include bp-xsmall {
-    width: 95%;
+	width: 95%;
   }
+
   h1 {
-    font-size: 56px;
+	font-size: 56px;
   }
-	/* space for intro text */	
+
+  /* Space for intro text */
   p {
 	font-size: 22px;
+	line-height: 1.6;
+	margin: 2em 0 3em 0;
   }
-	}
+
+  .hero-buttons {
+    margin: 0 auto;
+    display: table;
+
+    i {
+      padding-right: 0.5em;
+    }
+  }
+}
+
   .hero-buttons {
     margin: 0 auto;
     display: table;
