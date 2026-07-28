@@ -22,6 +22,15 @@ $secondary: #FF7B7B;
 %opensans { font-family: 'Open Sans', sans-serif; }
 %merriweather { font-family: 'Merriweather', serif; }
 
+
+$heading-color: #2F3443;
+$body-color: #4B5260;
+$muted-color: #737D8D;
+$link-color: #6078A8;
+$link-hover-color: #7B6F91;
+$border-color: #D8E0E9;
+$tag-color: #8798AA;
+
 /*--------------------------------------------------------------
 	1.0 Defaults
 --------------------------------------------------------------*/
@@ -33,12 +42,14 @@ $secondary: #FF7B7B;
 }
 
 body {
+  color: $body-color;
   background-color: #e9edf0;
   @extend %opensans;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  color: $heading-color;
   @extend %merriweather;
   font-weight: 700;
 }
@@ -48,14 +59,16 @@ article {
 }
 
 p {
+  color: $body-color;
   line-height: 1.8;
   font-size: 1.3em;
 }
 
 a {
+  color: $link-color;
   @include transition(color .2s ease-in-out);
   &:hover {
-    color: #FF5B33;
+    color: $link-hover-color;
     text-decoration: none;
   }
 }
@@ -139,11 +152,13 @@ button.btn, input.btn {
   }
 
   h1 {
+	color: $heading-color;
 	font-size: 56px;
   }
 
   /* Space for intro text */
   p {
+	color: $muted-color;
 	font-size: 22px;
 	line-height: 1.6;
 	margin: 2em 0 2em 0;
