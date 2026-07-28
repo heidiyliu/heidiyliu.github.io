@@ -447,6 +447,12 @@ pre {
     .highlight .il { color: #0000cf; font-weight: bold } /* Literal.Number.Integer.Long */
 
 
+	/* space between the spcial box */
+	.hero-content .hero-buttons button.btn {
+	  margin: 2em 2em;
+	}
+
+
 	/* Custom homepage banner */
 	.home-banner {
 	  width: 100%;
@@ -459,12 +465,6 @@ pre {
       max-width: 850px;
 	  height: auto;
       margin: 0 auto;
-	}
-
-
-	/* space between the spcial box */
-	.hero-content .hero-buttons button.btn {
-	  margin: 2em 2em;
 	}
 
 
@@ -589,7 +589,7 @@ pre {
   #portfolio .content p.excerpt {
     width: 100% !important;
     max-width: none !important;
-    font-size: 15px !important;
+    font-size: 12px !important;
     line-height: 1.6 !important;
     margin: 0 0 1em !important;
   }
