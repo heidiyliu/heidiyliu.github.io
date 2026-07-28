@@ -12,7 +12,7 @@ My work has involved analytic calculations, numerical modeling, statistical fore
 
 ## University of Arizona
 
-### Cosmological Structure Formation and UV Luminosity Functions
+### [Cosmological Structure Formation and UV Luminosity Functions]({{ '/research/rhct-structure-formation/' | relative_url }})
 
 *August 2025–Present*  
 **Advisor:** Prof. Fulvio Melia
