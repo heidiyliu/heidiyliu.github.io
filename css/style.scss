@@ -545,77 +545,81 @@ pre {
 	  }
 	}
 
-	/* Better typography and spacing on phones */
+	
+	/* Mobile only: fix homepage research/project posts */
 	@media (max-width: 767px) {
 	
-	  body {
-	    -webkit-text-size-adjust: 100%;
+	  /* Stop the text and image from sitting side by side */
+	  #portfolio .post-row {
+	    display: block !important;
+	    width: 100%;
 	  }
 	
-	  /* Homepage title */
-	  .hero-content h1 {
-	    font-size: 36px;
-	    line-height: 1.15;
-	    margin-bottom: 0.8em;
+	  /* Make each post column use the full phone width */
+	  #portfolio .post-row > [class*="col-"] {
+	    display: block !important;
+	    float: none !important;
+	    width: 100% !important;
+	    max-width: 100% !important;
 	  }
 	
-	  /* Homepage description */
-	  .hero-content > p {
-	    font-size: 16px;
-	    line-height: 1.65;
-	    margin: 0 0 1.2em;
+	  /* Hide project images on phones */
+	  #portfolio .content-wrap img.img-responsive {
+	    display: none !important;
 	  }
 	
-	  /* Research/project card */
+	  /* Use the full available width for the text */
 	  #portfolio .content-wrap .content {
-	    margin-top: 2em;
-	    margin-left: 0;
+	    width: 100% !important;
+	    margin: 0 !important;
+	    padding: 0 18px;
+	    box-sizing: border-box;
 	  }
 	
 	  /* Project title */
 	  #portfolio .content h3.title {
-	    font-size: 25px;
-	    line-height: 1.25;
-	    margin-top: 0;
-	    margin-bottom: 1.3em;
+	    font-size: 26px !important;
+	    line-height: 1.25 !important;
+	    margin: 0 0 1.4em !important;
 	  }
 	
-	  /* Move the little underline below the whole title */
+	  /* Keep the small line underneath the entire title */
 	  #portfolio .content h3.title::after {
-	    top: auto;
-	    bottom: -0.55em;
+	    top: auto !important;
+	    bottom: -0.55em !important;
 	    width: 2.5em;
 	  }
 	
 	  /* Project description */
-	  #portfolio .content .excerpt {
-	    width: 100%;
+	  #portfolio .content p.excerpt {
+	    width: 100% !important;
+	    max-width: none !important;
+	    font-size: 16px !important;
+	    line-height: 1.65 !important;
+	    margin: 0 0 1em !important;
 	  }
 	
-	  #portfolio .content .excerpt p {
-	    font-size: 16px;
-	    line-height: 1.65;
-	    margin-bottom: 1em;
+	  /* Project button */
+	  #portfolio .content .project-link button {
+	    width: auto !important;
+	    margin: 0.6em 0 1em !important;
+	    padding: 9px 15px !important;
+	    font-size: 14px !important;
 	  }
 	
-	  /* Research button */
-	  #portfolio .content button {
-	    width: auto;
-	    padding: 9px 16px;
-	    font-size: 14px;
-	    margin: 0.5em 0 1em;
+	  /* Smaller tags */
+	  #portfolio .content .tags {
+	    margin: 0.8em 0 2em !important;
 	  }
 	
-	  /* Categories and tags */
-	  #portfolio .content .tags,
-	  #portfolio .content .categories {
-	    margin: 1em 0;
+	  #portfolio .content .tags span {
+	    padding: 6px 10px !important;
+	    margin: 0 4px 6px 0 !important;
+	    font-size: 13px !important;
 	  }
 	
-	  #portfolio .content .tags span,
-	  #portfolio .content .categories span {
-	    padding: 6px 10px;
-	    margin: 0 4px 6px 0;
-	    font-size: 13px;
+	  /* Reduce space after each project */
+	  #portfolio .content-wrap {
+	    margin-bottom: 4em !important;
 	  }
 	}
