@@ -32,7 +32,7 @@ Most forecasts for inflationary gravitational waves assume a nearly scale-invari
 
 I developed a Python forecasting pipeline that used the public Boltzmann code **CLASS** to propagate a general primordial tensor power spectrum into an observable CMB B-mode polarization spectrum. I then used a Fisher-matrix analysis to estimate how well CMB-S4 could constrain the amplitude of primordial tensor perturbations in separate wavenumber bins.
 
-![CMB-S4 research poster]({{ '/research/cmb-s4/cmb-s4-poster.png' | relative_url }})
+![CMB-S4 research poster]({{ '/research/cmb-s4/cmb-s4-poster.pdf' | relative_url }})
 
 *Interactive research poster presented at the 241st Meeting of the American Astronomical Society.*
 
