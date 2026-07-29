@@ -56,7 +56,7 @@ My contributions included:
 
 ## University of Washington
 
-### CMB-S4: Probing New Physics with the Cosmic Microwave Background
+### CMB-S4: Probing New Physics with the Cosmic Microwave Background({{ '/research/cmb-s4/' | relative_url }})
 
 *March 2022–June 2023*  
 **Advisor:** Prof. Marilena LoVerde
