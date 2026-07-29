@@ -48,7 +48,7 @@ Those photons form the CMB observed today.
 
 Small primordial perturbations produced acoustic waves in the early plasma. Overdense regions were compressed and heated, while underdense regions became comparatively rarefied and cooler. When photons decoupled from matter, these variations were preserved as the temperature anisotropies visible in CMB maps.
 
-![Cosmic microwave background temperature anisotropies]({{ '/research/cmb-s4/cmb-map.png' | relative_url }})
+![Cosmic microwave background temperature anisotropies]({{ '/research/cmb-s4/cmb-map.jpg' | relative_url }})
 
 *Temperature anisotropies in the cosmic microwave background. The temperature variations are extremely small compared with the mean CMB temperature.*
 
@@ -67,7 +67,7 @@ These primordial perturbations can be separated into two principal components:
 
 Primordial gravitational waves are tensor perturbations of spacetime. If they were generated during inflation or another early-universe process, they could leave a characteristic imprint on the polarization of the CMB.
 
-![Illustration of gravitational waves]({{ '/research/cmb-s4/primordial-gravitational-waves.png' | relative_url }})
+![Illustration of gravitational waves]({{ '/research/cmb-s4/primordial-gravitational-waves.jpg' | relative_url }})
 
 *Illustration of gravitational waves propagating through spacetime.*
 
@@ -117,7 +117,7 @@ The observed B-mode power spectrum must therefore be modeled as a combination of
 - Foreground emission
 - Instrumental noise
 
-![Example CMB temperature and polarization power spectra]({{ '/research/cmb-s4/cmb-polarization-spectra.png' | relative_url }})
+![Example CMB temperature and polarization power spectra]({{ '/research/cmb-s4/cmb-polarization-spectra.jpg' | relative_url }})
 
 *Example temperature, E-mode, and B-mode angular power spectra.*
 
@@ -162,7 +162,7 @@ W_i(k)=\frac{1}{2}
 
 This parameterization allowed the primordial tensor power to vary independently across different scales.
 
-![Scale-dependent primordial tensor spectrum]({{ '/research/cmb-s4/scale-dependent-spectrum.gif' | relative_url }})
+![Scale-dependent primordial tensor spectrum]({{ '/research/cmb-s4/scale-dependent-spectrum.jpg' | relative_url }})
 
 *Smooth logarithmic bins used to construct the scale-dependent primordial tensor power spectrum.*
 
@@ -259,7 +259,7 @@ These values were preliminary and depended on the fiducial spectrum, binning sch
 
 The constraints on the tensor spectrum were also converted into constraints on the gravitational-wave energy density, \(\Omega_{\mathrm{GW}}(k)\), and compared with previously published CMB upper limits.
 
-![Preliminary constraints on primordial gravitational-wave density]({{ '/research/cmb-s4/preliminary-constraints.png' | relative_url }})
+![Preliminary constraints on primordial gravitational-wave density]({{ '/research/cmb-s4/preliminary-constraints.jpg' | relative_url }})
 
 *Preliminary scale-dependent forecast constraints converted into limits on the primordial gravitational-wave energy density.*
 
@@ -293,7 +293,7 @@ Here:
 
 The forecast showed that larger residual lensing amplitudes increase the uncertainty in \(r\), particularly when the primordial signal is small.
 
-![Forecast uncertainty under different delensing assumptions]({{ '/research/cmb-s4/delensing-forecast.png' | relative_url }})
+![Forecast uncertainty under different delensing assumptions]({{ '/research/cmb-s4/delensing-forecast.jpg' | relative_url }})
 
 *Forecast uncertainty as a function of the tensor-to-scalar ratio for different residual lensing amplitudes.*
 
