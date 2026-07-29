@@ -259,7 +259,11 @@ These values were preliminary and depended on the fiducial spectrum, binning sch
 
 The constraints on the tensor spectrum were also converted into constraints on the gravitational-wave energy density, \(\Omega_{\mathrm{GW}}(k)\), and compared with previously published CMB upper limits.
 
-![Preliminary constraints on primordial gravitational-wave density](preliminary-constraints.jpg)
+<img
+  src="/research/cmb-s4/cmb-map.jpg"
+  alt="Cosmic microwave background temperature anisotropies"
+  style="display: block; width: 100%; height: auto; margin: 1.5em auto 0.5em;"
+>
 
 *Preliminary scale-dependent forecast constraints converted into limits on the primordial gravitational-wave energy density.*
 
