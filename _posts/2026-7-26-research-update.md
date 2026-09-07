@@ -5,7 +5,7 @@ title: "Cosmological Structure Formation"
 date: 2026-07-26
 categories: research cosmology
 tags: Cosmology Numerical Methods Structure Formation
-featured_image: "/img/research/cosmology-project.png"
+featured_image: "/img/cosmology-project.png"
 project_link: "/research/"
 button_icon: "flask"
 button_text: "View Research"
