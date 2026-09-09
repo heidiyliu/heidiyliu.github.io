@@ -34,22 +34,31 @@ Through short-form videos, atmospheric sound, and surreal environments, the proj
 
 ---
 
-<img class="heidiverse-side-image" src="/img/heidiverse.jpg" alt="Heidiverse">
+<div class="creative-project-row reverse">
+
+  <div class="creative-project-copy" markdown="1">
 
 ## Heidiverse
 
 *Astronomy and cosmology, with occasional existential consequences*
 
-Heidiverse is my astronomy and cosmology communication and daily life scketch project. It uses illustrated and animated storytelling to introduce ideas about the universe in a way that is approachable, visually engaging, and scientifically grounded.
+Heidiverse is my astronomy and cosmology communication and daily life sketch project. It uses illustrated and animated storytelling to introduce ideas about the universe in a way that is approachable, visually engaging, and scientifically grounded.
 
 The project focuses on topics such as dark matter, cosmic structure, black holes, the early universe, and the limits of what we currently understand. My goal is to explain complex concepts clearly without removing the uncertainty, strangeness, or sense of wonder that makes cosmology compelling.
-
 
 **Themes:** Astronomy, cosmology, physics, science communication  
 **Format:** Illustrated videos, animations, and explanatory content  
 **Status:** In development
 
 [YouTube](#) · [Bilibili](#) · [Instagram](#)
+
+  </div>
+
+  <div class="creative-project-image">
+    <img src="/img/heidiverse.jpg" alt="Heidiverse">
+  </div>
+
+</div>
 
 ---
 
