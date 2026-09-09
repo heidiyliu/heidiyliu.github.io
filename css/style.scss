@@ -696,72 +696,72 @@ pre {
   }
 }
 
-/* Creative project images */
+/* ==========================================================
+   Creative Projects
+   ========================================================== */
 
-/* Oneira Archive: image on LEFT */
-.oneira-side-image {
-  float: left !important;
-  width: 22% !important;
-  max-width: 190px !important;
-  height: auto !important;
-  margin: 0.3em 2em 1em 0 !important;
-}
-
-
-/* Heidiverse: image on RIGHT */
-.heidiverse-side-image {
-  float: right !important;
-  width: 22% !important;
-  max-width: 190px !important;
-  height: auto !important;
-  margin: 0.3em 0 1em 2em !important;
-}
-
-/* Prevent one project's image from spilling into the next */
-.creative-clear {
-  clear: both;
-}
-
-@media (max-width: 767px) {
-
-  .oneira-side-image,
-  .heidiverse-side-image {
-    float: none !important;
-    display: block !important;
-    width: 38% !important;
-    max-width: 150px !important;
-    height: auto !important;
-    margin: 0.5em auto 1.2em !important;
-  }
-}
-
-/* Creative project rows */
 .creative-project-row {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 2.5em;
+  width: 100%;
   margin: 2em 0 4em;
 }
 
 /* Image column */
 .creative-project-image {
-  flex: 0 0 34%;
-  max-width: 320px;
+  flex: 0 0 32%;
+  max-width: 300px;
 }
 
-/* Override the theme's global img width */
+/* Override the theme's global img { width: 100%; } */
 .creative-project-image img {
   display: block;
   width: 100% !important;
+  max-width: 100% !important;
   height: auto !important;
+  margin: 0 !important;
 }
 
 /* Text column */
 .creative-project-copy {
-  flex: 1;
+  flex: 1 1 auto;
   min-width: 0;
 }
 
 .creative-project-copy h2 {
   margin-top: 0;
+}
+
+/* Heidiverse: text on left, image on right */
+.creative-project-row.reverse {
+  flex-direction: row;
+}
+
+
+/* ---------------- PHONE ---------------- */
+@media (max-width: 767px) {
+
+  .creative-project-row,
+  .creative-project-row.reverse {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    margin: 1.5em 0 3em;
+  }
+
+  .creative-project-image {
+    flex: none;
+    width: 65%;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .creative-project-copy {
+    width: 100%;
+  }
+
+  .creative-project-copy h2 {
+    margin-top: 0;
+  }
 }
