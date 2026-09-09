@@ -7,7 +7,45 @@ permalink: /creative/
 # Creative Projects
 
 Alongside my academic work, I develop independent creative projects centered on astronomy, visual storytelling, and everyday life. These projects allow me to explore scientific ideas and imagined worlds through formats that are more personal, visual, and experimental.
+<div class="creative-project">
 
+  <div class="creative-project-text">
+
+    <h2>Oneira Archive</h2>
+
+    <p><em>Dreamcore visual storytelling</em></p>
+
+    <p>
+      Oneira Archive is an original visual storytelling project exploring dreams,
+      liminal spaces, nostalgia, and places that feel familiar despite never having existed.
+    </p>
+
+    <p>
+      Through short-form videos, atmospheric sound, and surreal environments, the project
+      documents quiet and dreamlike locations that seem to belong to a half-remembered world.
+      The scenes are intended to feel peaceful and comforting, while occasionally carrying
+      a subtle sense that something is slightly out of place.
+    </p>
+
+    <p>
+      <strong>Themes:</strong> Dreamcore, liminal spaces, nostalgia, atmospheric storytelling<br>
+      <strong>Format:</strong> Short-form visual videos<br>
+      <strong>Status:</strong> Active
+    </p>
+
+    <p>
+      <a href="YOUR_INSTAGRAM_LINK">Instagram</a> ·
+      <a href="YOUR_TIKTOK_LINK">TikTok</a> ·
+      <a href="YOUR_REDNOTE_LINK">Xiaohongshu</a>
+    </p>
+
+  </div>
+
+  <div class="creative-project-image">
+    <img src="/img/oneira-archive.jpg" alt="Oneira Archive">
+  </div>
+
+</div>
 ## Oneira Archive
 
 *Dreamcore visual storytelling*
