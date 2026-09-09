@@ -696,14 +696,13 @@ pre {
   }
 }
 
-/* Image beside Creative project text */
-.creative-side-image {
-  float: right;
-  width: 32%;
-  max-width: 360px;
-  height: auto;
-  margin: 0 0 2em 3em;
-  border-radius: 4px;
+/* Oneira Archive image beside text */
+.oneira-side-image {
+  float: left !important;
+  width: 28% !important;
+  max-width: 240px !important;
+  height: auto !important;
+  margin: 0 0 1.5em 2.5em !important;
 }
 
 .creative-clear {
@@ -712,11 +711,11 @@ pre {
 
 /* Phone */
 @media (max-width: 767px) {
-  .creative-side-image {
-    float: none;
-    display: block;
-    width: 100%;
-    max-width: none;
-    margin: 1em 0 1.5em;
+  .oneira-side-image {
+    float: none !important;
+    display: block !important;
+    width: 55% !important;
+    max-width: 220px !important;
+    margin: 1em auto 1.5em !important;
   }
 }
