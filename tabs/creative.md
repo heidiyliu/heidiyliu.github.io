@@ -6,7 +6,7 @@ permalink: /creative/
 
 # Creative Projects
 
-<img class="creative-side-image" src="/img/oneira-archive.jpg" alt="Oneira Archive">
+<img class="oneira-side-image" src="/img/oneira-archive.jpg" alt="Oneira Archive">
 
 
 ## Oneira Archive
