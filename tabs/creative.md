@@ -26,6 +26,8 @@ Through short-form videos, atmospheric sound, and surreal environments, the proj
 
 ---
 
+<img class="creative-side-image" src="/img/heidiverse.jpg" alt="heidiverse">
+
 ## Heidiverse
 
 *Astronomy and cosmology, with occasional existential consequences*
