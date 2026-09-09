@@ -9,6 +9,14 @@ permalink: /creative/
 <img class="oneira-side-image" src="/img/oneira-archive.jpg" alt="Oneira Archive">
 
 
+<div class="creative-project-row">
+
+<div class="creative-project-image">
+  <img src="/img/oneira-archive.jpg" alt="Oneira Archive">
+</div>
+
+<div class="creative-project-copy" markdown="1">
+
 ## Oneira Archive
 
 *Dreamcore visual storytelling*
@@ -17,12 +25,15 @@ Oneira Archive is an original visual storytelling project exploring dreams, limi
 
 Through short-form videos, atmospheric sound, and surreal environments, the project documents quiet and dreamlike locations that seem to belong to a half-remembered world. The scenes are intended to feel peaceful and comforting, while occasionally carrying a subtle sense that something is slightly out of place.
 
-
 **Themes:** Dreamcore, liminal spaces, nostalgia, atmospheric storytelling  
 **Format:** Short-form visual videos  
 **Status:** Active
 
 [Instagram](#) · [TikTok](#) · [Xiaohongshu](#)
+
+</div>
+
+</div>
 
 ---
 
