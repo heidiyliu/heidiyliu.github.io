@@ -696,26 +696,40 @@ pre {
   }
 }
 
-/* Oneira Archive image beside text */
+/* Creative project images */
+
+/* Oneira Archive: image on LEFT */
 .oneira-side-image {
   float: left !important;
-  width: 5% !important;
-  max-width: 120px !important;
+  width: 22% !important;
+  max-width: 190px !important;
   height: auto !important;
-  margin: 0 0 1.5em 2.5em !important;
+  margin: 0.3em 2em 1em 0 !important;
 }
 
+/* Heidiverse: image on RIGHT */
+.heidiverse-side-image {
+  float: right !important;
+  width: 22% !important;
+  max-width: 190px !important;
+  height: auto !important;
+  margin: 0.3em 0 1em 2em !important;
+}
+
+/* Prevent one project's image from spilling into the next */
 .creative-clear {
   clear: both;
 }
 
-/* Phone */
 @media (max-width: 767px) {
-  .oneira-side-image {
+
+  .oneira-side-image,
+  .heidiverse-side-image {
     float: none !important;
     display: block !important;
-    width: 55% !important;
-    max-width: 220px !important;
-    margin: 1em auto 1.5em !important;
+    width: 38% !important;
+    max-width: 150px !important;
+    height: auto !important;
+    margin: 0.5em auto 1.2em !important;
   }
 }
