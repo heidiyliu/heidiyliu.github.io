@@ -695,3 +695,28 @@ pre {
     margin-bottom: 3em !important;
   }
 }
+
+/* Image beside Creative project text */
+.creative-side-image {
+  float: right;
+  width: 32%;
+  max-width: 360px;
+  height: auto;
+  margin: 0 0 2em 3em;
+  border-radius: 4px;
+}
+
+.creative-clear {
+  clear: both;
+}
+
+/* Phone */
+@media (max-width: 767px) {
+  .creative-side-image {
+    float: none;
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 1em 0 1.5em;
+  }
+}
