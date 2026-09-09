@@ -707,6 +707,37 @@ pre {
   margin: 0.3em 2em 1em 0 !important;
 }
 
+/* Creative project rows */
+.creative-project-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5em;
+  margin: 2em 0 4em;
+}
+
+/* Image column */
+.creative-project-image {
+  flex: 0 0 34%;
+  max-width: 320px;
+}
+
+/* Override the theme's global img width */
+.creative-project-image img {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Text column */
+.creative-project-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.creative-project-copy h2 {
+  margin-top: 0;
+}
+
 /* Heidiverse: image on RIGHT */
 .heidiverse-side-image {
   float: right !important;
