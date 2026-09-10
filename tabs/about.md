@@ -10,30 +10,30 @@ permalink: /about/
 
 <img class="about-photo" src="/img/heidi-about.jpg" alt="Heidi Liu">
 
-I am a Physics PhD student at the University of Arizona, working primarily in theoretical and computational cosmology. My research focuses on how cosmological models shape the formation and evolution of structure in the universe.
+I grew up in a smaller inland city in China, where access to educational and scientific resources was limited. I was an introspective child, often more absorbed in my own thoughts than in the world around me. When I was six, I asked what lies outside the universe. No one could really answer me, and that question stayed with me. In many ways, I am still following the same curiosity that started with that question when I was six.
 
-I am especially interested in questions that connect fundamental physics with observable structure: how initial perturbations evolve, how galaxies and dark-matter halos form, and how cosmological observations can be used to test the assumptions underlying our models of the universe.
 
-I enjoy research that combines analytic reasoning with numerical work. I am particularly drawn to problems where theoretical predictions can be translated into calculations, simulations, and comparisons with observational data.
+## Academic Journey
 
-Before beginning my PhD, I studied physics at the University of Washington, where I developed an interest in cosmology, computation, and the relationship between fundamental theory and astronomical observations.
+**Ph.D. in Astrophysics** · University of Arizona  
+*2024–Present*  
+Theoretical and computational cosmology · cosmic structure formation · high-redshift galaxies
+
+**B.S. in Physics & Astronomy** · University of Washington  
+*2020–2023*  
+Cosmology · cosmic microwave background · dark matter · astronomical instrumentation
 
 
 ## Research interests
 
 - Cosmological perturbation theory
-- Structure formation
-- High-redshift galaxy populations
+- Astroparticle Physics
+- Quantum Gravity
 - Numerical cosmology
 - Alternatives to the standard cosmological model
 
-### How I Became Interested in Astronomy
+You can explore my current and previous work on the [Research]({{ '/research/' | relative_url }}) page.
 
-My interest in astronomy began when I was about six years old. I remember asking a simple question: **what is outside the universe?** No one around me could really give me an answer. Instead of satisfying my curiosity, that uncertainty made me think about the question even more.
-
-That was probably my first encounter with the idea that some questions do not have simple answers, and that there are things about the universe we still do not fully understand. As I grew older, that curiosity developed into an interest in astronomy, physics, and eventually cosmology. I became especially drawn to the questions at the largest scales: how the universe began, how it evolved, what it is made of, and how much of it we can actually understand through observation and theory.
-
-In many ways, I am still following the same curiosity that started with that question when I was six. The questions have become more technical, but the motivation has not changed very much.
 
 ## Creative
 
