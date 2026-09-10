@@ -27,7 +27,7 @@ Before beginning my PhD, I studied physics at the University of Washington, wher
 - Numerical cosmology
 - Alternatives to the standard cosmological model
 
-## How I Became Interested in Astronomy
+### How I Became Interested in Astronomy
 
 My interest in astronomy began when I was about six years old. I remember asking a simple question: **what is outside the universe?** No one around me could really give me an answer. Instead of satisfying my curiosity, that uncertainty made me think about the question even more.
 
