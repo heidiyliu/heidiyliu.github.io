@@ -62,6 +62,8 @@ The project focuses on topics such as dark matter, cosmic structure, black holes
 
 ---
 
+<div class="creative-project-copy personal-vlog-copy" markdown="1">
+
 ## Personal Vlog
 
 *Life, research, and the things between them*
@@ -73,3 +75,5 @@ Rather than presenting a polished version of academic life, I hope to create a m
 **Themes:** PhD life, travel, creativity, and everyday experiences  
 **Format:** Video essays and personal vlogs  
 **Status:** Coming soon
+
+</div>
