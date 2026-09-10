@@ -28,6 +28,7 @@ I grew up in a smaller inland city in China, where access to educational and sci
 Theoretical and computational cosmology · cosmic structure formation · high-redshift galaxies
 
 **B.S. in Physics & B.S. in Astronomy** · University of Washington · Highest Honor
+
 *2020–2023*  
 Cosmology · cosmic microwave background · dark matter · astronomical instrumentation
 
