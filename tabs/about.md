@@ -50,6 +50,9 @@ Travel is one of the biggest parts of my life outside of physics. After graduati
 
 I also love being outdoors, especially skiing, hiking, and biking. More recently, I tried skydiving and discovered that I may have a growing interest in slightly more extreme adventures as well. There are still quite a few things waiting to make it onto that list.
 
+
+<img class="about-photo" src="/img/skydive.jpg" alt="Skydiving">
+
 </div>
 
 
