@@ -4,6 +4,8 @@ title: Teaching
 permalink: /teaching/
 ---
 
+<div class="standard-tab-page" markdown="1">
+
 # Teaching
 
 I have taught undergraduate physics and astronomy at the University of Arizona and the University of Washington. My experience includes introductory astronomy for both general-education and STEM audiences, mechanics and laboratory instruction, and lectures in mechanics and electricity and magnetism.
@@ -55,3 +57,5 @@ I helped students connect astronomical phenomena with the quantitative principle
 My goal as an instructor is to help students move beyond memorizing formulas and develop a physical understanding of why a method works. I emphasize connecting mathematical expressions with concrete physical situations, identifying the assumptions behind a model, and breaking complicated problems into manageable steps.
 
 I also try to create an environment in which students feel comfortable asking questions and making mistakes. Introductory physics and astronomy can be challenging, especially when students are encountering unfamiliar mathematical and conceptual tools at the same time. I aim to make that process rigorous but approachable, while encouraging students to become more independent and confident problem solvers.
+
+</div>
