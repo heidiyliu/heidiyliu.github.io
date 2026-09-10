@@ -4,6 +4,7 @@ title: About
 permalink: /about/
 ---
 
+<div class="standard-tab-page" markdown="1">
 
 # About Me
 
@@ -26,6 +27,9 @@ Outside research, I enjoy visual storytelling, illustration, and creating astron
 - High-redshift galaxy populations
 - Numerical cosmology
 - Alternatives to the standard cosmological model
+
+
+</div>
 
 
 
