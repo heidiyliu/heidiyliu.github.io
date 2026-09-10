@@ -26,7 +26,7 @@ Cosmology · cosmic microwave background · dark matter · astronomical instrume
 You can explore my current and previous work on the [Research]({{ '/research/' | relative_url }}) page.
 
 
-## Beyond Research
+### Beyond Research
 
 **Creative**
 
