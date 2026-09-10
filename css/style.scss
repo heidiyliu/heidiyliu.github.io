@@ -819,3 +819,48 @@ pre {
     font-size: 13px !important;
   }
 }
+
+@media (max-width: 767px) {
+
+  /* About / Research / Teaching main page title */
+  .standard-tab-page h1 {
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+    margin: 0 0 1.2em !important;
+  }
+
+  /* Major section headings */
+  .standard-tab-page h2 {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+    margin: 1.5em 0 0.5em !important;
+  }
+
+  /* Course / project subsection headings */
+  .standard-tab-page h3 {
+    font-size: 18px !important;
+    line-height: 1.35 !important;
+    margin: 1.3em 0 0.4em !important;
+  }
+
+  /* Smaller headings if you use them */
+  .standard-tab-page h4 {
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+    margin: 1.1em 0 0.35em !important;
+  }
+
+  /* Normal body text */
+  .standard-tab-page p {
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+    margin: 0 0 0.9em !important;
+  }
+
+  /* Lists */
+  .standard-tab-page li {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 0.35em;
+  }
+}
