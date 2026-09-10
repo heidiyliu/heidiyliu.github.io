@@ -44,7 +44,7 @@ I build my inner world visually through illustration, photography, and atmospher
 
 **Travel & Adventure**
 
-I love unfamiliar places. After college, I spent a gap year traveling through Europe and Asia, and I hope to see as much of the world as I can. The North and South Poles remain on the list.
+Travel around the world is my main goal. After college, I spent a gap year traveling through Europe and Asia, and I hope to see as much of the world as I can. The North and South Poles remain on the list.
 
 Skiing, hiking, biking, and, more recently, skydiving keep that list of adventures growing.
 
