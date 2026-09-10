@@ -738,6 +738,15 @@ pre {
   flex-direction: row;
 }
 
+/* About page photo */
+.about-photo {
+  display: block;
+  width: 42% !important;
+  max-width: 420px !important;
+  height: auto !important;
+  margin: 1.5em auto 2.5em !important;
+}
+
 
 /* ==========================================================
    Creative page - PHONE ONLY
@@ -827,6 +836,12 @@ pre {
     font-size: 30px !important;
     line-height: 1.2 !important;
     margin: 0 0 1.2em !important;
+  }
+
+  .about-photo {
+    width: 65% !important;
+    max-width: 280px !important;
+    margin: 1em auto 1.8em !important;
   }
 
   /* Major section headings */
