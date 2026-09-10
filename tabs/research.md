@@ -4,6 +4,8 @@ title: Research
 permalink: /research/
 ---
 
+<div class="standard-tab-page" markdown="1">
+
 # Research
 
 My research interests lie primarily in theoretical and computational cosmology. I am interested in how cosmic structure forms and evolves, how observations of galaxies and the cosmic microwave background can be used to test cosmological models, and how signatures of new physics may appear in astronomical data.
@@ -131,3 +133,5 @@ My contributions included:
 - Comparing spectra obtained at different epochs to identify candidate changing-look quasars.
 
 **Methods and tools:** Fiber-optic instrumentation, astronomical spectroscopy, SDSS archival data, quasar classification, experimental design.
+
+</div>
