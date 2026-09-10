@@ -23,23 +23,12 @@ Theoretical and computational cosmology · cosmic structure formation · high-re
 *2020–2023*  
 Cosmology · cosmic microwave background · dark matter · astronomical instrumentation
 
-
-### Research interests
-
-- Cosmological perturbation theory
-- Astroparticle Physics
-- Quantum Gravity
-- Numerical cosmology
-- Alternatives to the standard cosmological model
-
 You can explore my current and previous work on the [Research]({{ '/research/' | relative_url }}) page.
 
 
 ### Creative
 
-Outside of research, I enjoy visual storytelling, illustration, photography, and astronomy-inspired content. I am especially drawn to the space where science, imagination, and atmosphere meet.
-
-For me, creativity is another way of exploring unfamiliar worlds and preserving the sense of wonder that first drew me to cosmology.
+I build my inner world visually through illustration, photography, and atmospheric storytelling, turning thoughts and imagined places into something visible.
 
 [Explore my Creative Projects](/creative/)
 
