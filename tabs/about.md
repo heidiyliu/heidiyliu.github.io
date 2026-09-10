@@ -16,10 +16,9 @@ permalink: /about/
 <div style="height: 3em;"></div>
 
 
-
-
-
 I grew up in a smaller inland city in China, where access to educational and scientific resources was limited. I was an introspective child, often more absorbed in my own thoughts than in the world around me. When I was six, I asked what lies outside the universe. No one could really answer me, and that question stayed with me. In many ways, I am still following the same curiosity that started with that question when I was six.
+
+<div style="height: 3em;"></div>
 
 
 ### Academic Journey
