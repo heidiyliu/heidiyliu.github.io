@@ -26,21 +26,20 @@ Cosmology · cosmic microwave background · dark matter · astronomical instrume
 You can explore my current and previous work on the [Research]({{ '/research/' | relative_url }}) page.
 
 
-### Creative
+## Beyond Research
+
+**Creative**
 
 I build my inner world visually through illustration, photography, and atmospheric storytelling, turning thoughts and imagined places into something visible.
 
 [Explore my Creative Projects](/creative/)
 
+**Travel & Adventure**
 
-### Hobbies & Interests
+I love unfamiliar places. After college, I spent a gap year traveling through Europe and Asia, and I hope to see as much of the world as I can. The North and South Poles remain on the list.
 
-Travel is one of the biggest parts of my life outside of physics. After graduating from the University of Washington, I took a gap year to travel through Europe and Asia, which only made me want to see more of the world. One of my long-term dreams is to travel around the world, including eventually reaching both the North and South Poles.
+Skiing, hiking, biking, and, more recently, skydiving keep that list of adventures growing.
 
-I also love being outdoors, especially skiing, hiking, and biking. More recently, I tried skydiving and discovered that I may have a growing interest in slightly more extreme adventures as well. There are still quite a few things waiting to make it onto that list.
-
-
-<img class="about-photo" src="/img/skydive.jpg" alt="Skydiving">
 
 </div>
 
