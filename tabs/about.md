@@ -37,11 +37,11 @@ You can explore my current and previous work on the [Research]({{ '/research/' |
 
 ## Creative
 
-Outside of research, I enjoy visual storytelling, illustration, photography, and creating astronomy-inspired content. I am especially interested in finding ways to communicate complex scientific ideas without removing the wonder, strangeness, or occasional existential discomfort that makes cosmology so compelling.
+Outside of research, I enjoy visual storytelling, illustration, photography, and astronomy-inspired content. I am especially drawn to the space where science, imagination, and atmosphere meet.
 
-I also enjoy building imagined worlds and experimenting with atmosphere, color, sound, and narrative through my creative projects. For me, science and creativity are not entirely separate interests; both are different ways of exploring unfamiliar worlds and trying to make sense of them.
+For me, creativity is another way of exploring unfamiliar worlds and preserving the sense of wonder that first drew me to cosmology.
 
-You can see some of these projects on my [Creative Projects]({{ '/creative/' | relative_url }}) page.
+[Explore my Creative Projects](/creative/)
 
 
 ## Hobbies & Interests
