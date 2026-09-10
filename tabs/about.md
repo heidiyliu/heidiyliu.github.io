@@ -8,6 +8,8 @@ permalink: /about/
 
 # About Me
 
+<img class="about-photo" src="/img/heidi-about.jpg" alt="Heidi Liu">
+
 I am a Physics PhD student at the University of Arizona, working primarily in theoretical and computational cosmology. My research focuses on how cosmological models shape the formation and evolution of structure in the universe.
 
 I am especially interested in questions that connect fundamental physics with observable structure: how initial perturbations evolve, how galaxies and dark-matter halos form, and how cosmological observations can be used to test the assumptions underlying our models of the universe.
