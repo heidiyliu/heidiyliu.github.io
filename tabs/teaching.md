@@ -12,6 +12,8 @@ I have taught undergraduate physics and astronomy at the University of Arizona a
 
 ## University of Arizona
 
+<div style="height: 1em;"></div>
+
 <img class="teaching-photo" src="/img/steward-observatory.jpg" alt="steward">
 
 ### Lectures Taught
@@ -30,6 +32,7 @@ I delivered lectures on topics in introductory Newtonian mechanics, guiding stud
 
 I delivered lectures in introductory electricity and magnetism. The course covers Coulomb’s law, Gauss’s law, electric fields and potentials, electric and magnetic properties of matter, Ampère’s law, Faraday’s law, DC and AC circuits, and Maxwell’s equations.
 
+<div style="height: 1em;"></div>
 
 ### Laboratory Taught
 
@@ -57,15 +60,21 @@ Led laboratory sections in electricity, magnetism, optics, and modern physics, i
 
 ## University of Washington
 
+<div style="height: 1em;"></div>
+
 <img class="teaching-photo" src="/img/uw-pab.jpg" alt="uw">
 
 ### Teaching Assistant
+
+<div style="height: 1em;"></div>
 
 #### ASTR 101A — Astronomy
 
 A conceptual introduction to the universe for non-science majors. Topics include the solar system, planets, stars, black holes, galaxies, quasars, and modern ideas concerning the origin and evolution of the universe.
 
 As a teaching assistant, I supported course assessment and administration by grading exams, maintaining course records and the gradebook, and responding to student questions about course material and assessments.
+
+<div style="height: 1em;"></div>
 
 #### ASTR 301A — Astronomy for Scientists and Engineers
 
@@ -74,6 +83,8 @@ An introduction to astronomy designed for students in the physical sciences and 
 My responsibilities included grading exams and homework, maintaining the gradebook, answering student questions, and supporting the day-to-day administration of the course.
 
 ## Teaching Approach
+
+<div style="height: 1em;"></div>
 
 My goal as an instructor is to help students move beyond memorizing formulas and develop a physical understanding of why a method works. I emphasize connecting mathematical expressions with concrete physical situations, identifying the assumptions behind a model, and breaking complicated problems into manageable steps.
 
