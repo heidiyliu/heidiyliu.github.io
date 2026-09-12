@@ -12,6 +12,8 @@ I have taught undergraduate physics and astronomy at the University of Arizona a
 
 ## University of Arizona
 
+<img class="teaching-photo" src="/img/steward-observatory.jpg" alt="steward">
+
 ### Laboratory Instructor
 
 As a laboratory teaching assistant, I led weekly experimental sessions, introduced the underlying physics and experimental methods, guided students in using laboratory equipment and collecting reliable data, and helped them connect measurements with theoretical predictions. I also supported students with data analysis, uncertainty, graphs, and formal lab reports, and evaluated their experimental work through worksheets, reports, and practical assessments.
