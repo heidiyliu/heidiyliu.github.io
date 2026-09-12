@@ -12,21 +12,25 @@ I have taught undergraduate physics and astronomy at the University of Arizona a
 
 ## University of Arizona
 
-### Teaching Assistant
+### Laboratory Instructor
+
+As a laboratory teaching assistant, I led weekly experimental sessions, introduced the underlying physics and experimental methods, guided students in using laboratory equipment and collecting reliable data, and helped them connect measurements with theoretical predictions. I also supported students with data analysis, uncertainty, graphs, and formal lab reports, and evaluated their experimental work through worksheets, reports, and practical assessments.
 
 #### PHYS 141 — Introductory Mechanics
 
-An introductory course in Newtonian mechanics covering vectors, kinematics, Newton’s laws, energy and momentum conservation, rotational motion, statics, oscillations, gravitation, and fluid mechanics.
+Led calculus-based laboratory sections spanning vectors and kinematics, Newtonian mechanics, work and energy, collisions, rotational motion, oscillations, and fluid mechanics. Guided students through experimental design, data acquisition and analysis, uncertainty, graphing, and formal scientific reporting.
 
-As a teaching assistant, I supported students in developing both conceptual understanding and quantitative problem-solving skills in introductory mechanics.
 
 #### PHYS 182 — Introductory Laboratory II
 
-A laboratory course centered on quantitative, illustrative, and exploratory experiments in physics.
+Led laboratory sections in electricity, magnetism, optics, and modern physics, including circuits, electric-field mapping, cathode-ray tubes, capacitors, magnetic fields and motors, geometric and wave optics, radiation detection, and spectroscopy. Emphasized hands-on instrumentation, quantitative analysis, and scientific communication.
 
-My teaching focused on experimental reasoning, data collection and analysis, uncertainty, scientific communication, and connecting laboratory results with underlying physical principles.
+
+#### PHYS 241 — Introductory Mechanics
 
 ### Lectures Taught
+
+Taught undergraduate physics courses, including lectures, weekly discussion sessions, homework and exam preparation, grading, course coordination, and student support. My teaching focuses on clear physical intuition, mathematical reasoning, and structured problem solving.
 
 #### PHYS 141 — Introductory Mechanics
 
