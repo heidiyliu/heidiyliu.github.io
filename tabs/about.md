@@ -8,7 +8,7 @@ permalink: /about/
 
 # About Me
 
-<div style="height: 2em;"></div>
+<div style="height: 1em;"></div>
 
 
 <img class="about-photo" src="/img/heidi-about.jpg" alt="Heidi Liu">
@@ -34,7 +34,7 @@ Cosmology · cosmic microwave background · dark matter · astronomical instrume
 
 You can explore my current and previous work on the [Research]({{ '/research/' | relative_url }}) page.
 
-<div style="height: 3em;"></div>
+<div style="height: 1em;"></div>
 
 ### Beyond Research
 
