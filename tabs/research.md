@@ -59,6 +59,9 @@ My work has involved analytic calculations, numerical modeling, statistical fore
 
 **Methods and tools:** Telescope operation, astronomical observing, observatory software, stellar photometry, instrumentation maintenance.
 
+<img class="research-photo" src="/img/MRO.jpg" alt="MRO">
+
+
 ### SDSS-V: Sloan Digital Sky Survey
 
 *June 2021–September 2021*  
