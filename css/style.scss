@@ -741,10 +741,28 @@ pre {
 /* About page photo */
 .about-photo {
   display: block;
-  width: 42% !important;
+  width: 60% !important;
   max-width: 420px !important;
   height: auto !important;
   margin: 1.5em auto 2.5em !important;
+}
+
+.about-page em {
+  color: #8A92A0;
+}
+
+.about-page h2 {
+  margin-top: 3em;
+  margin-bottom: 1.2em;
+}
+
+.about-page h3 {
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+}
+
+.about-page p {
+  line-height: 1.8;
 }
 
 
