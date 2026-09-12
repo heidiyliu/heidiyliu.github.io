@@ -8,7 +8,7 @@ permalink: /about/
 
 # About Me
 
-<div style="height: 2.5em;"></div>
+<div style="height: 2em;"></div>
 
 
 <img class="about-photo" src="/img/heidi-about.jpg" alt="Heidi Liu">
