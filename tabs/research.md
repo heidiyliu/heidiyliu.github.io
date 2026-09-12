@@ -23,6 +23,8 @@ My work has involved analytic calculations, numerical modeling, statistical fore
 
 <img class="research-photo" src="/img/cosmology.jpg" alt="rhct">
 
+<div style="height: 2em;"></div>
+
 ## GSI Helmholtz Centre for Heavy Ion Research
 
 ### Nuclear Shell-Model Calculations for Astrophysical Processes
@@ -32,6 +34,8 @@ My work has involved analytic calculations, numerical modeling, statistical fore
 **Advisor:** Dr. Thomas Neff
 
 **Methods and tools:** Fortran, Python, nuclear shell model, scientific data analysis, database generation, computational nuclear astrophysics.
+
+<div style="height: 2em;"></div>
 
 ## University of Washington
 
@@ -44,6 +48,8 @@ My work has involved analytic calculations, numerical modeling, statistical fore
 
 <img class="research-photo" src="/img/cmb.jpg" alt="cmb-s4">
 
+<div style="height: 1em;"></div>
+
 ### DAMIC-M: Dark Matter in CCDs at Modane
 
 *January 2021–January 2022*  
@@ -53,6 +59,7 @@ My work has involved analytic calculations, numerical modeling, statistical fore
 
 <img class="research-photo" src="/img/CCD.jpg" alt="DAMIC">
 
+<div style="height: 1em;"></div>
 
 ### Manastash Ridge Observatory
 
@@ -64,6 +71,8 @@ My work has involved analytic calculations, numerical modeling, statistical fore
 
 <img class="research-photo" src="/img/MRO.jpg" alt="MRO">
 
+
+<div style="height: 1em;"></div>
 
 ### SDSS-V: Sloan Digital Sky Survey
 
