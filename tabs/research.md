@@ -12,6 +12,8 @@ My research interests lie primarily in theoretical and computational cosmology. 
 
 My work has involved analytic calculations, numerical modeling, statistical forecasting, detector development, and observational instrumentation. Below is a selection of my current and previous research projects.
 
+<div class="standard-tab-page" markdown="1">
+
 ## University of Arizona
 
 ### [Cosmological Structure Formation and UV Luminosity Functions]({{ '/research/rhct-structure-formation/' | relative_url }})
