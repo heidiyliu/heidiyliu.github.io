@@ -21,7 +21,7 @@ My work has involved analytic calculations, numerical modeling, statistical fore
 
 **Methods and tools:** Python, numerical integration, cosmological perturbation theory, matter power spectra, halo mass functions, galaxy luminosity functions, statistical comparison.
 
-<img class="research-photo" src="/img/cosmology.png" alt="steward">
+<img class="research-photo" src="/img/cosmology.jpg" alt="rhct">
 
 ## GSI Helmholtz Centre for Heavy Ion Research
 
@@ -41,6 +41,8 @@ My work has involved analytic calculations, numerical modeling, statistical fore
 **Advisor:** Prof. Marilena LoVerde
 
 **Methods and tools:** Python, CLASS, cosmological perturbation theory, CMB power spectra, Fisher matrices, MCMC, statistical forecasting.
+
+<img class="research-photo" src="/img/cmb.jpg" alt="cmb-s4">
 
 ### DAMIC-M: Dark Matter in CCDs at Modane
 
