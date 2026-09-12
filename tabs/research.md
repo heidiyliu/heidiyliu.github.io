@@ -51,6 +51,9 @@ My work has involved analytic calculations, numerical modeling, statistical fore
 
 **Methods and tools:** Python, ROOT, Linux, Arduino, CCD image analysis, detector characterization, noise analysis.
 
+<img class="research-photo" src="/img/CCD.jpg" alt="DAMIC">
+
+
 ### Manastash Ridge Observatory
 
 *October 2020–June 2023*  
