@@ -738,11 +738,15 @@ pre {
   flex-direction: row;
 }
 
+/* ==========================================================
+   About Page
+   ========================================================== */
+
 /* About page photo */
 .about-photo {
   display: block;
   width: 60% !important;
-  max-width: 420px !important;
+  max-width: 600px !important;
   height: auto !important;
   margin: 1.5em auto 2.5em !important;
 }
