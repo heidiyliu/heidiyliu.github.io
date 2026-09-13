@@ -533,12 +533,12 @@ input.btn {
 
   padding: 8px 18px;
 
-  background: transparent;
+  background-color: #EEF2F7;  /* soft cool gray-blue */
 
-  border: 1px solid $border-color;
+  border: 1px solid #C7D0DC;  /* slightly stronger cool border */
   border-radius: 2px;
 
-  color: $muted-color;
+  color: #4F5D73;             /* darker cool slate text */
 
   font-size: 12px;
   font-weight: 500;
@@ -549,11 +549,11 @@ input.btn {
 
   &:hover,
   &.btn-default:hover {
-    background: transparent;
+    background-color: #E2E8F0;  /* slightly darker on hover */
 
-    border-color: $link-color;
+    border-color: #B6C2D1;
 
-    color: $link-color;
+    color: #3C4758;
 
     box-shadow: none;
   }
