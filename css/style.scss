@@ -509,67 +509,89 @@ input.btn {
 
 
 /* ==========================================================
-   6.2 SOCIAL BUTTONS
+   6.2 SOCIAL ICONS
    ========================================================== */
 
+.hero-content .social-icons {
+  display: flex;
 
-/* ---------- Button Group ---------- */
+  justify-content: center;
+  align-items: center;
 
-.hero-content .hero-buttons {
-  margin: 0 auto;
+  gap: 1.8em;
 
-  display: table;
-
-  i {
-    padding-right: 0.5em;
-  }
+  margin: 1.5em auto 0;
 }
 
 
-/* ---------- Individual Social Button ---------- */
+/* ---------- Individual Social Icon ---------- */
 
-.hero-content .hero-buttons button.btn {
-  margin: 1em 1.2em;
+.hero-content .social-icons a {
+  display: inline-flex;
 
-  padding: 8px 18px;
+  align-items: center;
+  justify-content: center;
 
-  background-color: #EEF2F7;  /* soft cool gray-blue */
+  color: $heading-color;
 
-  border: 1px solid #C7D0DC;  /* slightly stronger cool border */
-  border-radius: 2px;
+  text-decoration: none;
 
-  color: #4F5D73;             /* darker cool slate text */
+  font-size: 22px;
 
-  font-size: 12px;
-  font-weight: 500;
+  line-height: 1;
 
-  letter-spacing: 0.02em;
-
-  box-shadow: none;
-
-  &:hover,
-  &.btn-default:hover {
-    background-color: #E2E8F0;  /* slightly darker on hover */
-
-    border-color: #B6C2D1;
-
-    color: #3C4758;
-
-    box-shadow: none;
-  }
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
 }
-/* ORCID "iD" mark */
-.orcid-icon {
-  display: inline-block;
-  margin-right: 0.45em;
+
+
+.hero-content .social-icons a:hover {
+  color: $link-color;
+
+  transform: translateY(-2px);
+}
+
+
+/* ---------- Font Awesome Icons ---------- */
+
+.hero-content .social-icons i {
+  padding: 0;
+
+  font-size: 22px;
+}
+
+
+/* ---------- ORCID Icon ---------- */
+
+.hero-content .social-icons .orcid-icon {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 22px;
+  height: 22px;
+
+  border-radius: 50%;
+
+  background-color: $heading-color;
+  color: $surface;
 
   font-family: Arial, sans-serif;
-  font-size: 0.9em;
-  font-weight: 600;
 
-  color: inherit;
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: -0.03em;
+
+  transition: background-color 0.2s ease;
 }
 
+
+.hero-content .social-icons a:hover .orcid-icon {
+  background-color: $link-color;
+}
 
 /* ==========================================================
    6.3 HOMEPAGE BANNER
@@ -1303,58 +1325,68 @@ pre > code {
   }
 
 
-  /* ---------- Social Buttons ---------- */
+  /* ---------- Social Icons ---------- */
 
-  .hero-content .hero-buttons {
+  .hero-content .social-icons {
     display: flex !important;
 
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-
     justify-content: center !important;
-    align-items: stretch !important;
+    align-items: center !important;
 
-    gap: 5px;
+    gap: 1.7em !important;
 
     width: 100%;
+
+    margin: 0 auto !important;
   }
 
 
-  .hero-content .hero-buttons > a {
-    display: block !important;
+  .hero-content .social-icons a {
+    display: inline-flex !important;
 
-    flex: 1 1 0 !important;
+    align-items: center !important;
+    justify-content: center !important;
 
-    min-width: 0 !important;
+    color: $heading-color !important;
 
-    margin: 0 !important;
+    font-size: 20px !important;
+
+    line-height: 1 !important;
+
+    text-decoration: none !important;
   }
 
 
-  .hero-content .hero-buttons button.btn {
-    display: block !important;
+  .hero-content .social-icons i {
+    padding: 0 !important;
 
-    width: 100% !important;
-    min-width: 0 !important;
-
-    margin: 0 !important;
-
-    padding: 8px 4px !important;
-
-    font-size: 11px !important;
-
-    line-height: 1.2 !important;
-
-    white-space: nowrap !important;
-
-    box-sizing: border-box;
+    font-size: 20px !important;
   }
 
 
-  .hero-content .hero-buttons button.btn i {
-    margin-right: 3px !important;
+  /* ORCID icon */
+  .hero-content .social-icons .orcid-icon {
+    display: inline-flex !important;
 
-    font-size: 11px !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background-color: $heading-color;
+    color: $surface;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 9px !important;
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: -0.03em;
   }
 
 
