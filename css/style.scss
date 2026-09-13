@@ -1270,21 +1270,14 @@ pre > code {
      ======================================================== */
 
 
- /* ---------- Overall Hero ---------- */
-
-  .hero-container {
-    margin: 1.8em 0 1.2em !important;
-  }
-
-
   /* ---------- Homepage Main Title ---------- */
 
   .hero-content h1 {
     font-size: 24px !important;
+
     line-height: 1.2 !important;
 
-    /* Less empty space above and below title */
-    margin: 1.5em 0 0.55em !important;
+    margin: 3em 0 0.6em !important;
   }
 
 
@@ -1292,10 +1285,10 @@ pre > code {
 
   .hero-content > p {
     font-size: 12px !important;
+
     line-height: 1.55 !important;
 
-    /* Much less space before social buttons */
-    margin: 0 0 1.6em !important;
+    margin: 0 0 3em !important;
   }
 
 
@@ -1313,9 +1306,6 @@ pre > code {
     gap: 5px;
 
     width: 100%;
-
-    /* Control space after social buttons */
-    margin: 0 auto 2.3em !important;
   }
 
 
@@ -1341,6 +1331,7 @@ pre > code {
     padding: 8px 4px !important;
 
     font-size: 11px !important;
+
     line-height: 1.2 !important;
 
     white-space: nowrap !important;
@@ -1366,8 +1357,7 @@ pre > code {
     width: calc(100vw - 20px);
     max-width: none;
 
-    /* Reduced from the previous very large spacing */
-    margin: 0 0 1.8em !important;
+    margin: 5em 0 3em !important;
 
     transform: translateX(-50%);
   }
@@ -1382,20 +1372,6 @@ pre > code {
   }
 
 
-  /* ---------- Down Arrow ---------- */
-
-  .hero-content .section-jump {
-    margin: 1.2em auto 2.2em !important;
-  }
-
-
-  /* ---------- Selected Work Area ---------- */
-
-  #portfolio .container {
-    margin-top: 1.5em !important;
-  }
-
-
   /* ---------- Selected Work Heading ---------- */
 
   #portfolio .section-title {
@@ -1404,6 +1380,7 @@ pre > code {
     margin: 0 auto 1em !important;
 
     font-size: 22px !important;
+
     line-height: 1.25 !important;
   }
 
@@ -1429,6 +1406,7 @@ pre > code {
     margin: 1.4em auto 2em !important;
 
     font-size: 13px !important;
+
     line-height: 1.55 !important;
 
     box-sizing: border-box;
@@ -1477,6 +1455,7 @@ pre > code {
     margin: 0 0 1.2em !important;
 
     font-size: 15px !important;
+
     line-height: 1.3 !important;
   }
 
@@ -1498,6 +1477,7 @@ pre > code {
     margin: 0 0 1em !important;
 
     font-size: 12px !important;
+
     line-height: 1.6 !important;
   }
 
