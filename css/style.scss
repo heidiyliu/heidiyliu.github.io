@@ -53,23 +53,27 @@
 
 /* ---------- Cool Minimalist Palette ---------- */
 
-/* Main backgrounds */
-$site-bg: #E9EDF2;
-$surface: #F6F8FA;
-$soft-fill: #E2E8EE;
+/* ==========================================================
+   Smoky Mauve Blue Palette
+   ========================================================== */
+
+/* Backgrounds */
+$site-bg: #F0F0F5;          /* cool mauve-gray background */
+$surface: #FAFAFC;          /* clean cool white */
+$soft-fill: #E9E8F0;        /* smoky lavender fill */
 
 /* Typography */
-$heading-color: #303846;
-$body-color: #505C68;
-$muted-color: #7A8591;
+$heading-color: #6A647A;    /* smoky mauve-gray heading */
+$body-color: #6C707C;       /* cool neutral gray body text */
+$muted-color: #9495A0;      /* soft gray for metadata */
 
 /* Links */
-$link-color: #596F91;
-$link-hover-color: #415875;
+$link-color: #79779A;       /* muted mauve-blue */
+$link-hover-color: #5E5D7F; /* deeper mauve-blue */
 
-/* Borders / accents */
-$border-color: #D2DAE2;
-$tag-color: #7D8DA0;
+/* Borders / details */
+$border-color: #DDDCE6;     /* pale mauve-gray divider */
+$tag-color: #9290A4;        /* muted mauve tag text */
 
 
 /* ==========================================================
