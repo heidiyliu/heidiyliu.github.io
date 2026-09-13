@@ -36,18 +36,23 @@
    1. IMPORTS & SITE PALETTE
    ========================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:wght@400;700&display=swap');
 @import '../_sass/bootstrap';
 @import '../_sass/mixins';
 
 
 /* ---------- Fonts ---------- */
 
-%opensans {
-  font-family: 'Open Sans', sans-serif;
+/* ==========================================================
+   Typography
+   ========================================================== */
+
+%bodyfont {
+  font-family: 'Inter', sans-serif;
 }
 
-%merriweather {
-  font-family: 'Merriweather', serif;
+%headingfont {
+  font-family: 'Libre Baskerville', serif;
 }
 
 
@@ -94,7 +99,7 @@ $tag-color: #8B96A5;        /* soft blue-gray for tags */
 body {
   color: $body-color;
   background-color: $site-bg;
-  @extend %opensans;
+  @extend %bodyfont;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -106,7 +111,23 @@ h4,
 h5,
 h6 {
   color: $heading-color;
-  @extend %merriweather;
+  @extend %headingfont;
+}
+
+h1 {
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+h2 {
+  font-weight: 400;
+  letter-spacing: -0.015em;
+}
+
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
 }
 
@@ -120,11 +141,15 @@ p {
   color: $body-color;
   line-height: 1.8;
   font-size: 1.3em;
+  font-weight: 400;
+  letter-spacing: 0.005em;
 }
 
 
 li {
   color: $body-color;
+  font-weight: 400;
+  letter-spacing: 0.005em;
 }
 
 
