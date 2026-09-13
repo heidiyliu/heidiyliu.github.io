@@ -8,6 +8,8 @@ permalink: /teaching/
 
 # Teaching
 
+<div style="height: 1em;"></div>
+
 I have taught undergraduate physics and astronomy at the University of Arizona and the University of Washington. My experience includes introductory astronomy for both general-education and STEM audiences, mechanics and laboratory instruction, and lectures in mechanics and electricity and magnetism.
 
 ## University of Arizona
