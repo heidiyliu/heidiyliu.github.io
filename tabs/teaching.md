@@ -12,13 +12,13 @@ permalink: /teaching/
 
 My teaching experience spans undergraduate physics and astronomy, from introductory laboratory courses to mechanics and electromagnetism.
 
-<div style="height: 1.5em;"></div>
+<div style="height: 1em;"></div>
 
 ## University of Arizona
 
 <img class="teaching-photo" src="/img/steward-observatory.jpg" alt="Steward Observatory">
 
-<div style="height: 1.5em;"></div>
+<div style="height: 1em;"></div>
 
 ### Courses Taught
 
@@ -30,7 +30,7 @@ Newtonian mechanics · energy and momentum · rotational dynamics · oscillation
 **PHYS 241 — Introductory Electricity and Magnetism**  
 Electric fields and potentials · Gauss’s law · circuits · magnetism · electromagnetic induction · Maxwell’s equations
 
-<div style="height: 2em;"></div>
+<div style="height: 1em;"></div>
 
 ### Laboratories Taught
 
@@ -55,7 +55,7 @@ Electrostatics · electric fields and equipotentials · circuits · magnetic fie
 
 <img class="teaching-photo" src="/img/uw-pab.jpg" alt="University of Washington Physics and Astronomy Building">
 
-<div style="height: 1.5em;"></div>
+<div style="height: 1em;"></div>
 
 ### Teaching Assistant
 
