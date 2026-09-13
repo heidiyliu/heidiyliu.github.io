@@ -42,7 +42,7 @@ You can explore my current and previous work on the [Research]({{ '/research/' |
 
 I build my inner world visually through illustration, photography, and atmospheric storytelling, turning thoughts and imagined places into something visible.
 
-[Explore my Creative Projects ⋆˙⟡](/creative/)
+[⋆˙⟡ Explore my Creative Projects ⋆˙⟡](/creative/)
 
 **Travel & Adventure**
 
