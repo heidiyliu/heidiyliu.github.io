@@ -18,7 +18,7 @@ My teaching experience spans undergraduate physics and astronomy, from introduct
 
 <div style="height: 1.5em;"></div>
 
-### Course Teaching
+### Courses Taught
 
 Taught undergraduate physics courses through lectures, weekly discussion sessions, assessment preparation, grading, course coordination, and student support. My teaching emphasizes physical intuition, mathematical reasoning, and clear approaches to problem solving.
 
@@ -30,7 +30,7 @@ Electric fields and potentials · Gauss’s law · circuits · magnetism · elec
 
 <div style="height: 2em;"></div>
 
-### Laboratory Teaching
+### Laboratories Taught
 
 Led weekly experimental physics sections, introducing the underlying physics and experimental methods while guiding students through instrumentation, data collection, quantitative analysis, uncertainty, graphing, and scientific reporting.
 
@@ -43,11 +43,11 @@ Circuits · electric-field mapping · cathode-ray tubes · magnetism and motors 
 **PHYS 241 — Electricity and Magnetism Laboratory**  
 Electrostatics · electric fields and equipotentials · circuits · magnetic fields · electromagnetic induction
 
-<div style="height: 3em;"></div>
+<div style="height: 1em;"></div>
 
 <hr class="about-divider">
 
-<div style="height: 2em;"></div>
+<div style="height: 0.5em;"></div>
 
 ## University of Washington
 
@@ -65,11 +65,11 @@ Conceptual astronomy for a general audience, spanning the solar system, stars, b
 **ASTR 301A — Astronomy for Scientists and Engineers**  
 A quantitative introduction to astronomy for students in the physical sciences and engineering.
 
-<div style="height: 3em;"></div>
+<div style="height: 1em;"></div>
 
 <hr class="about-divider">
 
-<div style="height: 2em;"></div>
+<div style="height: 0.5em;"></div>
 
 ## Teaching Approach
 
