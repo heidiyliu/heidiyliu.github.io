@@ -4,6 +4,8 @@ title: Cosmological Structure Formation and UV Luminosity Functions
 permalink: /research/rhct-structure-formation/
 ---
 
+<div class="research-detail-page" markdown="1">
+
 # Cosmological Structure Formation and UV Luminosity Functions
 
 **University of Arizona**  
@@ -53,3 +55,5 @@ The framework enables consistent comparisons between predictions from the standa
 **Python · Numerical integration · Cosmological perturbation theory · Matter power spectra · Halo mass functions · UV luminosity functions**
 
 [← Back to Research]({{ '/research/' | relative_url }})
+
+</div>
