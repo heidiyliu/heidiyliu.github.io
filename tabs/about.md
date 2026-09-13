@@ -22,6 +22,10 @@ I grew up in a smaller inland city in China, where access to educational and sci
 <div style="height: 3em;"></div>
 
 
+<hr class="about-divider">
+
+
+
 ### Academic Journey
 
 **Ph.D. in Astrophysics** · University of Arizona  
