@@ -37,6 +37,8 @@ My work has involved analytic calculations, numerical modeling, statistical fore
 
 **Methods and tools:** Fortran, Python, nuclear shell model, scientific data analysis, database generation, computational nuclear astrophysics.
 
+<img class="research-photo" src="/img/nuclides-chart.jpg" alt="gsi">
+
 <div style="height: 2em;"></div>
 
 ## University of Washington
