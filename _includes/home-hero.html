@@ -34,8 +34,13 @@
             {% endif %}
             {% if site.instagram_username != '' %}<a href="https://instagram.com/{{ site.instagram_username }}"target="_blank"rel="noopener noreferrer"aria-label="Instagram"title="Instagram"><i class="fa fa-instagram"></i></a>
             {% endif %}
-            {% if site.rednote_url != '' %}<a href="{{ site.rednote_url }}"target="_blank"rel="noopener noreferrer"aria-label="RedNote"title="RedNote"><span class="rednote-icon">小红书</span></a>
-            {% endif %}
+            {% if site.rednote_url != '' %}<a href="{{ site.rednote_url }}"target="_blank"rel="noopener noreferrer"aria-label="RedNote"title="RedNote">
+  <img
+    class="rednote-icon"
+    src="https://cdn.simpleicons.org/xiaohongshu/626A78"
+    alt="RedNote">
+</a>
+{% endif %}
             {% if site.orcid_url != '' %}<a href="{{ site.orcid_url }}"target="_blank"rel="noopener noreferrer"aria-label="ORCID"title="ORCID"><span class="orcid-icon">iD</span></a>
             {% endif %}
             {% if site.medium_username != '' %}
