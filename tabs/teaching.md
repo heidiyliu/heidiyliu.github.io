@@ -4,91 +4,77 @@ title: Teaching
 permalink: /teaching/
 ---
 
-<div class="standard-tab-page" markdown="1">
+<div class="standard-tab-page teaching-page" markdown="1">
 
 # Teaching
 
-<div style="height: 1em;"></div>
+My teaching experience spans undergraduate physics and astronomy, from introductory laboratory courses to mechanics and electromagnetism.
 
-I have taught undergraduate physics and astronomy at the University of Arizona and the University of Washington. My experience includes introductory astronomy for both general-education and STEM audiences, mechanics and laboratory instruction, and lectures in mechanics and electricity and magnetism.
+<div style="height: 1.5em;"></div>
 
 ## University of Arizona
 
-<div style="height: 1em;"></div>
+<img class="teaching-photo" src="/img/steward-observatory.jpg" alt="Steward Observatory">
 
-<img class="teaching-photo" src="/img/steward-observatory.jpg" alt="steward">
+<div style="height: 1.5em;"></div>
 
-### Courses Taught
+### Course Teaching
 
-Taught undergraduate physics courses, including lectures, weekly discussion sessions, homework and exam preparation, grading, course coordination, and student support. My teaching focuses on clear physical intuition, mathematical reasoning, and structured problem solving.
+Taught undergraduate physics courses through lectures, weekly discussion sessions, assessment preparation, grading, course coordination, and student support. My teaching emphasizes physical intuition, mathematical reasoning, and clear approaches to problem solving.
 
-<div style="height: 1em;"></div>
+**PHYS 141 — Introductory Mechanics**  
+Newtonian mechanics · energy and momentum · rotational dynamics · oscillations · gravitation
 
-#### PHYS 141 — Introductory Mechanics
+**PHYS 241 — Introductory Electricity and Magnetism**  
+Electric fields and potentials · Gauss’s law · circuits · magnetism · electromagnetic induction · Maxwell’s equations
 
-I delivered lectures on topics in introductory Newtonian mechanics, guiding students through the physical concepts, mathematical methods, and problem-solving strategies used in the course.
+<div style="height: 2em;"></div>
 
-<div style="height: 1em;"></div>
+### Laboratory Teaching
 
-#### PHYS 241 — Introductory Electricity and Magnetism
+Led weekly experimental physics sections, introducing the underlying physics and experimental methods while guiding students through instrumentation, data collection, quantitative analysis, uncertainty, graphing, and scientific reporting.
 
-I delivered lectures in introductory electricity and magnetism. The course covers Coulomb’s law, Gauss’s law, electric fields and potentials, electric and magnetic properties of matter, Ampère’s law, Faraday’s law, DC and AC circuits, and Maxwell’s equations.
+**PHYS 141 — Introductory Mechanics Laboratory**  
+Vectors and kinematics · Newtonian mechanics · work and energy · collisions · rotational motion · oscillations · fluid mechanics
 
-<div style="height: 1em;"></div>
+**PHYS 182 — Introductory Laboratory II**  
+Circuits · electric-field mapping · cathode-ray tubes · magnetism and motors · optics · radiation detection · spectroscopy
 
-### Laboratories Taught
-
-As a laboratory teaching assistant, I led weekly experimental sessions, introduced the underlying physics and experimental methods, guided students in using laboratory equipment and collecting reliable data, and helped them connect measurements with theoretical predictions. I also supported students with data analysis, uncertainty, graphs, and formal lab reports, and evaluated their experimental work through worksheets, reports, and practical assessments.
-
-<div style="height: 1em;"></div>
-
-#### PHYS 141 — Introductory Mechanics
-
-Led calculus-based laboratory sections spanning vectors and kinematics, Newtonian mechanics, work and energy, collisions, rotational motion, oscillations, and fluid mechanics. Guided students through experimental design, data acquisition and analysis, uncertainty, graphing, and formal scientific reporting.
-
-<div style="height: 1em;"></div>
-
-#### PHYS 182 — Introductory Laboratory II
-
-Led laboratory sections in electricity, magnetism, optics, and modern physics, including circuits, electric-field mapping, cathode-ray tubes, capacitors, magnetic fields and motors, geometric and wave optics, radiation detection, and spectroscopy. Emphasized hands-on instrumentation, quantitative analysis, and scientific communication.
-
-<div style="height: 1em;"></div>
-
-#### PHYS 241 — Introductory Mechanics
-
+**PHYS 241 — Electricity and Magnetism Laboratory**  
+Electrostatics · electric fields and equipotentials · circuits · magnetic fields · electromagnetic induction
 
 <div style="height: 3em;"></div>
 
+<hr class="about-divider">
+
+<div style="height: 2em;"></div>
 
 ## University of Washington
 
-<div style="height: 1em;"></div>
+<img class="teaching-photo" src="/img/uw-pab.jpg" alt="University of Washington Physics and Astronomy Building">
 
-<img class="teaching-photo" src="/img/uw-pab.jpg" alt="uw">
+<div style="height: 1.5em;"></div>
 
 ### Teaching Assistant
 
-As a teaching assistant, I supported course assessment and administration by grading exams and homework, maintaining course records and the gradebook, and responding to student questions about course material and assessments.
+Supported undergraduate astronomy courses through grading, course administration, gradebook management, and direct student support.
 
-<div style="height: 1em;"></div>
+**ASTR 101A — Astronomy**  
+Conceptual astronomy for a general audience, spanning the solar system, stars, black holes, galaxies, and cosmology.
 
-#### ASTR 101A — Astronomy
+**ASTR 301A — Astronomy for Scientists and Engineers**  
+A quantitative introduction to astronomy for students in the physical sciences and engineering.
 
-A conceptual introduction to the universe for non-science majors. Topics include the solar system, planets, stars, black holes, galaxies, quasars, and modern ideas concerning the origin and evolution of the universe.
+<div style="height: 3em;"></div>
 
-<div style="height: 1em;"></div>
+<hr class="about-divider">
 
-#### ASTR 301A — Astronomy for Scientists and Engineers
-
-An introduction to astronomy designed for students in the physical sciences and engineering. The course covers topics similar to introductory astronomy but approaches them with greater emphasis on mathematics and physics.
-
+<div style="height: 2em;"></div>
 
 ## Teaching Approach
 
-<div style="height: 1em;"></div>
+I want students to understand the physics behind an equation, not simply remember when to use it. I emphasize physical intuition, careful reasoning, and the connection between mathematical models and the systems they describe.
 
-My goal as an instructor is to help students move beyond memorizing formulas and develop a physical understanding of why a method works. I emphasize connecting mathematical expressions with concrete physical situations, identifying the assumptions behind a model, and breaking complicated problems into manageable steps.
-
-I also try to create an environment in which students feel comfortable asking questions and making mistakes. Introductory physics and astronomy can be challenging, especially when students are encountering unfamiliar mathematical and conceptual tools at the same time. I aim to make that process rigorous but approachable, while encouraging students to become more independent and confident problem solvers.
+I also try to make the classroom a place where questions and mistakes are part of learning, while encouraging students to become increasingly confident and independent problem solvers.
 
 </div>
