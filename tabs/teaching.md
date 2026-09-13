@@ -16,7 +16,7 @@ I have taught undergraduate physics and astronomy at the University of Arizona a
 
 <img class="teaching-photo" src="/img/steward-observatory.jpg" alt="steward">
 
-###Courses Taught
+### Courses Taught
 
 Taught undergraduate physics courses, including lectures, weekly discussion sessions, homework and exam preparation, grading, course coordination, and student support. My teaching focuses on clear physical intuition, mathematical reasoning, and structured problem solving.
 
@@ -34,7 +34,7 @@ I delivered lectures in introductory electricity and magnetism. The course cover
 
 <div style="height: 1em;"></div>
 
-### Laboratory Taught
+### Laboratories Taught
 
 As a laboratory teaching assistant, I led weekly experimental sessions, introduced the underlying physics and experimental methods, guided students in using laboratory equipment and collecting reliable data, and helped them connect measurements with theoretical predictions. I also supported students with data analysis, uncertainty, graphs, and formal lab reports, and evaluated their experimental work through worksheets, reports, and practical assessments.
 
@@ -66,13 +66,13 @@ Led laboratory sections in electricity, magnetism, optics, and modern physics, i
 
 ### Teaching Assistant
 
+As a teaching assistant, I supported course assessment and administration by grading exams and homework, maintaining course records and the gradebook, and responding to student questions about course material and assessments.
+
 <div style="height: 1em;"></div>
 
 #### ASTR 101A — Astronomy
 
 A conceptual introduction to the universe for non-science majors. Topics include the solar system, planets, stars, black holes, galaxies, quasars, and modern ideas concerning the origin and evolution of the universe.
-
-As a teaching assistant, I supported course assessment and administration by grading exams, maintaining course records and the gradebook, and responding to student questions about course material and assessments.
 
 <div style="height: 1em;"></div>
 
@@ -80,7 +80,6 @@ As a teaching assistant, I supported course assessment and administration by gra
 
 An introduction to astronomy designed for students in the physical sciences and engineering. The course covers topics similar to introductory astronomy but approaches them with greater emphasis on mathematics and physics.
 
-My responsibilities included grading exams and homework, maintaining the gradebook, answering student questions, and supporting the day-to-day administration of the course.
 
 ## Teaching Approach
 
