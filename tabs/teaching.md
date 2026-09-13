@@ -8,6 +8,8 @@ permalink: /teaching/
 
 # Teaching
 
+<div style="height: 1.5em;"></div>
+
 My teaching experience spans undergraduate physics and astronomy, from introductory laboratory courses to mechanics and electromagnetism.
 
 <div style="height: 1.5em;"></div>
