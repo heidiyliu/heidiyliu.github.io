@@ -16,7 +16,7 @@ I have taught undergraduate physics and astronomy at the University of Arizona a
 
 <img class="teaching-photo" src="/img/steward-observatory.jpg" alt="steward">
 
-### Lectures Taught
+###Courses Taught
 
 Taught undergraduate physics courses, including lectures, weekly discussion sessions, homework and exam preparation, grading, course coordination, and student support. My teaching focuses on clear physical intuition, mathematical reasoning, and structured problem solving.
 
