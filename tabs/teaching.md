@@ -8,11 +8,11 @@ permalink: /teaching/
 
 # Teaching
 
-<div style="height: 1em;"></div>
+<div style="height: 0.5em;"></div>
 
 My teaching experience spans undergraduate physics and astronomy, from introductory laboratory courses to mechanics and electromagnetism.
 
-<div style="height: 0.5em;"></div>
+<div style="height: 0.2em;"></div>
 
 ## University of Arizona
 
