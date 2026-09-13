@@ -73,8 +73,6 @@ A quantitative introduction to astronomy for students in the physical sciences a
 
 ## Teaching Approach
 
-I want students to understand the physics behind an equation, not simply remember when to use it. I emphasize physical intuition, careful reasoning, and the connection between mathematical models and the systems they describe.
-
-I also try to make the classroom a place where questions and mistakes are part of learning, while encouraging students to become increasingly confident and independent problem solvers.
+My goal as an instructor is to help students move beyond memorizing formulas and develop a physical understanding of why a method works. I emphasize connecting mathematical expressions with concrete physical situations, identifying the assumptions behind a model, and breaking complicated problems into manageable steps. I also try to create an environment in which students feel comfortable asking questions and making mistakes. Introductory physics and astronomy can be challenging, especially when students are encountering unfamiliar mathematical and conceptual tools at the same time. I aim to make that process rigorous but approachable, while encouraging students to become more independent and confident problem solvers.
 
 </div>
