@@ -1,63 +1,92 @@
 ---
 ---
 
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
+/* ==========================================================
+   TABLE OF CONTENTS
+   ==========================================================
 
-1.0 Defaults
-2.0 Home Hero
-  2.1 Contact
-3.0 Posts
-4.0 Footer
+   1.  Imports & Site Palette
+   2.  Global / Base Styles
+   3.  Global Components
+       3.1 Buttons
+       3.2 Dividers
+   4.  Homepage
+       4.1 Hero
+       4.2 Social Buttons
+       4.3 Banner
+       4.4 Homepage Portfolio / Posts
+   5.  About Page
+   6.  Creative Page
+   7.  Research Page
+       7.1 Research Cards
+   8.  Footer
+   9.  Code Formatting
+   10. Syntax Highlighting
+   11. Mobile Styles
+       11.1 Homepage
+       11.2 Standard Tabs
+       11.3 Creative Page
+       11.4 Research Cards
+       11.5 Detailed Research Pages
 
---------------------------------------------------------------*/
+   ========================================================== */
+
+
+/* ==========================================================
+   1. IMPORTS & SITE PALETTE
+   ========================================================== */
 
 @import '../_sass/bootstrap';
 @import '../_sass/mixins';
 
-$primary: #0a0a0a;
-$secondary: #FF7B7B;
 
-%opensans { font-family: 'Open Sans', sans-serif; }
-%merriweather { font-family: 'Merriweather', serif; }
+/* ---------- Fonts ---------- */
+
+%opensans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+%merriweather {
+  font-family: 'Merriweather', serif;
+}
 
 
-/*$heading-color: #2F3443;
-$body-color: #4B5260;
-$muted-color: #737D8D;
-$link-color: #6078A8;
-$link-hover-color: #7B6F91;
-$border-color: #D8E0E9;
-$tag-color: #8798AA;*/
+/* ---------- Cool Minimalist Palette ---------- */
+
+/* Main backgrounds */
+$site-bg: #EEF1F5;          /* cool mist outside the main page */
+$surface: #F8FAFC;          /* soft cool white page background */
+$soft-fill: #E8EDF3;        /* research cards, tags, subtle fills */
+
+/* Typography */
+$heading-color: #303746;    /* deep blue-charcoal */
+$body-color: #515B69;       /* cool slate */
+$muted-color: #7A8592;      /* dates, captions, secondary text */
+
+/* Links */
+$link-color: #5F7396;       /* muted slate blue */
+$link-hover-color: #435775; /* deeper blue on hover */
+
+/* Borders / accents */
+$border-color: #D4DCE5;
+$tag-color: #7F8FA2;
+
 
 /* ==========================================================
-   Cool minimalist site palette
+   2. GLOBAL / BASE STYLES
    ========================================================== */
 
-$site-bg: #9EB9D4;        /* cool (Alice Blue) background */
-$surface: #F8FAFC;        /* soft cool white */
-$soft-fill: #E9EEF3;      /* cards / tags */
 
-$heading-color: #2F3642;  /* deep blue-charcoal */
-$body-color: #4E5866;     /* cool slate */
-$muted-color: #7C8794;    /* secondary text */
-
-$link-color: #62789A;     /* muted blue */
-$link-hover-color: #455B78;
-
-$border-color: #D8E0E8;
-$tag-color: #8393A5;
-
-/*--------------------------------------------------------------
-	1.0 Defaults
---------------------------------------------------------------*/
+/* ---------- Desktop container width ---------- */
 
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
   }
 }
+
+
+/* ---------- Page background & typography ---------- */
 
 body {
   color: $body-color;
@@ -66,15 +95,23 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: $heading-color;
   @extend %merriweather;
   font-weight: 700;
 }
 
+
 article {
   margin: 5em 0;
 }
+
 
 p {
   color: $body-color;
@@ -82,44 +119,98 @@ p {
   font-size: 1.3em;
 }
 
+
 li {
   color: $body-color;
 }
+
 
 em,
 small {
   color: $muted-color;
 }
 
+
+/* ---------- Links ---------- */
+
 a {
   color: $link-color;
   @include transition(color .2s ease-in-out);
+
   &:hover {
     color: $link-hover-color;
     text-decoration: none;
   }
 }
 
+
+/* ---------- Global image behavior ---------- */
+
 img {
   width: 100%;
 }
+
+
+/* ---------- Main white page surface ---------- */
+
+.main {
+  background-color: $surface;
+  border-left: solid 1px $border-color;
+  border-right: solid 1px $border-color;
+
+  &.container {
+    padding: 0;
+  }
+}
+
+
+/* ---------- Section jump arrow ---------- */
+
+.section-jump {
+  position: relative;
+  top: 0;
+  color: $border-color;
+  margin: 0 auto;
+  display: table;
+  @include transition(top .2s ease-in);
+
+  &:hover {
+    top: 3px;
+  }
+}
+
+
+/* ==========================================================
+   3. GLOBAL COMPONENTS
+   ========================================================== */
+
+
+/* ==========================================================
+   3.1 BUTTONS
+   ========================================================== */
 
 button.btn,
 input.btn {
   padding: 12px 35px;
   margin: 2em 0.5em;
+
   border: solid 1px $border-color;
   border-radius: 4px;
+
   background-color: $surface;
   color: $heading-color;
+
   font-weight: 600;
 
   &:hover,
   &.btn-default:hover {
     background-color: #FFFFFF;
-    border-color: #C9CED6;
+    border-color: #C5CED8;
     color: $link-hover-color;
-    box-shadow: 0 1px 0 #C9CED6;
+
+    -moz-box-shadow: 0 1px 0 #C5CED8;
+    -webkit-box-shadow: 0 1px 0 #C5CED8;
+    box-shadow: 0 1px 0 #C5CED8;
   }
 
   i {
@@ -132,633 +223,10 @@ input.btn {
   }
 }
 
-.main {
-  background-color: $surface;
-  border-left: solid 1px $border-color;
-  border-right: solid 1px $border-color;
-  &.container {
-    padding: 0;
-  }
-}
-
-.section-jump {
-  position: relative;
-  top: 0;
-  color: #C8D7E1;
-  margin: 0 auto;
-  display: table;
-  @include transition(top .2s ease-in);
-  &:hover {
-    top: 3px;
-  }
-}
-
-/*--------------------------------------------------------------
-	2.0 Home Hero
---------------------------------------------------------------*/
-.hero-container {
-  margin: 12em 0 3em 0;
-  @include bp-xsmall {
-    margin: 3em 0 2em 0;
-  }
-  @include bp-small {
-    margin: 4em 0 3em 0;
-  }
-}
-
-.hero-content {
-  width: 80%;
-  margin: 0 auto;
-  display: table;
-
-  @include bp-medium {
-	width: 90%;
-  }
-
-  @include bp-small {
-	width: 95%;
-  }
-
-  @include bp-xsmall {
-	width: 95%;
-  }
-
-  h1 {
-	color: $heading-color;
-	font-size: 56px;
-  }
-
-  /* Space for intro text */
-  p {
-	color: $muted-color;
-	font-size: 22px;
-	line-height: 1.6;
-	margin: 2em 0 2em 0;
-  }
-
-
-  .hero-buttons {
-    margin: 0 auto;
-    display: table;
-    i {
-      padding-right: 0.5em;
-    }
-  }
-}
-
-/*--------------------------------------------------------------
-	2.1 Contact
---------------------------------------------------------------*/
-.modal-header {
-  border-bottom: none;
-  button {
-    margin-bottom: 0;
-  }
-}
-
-.modal-content {
-  border-radius: 2px;
-}
-
-.modal-body {
-  margin: 0 20px;
-  label {
-    font-weight: 300;
-    font-size: 24px;
-    margin-bottom: 0.5em;
-  }
-  textarea, input {
-    border-color: #e6e6e6;
-    border-radius: 2px;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    margin-bottom: 1em;
-  }
-  .form-group {
-    margin: 0;
-  }
-  .form-control {
-    padding: 25px;
-    font-size: 16px;
-  }
-  input[type="submit"]{
-    float: right;
-    margin-right: 0;
-  }
-  ::-webkit-input-placeholder {
-    color: #D6D6D6;
-  }
-  :-moz-placeholder {
-    color: #D6D6D6;
-  }
-  ::-moz-placeholder {
-    color: #D6D6D6;
-  }
-  :-ms-input-placeholder {
-    color: #D6D6D6;
-  }
-}
-
-/*--------------------------------------------------------------
-	3.0 Posts
---------------------------------------------------------------*/
-#portfolio .container {
-  margin-top: 6em;
-  @include bp-xsmall {
-    margin-top: 2em;
-  }
-  .break {
-    margin: 3em 0;
-    @include bp-xsmall {
-      margin: 1em 0;
-    }
-  }
-}
-
-.section-title {
-  color: $heading-color;
-  position: relative;
-  margin: 0 auto;
-  margin-bottom: 1em;
-  font-size: 40px;
-  line-height: 1.25;
-  &:after {
-    content: '';
-    position: absolute;
-    top: 1.35em;
-    width: 3em;
-    height: 3px;
-    background-color: $border-color;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-}
-
-.section-subtitle {
-  color: $body-color;
-  width: 40%;
-  margin: 1.5em auto 1.5em;
-  font-size: 20px;
-  line-height: 1.6;
-  @include bp-xsmall {
-    width: 100%;
-  }
-  @include bp-small {
-    width: 60%;;
-  }
-}
-
-.content-wrap {
-  margin-bottom: 8em;
-  @include bp-xsmall {
-    margin-bottom: 2em;
-  }
-  @include bp-small {
-    margin-bottom: 2em;
-  }
-  img.img-responsive {
-    @include bp-xsmall {
-      display: none;
-    }
-    @include bp-small {
-      display: none;
-    }
-  }
-  .content {
-    margin-top: 5em;
-    margin-left: 5em;
-    @include bp-xsmall {
-      margin-left: 0;
-    }
-    h3.title {
-      position: relative;
-      margin-bottom: 1.5em;
-      &:after {
-        content: '';
-        position: absolute;
-        top: 1.5em;
-        left: 0;
-        width: 3em;
-        height: 3px;
-		background-color: $border-color;
-      }
-    }
-    .excerpt {
-      width: 80%;
-      @include bp-xsmall {
-        width: 100%;
-      }
-    }
-    button{
-      font-size: 16px;
-      margin-left: 0;
-      margin-bottom: 1em;
-      margin-top: 1em;
-    }
-    .tags, .categories {
-  margin: 2em 0;
-
-  span {
-    color: $tag-color;
-    background-color: $soft-fill;
-    padding: 0.5em 1.5em;
-    display: inline-block;
-    margin-bottom: 0.5em;
-  }
-}
-    .categories span {
-      color: $muted-color;
-      background-color: $soft-fill;
-    }
-  }
-}
-
-// vertically center content of post rows
-.post-row {
-    align-items: center;
-    display: flex;
-}
-
-/*--------------------------------------------------------------
-	4.0 Footer
---------------------------------------------------------------*/
-.site-footer {
-  font-size: 14px;
-  margin-top: 2em;
-  border-top: 1px solid $border-color;
-  padding: 1em 0;
-  p {
-    font-size: 12px;
-    font-weight: 600;
-    color: $muted-color;
-    margin: 0;
-    padding: 10px 0;
-    @include bp-xsmall {
-      text-align: center;
-    }
-  }
-  .section-jump {
-    float: right;
-    @include bp-xsmall {
-      float: none;
-    }
-  }
-}
-
-/*--------------------------------------------------------------
-	5.0 Code formatting
---------------------------------------------------------------*/
-pre,
-code {
-  color: #262626;
-  font-size: 14px;
-  border: 1px solid #E5E5E5;
-  border-radius: 3px;
-  background-color: #FBFBFB;  }
-
-code {
-  padding: 1px 5px; }
-
-pre {
-  padding: 8px 12px;
-  overflow-x: auto; }
-  pre > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0; }
-
-/*--------------------------------------------------------------
-	6.0 Syntax highlighting styles
---------------------------------------------------------------*/
-.highlight {
-  background: #fff; }
-  .highlighter-rouge .highlight {
-    background: #eef; }
-    .highlight .hll { background-color: #ffffcc }
-    .highlight .c { color: #8f5902; font-style: italic } /* Comment */
-    .highlight .err { color: #a40000 } /* Error */
-    .highlight .g { color: #000000 } /* Generic */
-    .highlight .k { color: #204a87; font-weight: bold } /* Keyword */
-    .highlight .l { color: #000000 } /* Literal */
-    .highlight .n { color: #000000 } /* Name */
-    .highlight .o { color: #ce5c00; font-weight: bold } /* Operator */
-    .highlight .x { color: #000000 } /* Other */
-    .highlight .p { color: #000000; font-weight: bold } /* Punctuation */
-    .highlight .cm { color: #8f5902; font-style: italic } /* Comment.Multiline */
-    .highlight .cp { color: #8f5902; font-style: italic } /* Comment.Preproc */
-    .highlight .c1 { color: #8f5902; font-style: italic } /* Comment.Single */
-    .highlight .cs { color: #8f5902; font-style: italic } /* Comment.Special */
-    .highlight .gd { color: #a40000 } /* Generic.Deleted */
-    .highlight .ge { color: #000000; font-style: italic } /* Generic.Emph */
-    .highlight .gr { color: #ef2929 } /* Generic.Error */
-    .highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
-    .highlight .gi { color: #00A000 } /* Generic.Inserted */
-    .highlight .go { color: #000000; font-style: italic } /* Generic.Output */
-    .highlight .gp { color: #8f5902 } /* Generic.Prompt */
-    .highlight .gs { color: #000000; font-weight: bold } /* Generic.Strong */
-    .highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
-    .highlight .gt { color: #a40000; font-weight: bold } /* Generic.Traceback */
-    .highlight .kc { color: #204a87; font-weight: bold } /* Keyword.Constant */
-    .highlight .kd { color: #204a87; font-weight: bold } /* Keyword.Declaration */
-    .highlight .kn { color: #204a87; font-weight: bold } /* Keyword.Namespace */
-    .highlight .kp { color: #204a87; font-weight: bold } /* Keyword.Pseudo */
-    .highlight .kr { color: #204a87; font-weight: bold } /* Keyword.Reserved */
-    .highlight .kt { color: #204a87; font-weight: bold } /* Keyword.Type */
-    .highlight .ld { color: #000000 } /* Literal.Date */
-    .highlight .m { color: #0000cf; font-weight: bold } /* Literal.Number */
-    .highlight .s { color: #4e9a06 } /* Literal.String */
-    .highlight .na { color: #c4a000 } /* Name.Attribute */
-    .highlight .nb { color: #204a87 } /* Name.Builtin */
-    .highlight .nc { color: #000000 } /* Name.Class */
-    .highlight .no { color: #000000 } /* Name.Constant */
-    .highlight .nd { color: #5c35cc; font-weight: bold } /* Name.Decorator */
-    .highlight .ni { color: #ce5c00 } /* Name.Entity */
-    .highlight .ne { color: #cc0000; font-weight: bold } /* Name.Exception */
-    .highlight .nf { color: #000000 } /* Name.Function */
-    .highlight .nl { color: #f57900 } /* Name.Label */
-    .highlight .nn { color: #000000 } /* Name.Namespace */
-    .highlight .nx { color: #000000 } /* Name.Other */
-    .highlight .py { color: #000000 } /* Name.Property */
-    .highlight .nt { color: #204a87; font-weight: bold } /* Name.Tag */
-    .highlight .nv { color: #000000 } /* Name.Variable */
-    .highlight .ow { color: #204a87; font-weight: bold } /* Operator.Word */
-    .highlight .w { color: #f8f8f8; text-decoration: underline } /* Text.Whitespace */
-    .highlight .mf { color: #0000cf; font-weight: bold } /* Literal.Number.Float */
-    .highlight .mh { color: #0000cf; font-weight: bold } /* Literal.Number.Hex */
-    .highlight .mi { color: #0000cf; font-weight: bold } /* Literal.Number.Integer */
-    .highlight .mo { color: #0000cf; font-weight: bold } /* Literal.Number.Oct */
-    .highlight .sb { color: #4e9a06 } /* Literal.String.Backtick */
-    .highlight .sc { color: #4e9a06 } /* Literal.String.Char */
-    .highlight .sd { color: #8f5902; font-style: italic } /* Literal.String.Doc */
-    .highlight .s2 { color: #4e9a06 } /* Literal.String.Double */
-    .highlight .se { color: #4e9a06 } /* Literal.String.Escape */
-    .highlight .sh { color: #4e9a06 } /* Literal.String.Heredoc */
-    .highlight .si { color: #4e9a06 } /* Literal.String.Interpol */
-    .highlight .sx { color: #4e9a06 } /* Literal.String.Other */
-    .highlight .sr { color: #4e9a06 } /* Literal.String.Regex */
-    .highlight .s1 { color: #4e9a06 } /* Literal.String.Single */
-    .highlight .ss { color: #4e9a06 } /* Literal.String.Symbol */
-    .highlight .bp { color: #3465a4 } /* Name.Builtin.Pseudo */
-    .highlight .vc { color: #000000 } /* Name.Variable.Class */
-    .highlight .vg { color: #000000 } /* Name.Variable.Global */
-    .highlight .vi { color: #000000 } /* Name.Variable.Instance */
-    .highlight .il { color: #0000cf; font-weight: bold } /* Literal.Number.Integer.Long */
-
-
-	/* space between the spcial box */
-	.hero-content .hero-buttons button.btn {
-	  margin: 2em 2em;
-	}
-
-
-	/* Custom homepage banner */
-	.home-banner {
-	  width: 100%;
-	  margin: 5em auto 5em;
-	}
-	
-	.home-banner img {
-	  display: block;
-	  width: 100%;
-      max-width: 850px;
-	  height: auto;
-      margin: 0 auto;
-	}
-
-
-	/* Widen the visible homepage hero */
-	.hero-content {
-	  width: 85% !important;
-	  max-width: none !important;
-	}
-	
-	/* Allow the banner to fill the wider hero */
-	.home-banner {
-	  width: 100% !important;
-	  max-width: none !important;
-	  margin-left: auto;
-	  margin-right: auto;
-	}
-	
-	.home-banner img {
-	  display: block;
-	  width: 100% !important;
-	  max-width: none !important;
-	  height: auto;
-	}
-
-
-/* Mobile-only homepage styling */
-@media (max-width: 767px) {
-
-  /* Homepage title: "Hello, I'm Heidi Liu :)" */
-  .hero-content h1 {
-    font-size: 24px !important;
-    line-height: 1.2 !important;
-    margin: 3em 0 0.6em !important;
-  }
-
-  /* Homepage introductory sentence */
-  .hero-content > p {
-    font-size: 12px !important;
-    line-height: 1.55 !important;
-    margin: 0 0 3em !important;
-  }
-
-
-  /* Keep the three social-media buttons in one row on phones */
-  .hero-content .hero-buttons {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    justify-content: center !important;
-    align-items: stretch !important;
-    gap: 5px;
-    width: 100%;
-  }
-
-  .hero-content .hero-buttons > a {
-    display: block !important;
-    flex: 1 1 0 !important;
-    min-width: 0 !important;
-    margin: 0 !important;
-  }
-
-  .hero-content .hero-buttons button.btn {
-    display: block !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    margin: 0 !important;
-    padding: 8px 4px !important;
-    font-size: 11px !important;
-    line-height: 1.2 !important;
-    white-space: nowrap !important;
-    box-sizing: border-box;
-  }
-
-  .hero-content .hero-buttons button.btn i {
-    margin-right: 3px !important;
-    font-size: 11px !important;
-  }
-
-
-  /* Space around the banner on phones */
-  .home-banner {
-    position: relative;
-    left: 50%;
-    width: calc(100vw - 20px);
-    max-width: none;
-
-    margin: 5em 0 3em !important;
-
-    transform: translateX(-50%);
-  }
-
-  .home-banner img {
-    display: block;
-    width: 100% !important;
-    max-width: none !important;
-    height: auto !important;
-  }
-
-
-  /* Homepage section title on phones */
-  #portfolio .section-title {
-    font-size: 22px !important;
-    line-height: 1.25 !important;
-    margin: 0 auto 1em !important;
-    padding: 0 15px;
-  }
-
-  #portfolio .section-title::after {
-    display: block !important;
-    top: auto !important;
-    bottom: -0.4em !important;
-    width: 2.5em !important;
-  }
-
-  /* Homepage section subtitle on phones */
-  #portfolio .section-subtitle {
-    width: 100% !important;
-    max-width: 420px;
-    padding: 0 12px;
-    margin: 1.4em auto 2em !important;
-    font-size: 13px !important;
-    line-height: 1.55 !important;
-    box-sizing: border-box;
-  }
-
-
-
-  /* Stack project content rather than placing image beside text */
-  #portfolio .post-row {
-    display: block !important;
-    width: 100% !important;
-  }
-
-  /* Give the project columns the full phone width */
-  #portfolio .post-row > [class*="col-"] {
-    display: block !important;
-    float: none !important;
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-
-  /* Hide project images on phones */
-  #portfolio .content-wrap img.img-responsive {
-    display: none !important;
-  }
-
-  /* Use the full width for project text */
-  #portfolio .content-wrap .content {
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 15px !important;
-    box-sizing: border-box;
-  }
-
-  /* Project title */
-  #portfolio .content h3.title {
-    font-size: 15px !important;
-    line-height: 1.3 !important;
-    margin: 0 0 1.2em !important;
-  }
-
-  /* Line underneath project title */
-  #portfolio .content h3.title::after {
-    top: auto !important;
-    bottom: -0.5em !important;
-    width: 2.5em !important;
-  }
-
-  /* Project description */
-  #portfolio .content p.excerpt {
-    width: 100% !important;
-    max-width: none !important;
-    font-size: 12px !important;
-    line-height: 1.6 !important;
-    margin: 0 0 1em !important;
-  }
-
-  /* Project button */
-  #portfolio .content .project-link button {
-    width: auto !important;
-    margin: 0.5em 0 1em !important;
-    padding: 8px 13px !important;
-    font-size: 13px !important;
-  }
-
-  /* Tag container */
-  #portfolio .content .tags {
-    margin: 0.7em 0 1.5em !important;
-  }
-
-  /* Individual tags */
-  #portfolio .content .tags span {
-    padding: 5px 9px !important;
-    margin: 0 4px 5px 0 !important;
-    font-size: 12px !important;
-  }
-
-  /* Space after each project */
-  #portfolio .content-wrap {
-    margin-bottom: 3em !important;
-  }
-}
-
 
 /* ==========================================================
-   About Page
+   3.2 DIVIDERS
    ========================================================== */
-
-/* About page photo */
-.about-photo {
-  display: block;
-  width: 60% !important;
-  max-width: 600px !important;
-  height: auto !important;
-  margin: 1.5em auto 2.5em !important;
-}
-
-.about-page em {
-  color: $muted-color;
-}
-
-.about-page h2 {
-  margin-top: 3em;
-  margin-bottom: 1.2em;
-}
-
-.about-page h3 {
-  margin-top: 2em;
-  margin-bottom: 0.6em;
-}
-
-.about-page p {
-  line-height: 1.8;
-}
 
 .about-divider {
   border: 0;
@@ -769,231 +237,466 @@ pre {
 
 
 /* ==========================================================
-   Creative Projects
+   4. HOMEPAGE
    ========================================================== */
+
+
+/* ==========================================================
+   4.1 HERO
+   ========================================================== */
+
+.hero-container {
+  margin: 12em 0 3em 0;
+
+  @include bp-xsmall {
+    margin: 3em 0 2em 0;
+  }
+
+  @include bp-small {
+    margin: 4em 0 3em 0;
+  }
+}
+
+
+.hero-content {
+  width: 85%;
+  max-width: none !important;
+  margin: 0 auto;
+  display: table;
+
+  @include bp-medium {
+    width: 90%;
+  }
+
+  @include bp-small {
+    width: 95%;
+  }
+
+  @include bp-xsmall {
+    width: 95%;
+  }
+
+
+  /* Homepage main title */
+  h1 {
+    color: $heading-color;
+    font-size: 56px;
+  }
+
+
+  /* Homepage introductory sentence */
+  p {
+    color: $muted-color;
+    font-size: 22px;
+    line-height: 1.6;
+    margin: 2em 0 2em 0;
+  }
+}
+
+
+/* ==========================================================
+   4.2 SOCIAL BUTTONS
+   ========================================================== */
+
+.hero-content .hero-buttons {
+  margin: 0 auto;
+  display: table;
+
+  i {
+    padding-right: 0.5em;
+  }
+}
+
+
+/* Space between social-media buttons on desktop */
+.hero-content .hero-buttons button.btn {
+  margin: 2em 2em;
+}
+
+
+/* ==========================================================
+   4.3 HOMEPAGE BANNER
+   ========================================================== */
+
+.home-banner {
+  width: 100% !important;
+  max-width: none !important;
+
+  margin: 5em auto 5em;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.home-banner img {
+  display: block;
+
+  width: 100% !important;
+  max-width: none !important;
+  height: auto;
+
+  margin: 0 auto;
+}
+
+
+/* ==========================================================
+   4.4 HOMEPAGE PORTFOLIO / POSTS
+   ========================================================== */
+
+
+/* ---------- Overall portfolio spacing ---------- */
+
+#portfolio .container {
+  margin-top: 6em;
+
+  @include bp-xsmall {
+    margin-top: 2em;
+  }
+
+  .break {
+    margin: 3em 0;
+
+    @include bp-xsmall {
+      margin: 1em 0;
+    }
+  }
+}
+
+
+/* ---------- Portfolio section heading ---------- */
+
+.section-title {
+  color: $heading-color;
+
+  position: relative;
+
+  margin: 0 auto;
+  margin-bottom: 1em;
+
+  font-size: 40px;
+  line-height: 1.25;
+
+  &:after {
+    content: '';
+
+    position: absolute;
+    top: 1.35em;
+    left: 50%;
+
+    width: 3em;
+    height: 3px;
+
+    background-color: $border-color;
+
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+
+/* ---------- Portfolio section subtitle ---------- */
+
+.section-subtitle {
+  color: $body-color;
+
+  width: 40%;
+
+  margin: 1.5em auto 1.5em;
+
+  font-size: 20px;
+  line-height: 1.6;
+
+  @include bp-xsmall {
+    width: 100%;
+  }
+
+  @include bp-small {
+    width: 60%;
+  }
+}
+
+
+/* ---------- Individual homepage project ---------- */
+
+.content-wrap {
+  margin-bottom: 8em;
+
+  @include bp-xsmall {
+    margin-bottom: 2em;
+  }
+
+  @include bp-small {
+    margin-bottom: 2em;
+  }
+
+
+  /* Hide homepage project images on smaller screens */
+  img.img-responsive {
+    @include bp-xsmall {
+      display: none;
+    }
+
+    @include bp-small {
+      display: none;
+    }
+  }
+
+
+  .content {
+    margin-top: 5em;
+    margin-left: 5em;
+
+    @include bp-xsmall {
+      margin-left: 0;
+    }
+
+
+    /* Homepage project title */
+    h3.title {
+      position: relative;
+      margin-bottom: 1.5em;
+
+      &:after {
+        content: '';
+
+        position: absolute;
+        top: 1.5em;
+        left: 0;
+
+        width: 3em;
+        height: 3px;
+
+        background-color: $border-color;
+      }
+    }
+
+
+    /* Homepage project description */
+    .excerpt {
+      width: 80%;
+
+      @include bp-xsmall {
+        width: 100%;
+      }
+    }
+
+
+    /* Homepage project button */
+    button {
+      font-size: 16px;
+
+      margin-left: 0;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+
+
+    /* Tags / categories */
+    .tags,
+    .categories {
+      margin: 2em 0;
+
+      span {
+        color: $tag-color;
+        background-color: $soft-fill;
+
+        padding: 0.5em 1.5em;
+
+        display: inline-block;
+
+        margin-bottom: 0.5em;
+      }
+    }
+
+
+    .categories span {
+      color: $muted-color;
+      background-color: $soft-fill;
+    }
+  }
+}
+
+
+/* Vertically center homepage post rows */
+.post-row {
+  align-items: center;
+  display: flex;
+}
+
+
+/* ==========================================================
+   5. ABOUT PAGE
+   ========================================================== */
+
+
+/* ---------- Portrait ---------- */
+
+.about-photo {
+  display: block;
+
+  width: 60% !important;
+  max-width: 600px !important;
+  height: auto !important;
+
+  margin: 1.5em auto 2.5em !important;
+}
+
+
+/* ---------- About typography ---------- */
+
+.about-page em {
+  color: $muted-color;
+}
+
+
+.about-page h2 {
+  margin-top: 3em;
+  margin-bottom: 1.2em;
+}
+
+
+.about-page h3 {
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+}
+
+
+.about-page p {
+  line-height: 1.8;
+}
+
+
+/* ==========================================================
+   6. CREATIVE PAGE
+   ========================================================== */
+
+
+/* ---------- Project row ---------- */
 
 .creative-project-row {
   display: flex;
   align-items: center;
+
   gap: 2.5em;
+
   width: 100%;
+
   margin: 2em 0 4em;
 }
 
-/* Image column */
+
+/* ---------- Project image ---------- */
+
 .creative-project-image {
   flex: 0 0 32%;
   max-width: 300px;
 }
 
-/* Override the theme's global img { width: 100%; } */
+
 .creative-project-image img {
   display: block;
+
   width: 100% !important;
   max-width: 100% !important;
   height: auto !important;
+
   margin: 0 !important;
 }
 
-/* Text column */
+
+/* ---------- Project text ---------- */
+
 .creative-project-copy {
   flex: 1 1 auto;
   min-width: 0;
 }
 
+
 .creative-project-copy h2 {
   margin-top: 0;
 }
 
-/* Heidiverse: text on left, image on right */
+
+/* Heidiverse desktop ordering:
+   text on the left, image on the right */
 .creative-project-row.reverse {
   flex-direction: row;
 }
 
 
-
 /* ==========================================================
-   Creative page - PHONE ONLY
+   7. RESEARCH PAGE
    ========================================================== */
 
-@media (max-width: 767px) {
-
-  /* Main "Creative Projects" heading */
-  article h1 {
-    font-size: 30px !important;
-    line-height: 1.2 !important;
-    margin: 0 0 1.2em !important;
-  }
-
-  /* Each creative project */
-  .creative-project-row,
-  .creative-project-row.reverse {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 0 !important;
-
-    width: 100% !important;
-    margin: 0 0 3em !important;
-    padding-bottom: 2.5em;
-
-    border-bottom: 1px solid $border-color; 
-  }
-
-  /* Always put image FIRST on mobile */
-  .creative-project-image {
-    order: 1 !important;
-
-    width: 48% !important;
-    max-width: 210px !important;
-
-    flex: none !important;
-    margin: 0 auto 1.3em !important;
-  }
-
-  .creative-project-image img {
-    display: block !important;
-    width: 100% !important;
-    height: auto !important;
-    margin: 0 !important;
-  }
-
-  /* Text always goes under image */
-  .creative-project-copy {
-    order: 2 !important;
-
-    width: 100% !important;
-    min-width: 0 !important;
-  }
-
-  /* Oneira Archive / Heidiverse titles */
-  .creative-project-copy h2 {
-    font-size: 22px !important;
-    line-height: 1.25 !important;
-    margin: 0 0 0.25em !important;
-  }
-
-  /* All project paragraph text */
-  .creative-project-copy p {
-    font-size: 14px !important;
-    line-height: 1.65 !important;
-    margin: 0 0 0.9em !important;
-  }
-
-  /* First paragraph = italic subtitle */
-  .creative-project-copy h2 + p {
-    font-size: 13px !important;
-    line-height: 1.4 !important;
-    margin: 0 0 1.2em !important;
-  }
-
-  /* Links */
-  .creative-project-copy a {
-    font-size: 13px !important;
-  }
-}
-
-@media (max-width: 767px) {
-
-  /* About / Research / Teaching main page title */
-  .standard-tab-page h1 {
-    font-size: 30px !important;
-    line-height: 1.2 !important;
-    margin: 0 0 1.2em !important;
-  }
-
-  .about-photo {
-    width: 85% !important;
-    max-width: 320px !important;
-    margin: 1em auto 1.8em !important;
-  }
-
-  /* Major section headings */
-  .standard-tab-page h2 {
-    font-size: 22px !important;
-    line-height: 1.3 !important;
-    margin: 1.5em 0 0.5em !important;
-  }
-
-  /* Course / project subsection headings */
-  .standard-tab-page h3 {
-    font-size: 18px !important;
-    line-height: 1.35 !important;
-    margin: 1.3em 0 0.4em !important;
-  }
-
-  /* Smaller headings if you use them */
-  .standard-tab-page h4 {
-    font-size: 15px !important;
-    line-height: 1.4 !important;
-    margin: 1.1em 0 0.35em !important;
-  }
-
-  /* Normal body text */
-  .standard-tab-page p {
-    font-size: 14px !important;
-    line-height: 1.65 !important;
-    margin: 0 0 0.9em !important;
-  }
-
-  /* Lists */
-  .standard-tab-page li {
-    font-size: 14px !important;
-    line-height: 1.6 !important;
-    margin-bottom: 0.35em;
-  }
-}
-
 
 /* ==========================================================
-   Research project cards
+   7.1 RESEARCH PROJECT CARDS
    ========================================================== */
 
 .research-grid {
   display: grid;
+
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5em;
+
   margin: 2.5em 0 4em;
 }
 
+
 .research-card {
-  background: $soft-fill;
+  background-color: $soft-fill;
   border: 1px solid $border-color;
+
   padding: 1.7em;
+
   box-sizing: border-box;
 }
 
+
 .research-card img {
   display: block;
+
   width: 100% !important;
   height: 260px !important;
+
   object-fit: cover;
+
   margin: 0 0 1.5em !important;
 }
 
+
 .research-card h3 {
   margin: 0 0 0.45em;
+
   font-size: 22px;
   line-height: 1.3;
 }
+
 
 .research-card h3 a {
   color: inherit;
 }
 
+
 .research-card h3 a:hover {
-  color: #6078A8;
+  color: $link-color;
 }
+
 
 .research-card p {
   font-size: 14px;
   line-height: 1.65;
+
   margin-bottom: 0.8em;
 }
+
 
 .research-card em {
   color: $muted-color;
 }
+
 
 .research-card > p:last-child {
   margin-bottom: 0;
@@ -1001,90 +704,685 @@ pre {
 
 
 /* ==========================================================
-   Phone Research project cards
+   8. FOOTER
+   ========================================================== */
+
+.site-footer {
+  font-size: 14px;
+
+  margin-top: 2em;
+
+  border-top: 1px solid $border-color;
+
+  padding: 1em 0;
+
+
+  p {
+    font-size: 12px;
+    font-weight: 600;
+
+    color: $muted-color;
+
+    margin: 0;
+    padding: 10px 0;
+
+    @include bp-xsmall {
+      text-align: center;
+    }
+  }
+
+
+  .section-jump {
+    float: right;
+
+    @include bp-xsmall {
+      float: none;
+    }
+  }
+}
+
+
+/* ==========================================================
+   9. CODE FORMATTING
+   ========================================================== */
+
+pre,
+code {
+  color: #262626;
+
+  font-size: 14px;
+
+  border: 1px solid #E5E5E5;
+  border-radius: 3px;
+
+  background-color: #FBFBFB;
+}
+
+
+code {
+  padding: 1px 5px;
+}
+
+
+pre {
+  padding: 8px 12px;
+
+  overflow-x: auto;
+}
+
+
+pre > code {
+  border: 0;
+
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+/* ==========================================================
+   10. SYNTAX HIGHLIGHTING
+   ========================================================== */
+
+/*
+   These colors belong only to code blocks.
+   They do not control the normal website palette.
+*/
+
+.highlight {
+  background: #fff;
+}
+
+.highlighter-rouge .highlight {
+  background: #eef;
+}
+
+.highlight .hll { background-color: #ffffcc }
+.highlight .c { color: #8f5902; font-style: italic }
+.highlight .err { color: #a40000 }
+.highlight .g { color: #000000 }
+.highlight .k { color: #204a87; font-weight: bold }
+.highlight .l { color: #000000 }
+.highlight .n { color: #000000 }
+.highlight .o { color: #ce5c00; font-weight: bold }
+.highlight .x { color: #000000 }
+.highlight .p { color: #000000; font-weight: bold }
+.highlight .cm { color: #8f5902; font-style: italic }
+.highlight .cp { color: #8f5902; font-style: italic }
+.highlight .c1 { color: #8f5902; font-style: italic }
+.highlight .cs { color: #8f5902; font-style: italic }
+.highlight .gd { color: #a40000 }
+.highlight .ge { color: #000000; font-style: italic }
+.highlight .gr { color: #ef2929 }
+.highlight .gh { color: #000080; font-weight: bold }
+.highlight .gi { color: #00A000 }
+.highlight .go { color: #000000; font-style: italic }
+.highlight .gp { color: #8f5902 }
+.highlight .gs { color: #000000; font-weight: bold }
+.highlight .gu { color: #800080; font-weight: bold }
+.highlight .gt { color: #a40000; font-weight: bold }
+.highlight .kc { color: #204a87; font-weight: bold }
+.highlight .kd { color: #204a87; font-weight: bold }
+.highlight .kn { color: #204a87; font-weight: bold }
+.highlight .kp { color: #204a87; font-weight: bold }
+.highlight .kr { color: #204a87; font-weight: bold }
+.highlight .kt { color: #204a87; font-weight: bold }
+.highlight .ld { color: #000000 }
+.highlight .m { color: #0000cf; font-weight: bold }
+.highlight .s { color: #4e9a06 }
+.highlight .na { color: #c4a000 }
+.highlight .nb { color: #204a87 }
+.highlight .nc { color: #000000 }
+.highlight .no { color: #000000 }
+.highlight .nd { color: #5c35cc; font-weight: bold }
+.highlight .ni { color: #ce5c00 }
+.highlight .ne { color: #cc0000; font-weight: bold }
+.highlight .nf { color: #000000 }
+.highlight .nl { color: #f57900 }
+.highlight .nn { color: #000000 }
+.highlight .nx { color: #000000 }
+.highlight .py { color: #000000 }
+.highlight .nt { color: #204a87; font-weight: bold }
+.highlight .nv { color: #000000 }
+.highlight .ow { color: #204a87; font-weight: bold }
+.highlight .w { color: #f8f8f8; text-decoration: underline }
+.highlight .mf { color: #0000cf; font-weight: bold }
+.highlight .mh { color: #0000cf; font-weight: bold }
+.highlight .mi { color: #0000cf; font-weight: bold }
+.highlight .mo { color: #0000cf; font-weight: bold }
+.highlight .sb { color: #4e9a06 }
+.highlight .sc { color: #4e9a06 }
+.highlight .sd { color: #8f5902; font-style: italic }
+.highlight .s2 { color: #4e9a06 }
+.highlight .se { color: #4e9a06 }
+.highlight .sh { color: #4e9a06 }
+.highlight .si { color: #4e9a06 }
+.highlight .sx { color: #4e9a06 }
+.highlight .sr { color: #4e9a06 }
+.highlight .s1 { color: #4e9a06 }
+.highlight .ss { color: #4e9a06 }
+.highlight .bp { color: #3465a4 }
+.highlight .vc { color: #000000 }
+.highlight .vg { color: #000000 }
+.highlight .vi { color: #000000 }
+.highlight .il { color: #0000cf; font-weight: bold }
+
+
+/* ==========================================================
+   11. MOBILE STYLES
+   ==========================================================
+
+   IMPORTANT:
+   Your existing mobile font sizes are preserved here.
+
    ========================================================== */
 
 @media (max-width: 767px) {
 
+
+  /* ========================================================
+     11.1 HOMEPAGE — MOBILE
+     ======================================================== */
+
+
+  /* Homepage title */
+  .hero-content h1 {
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+    margin: 3em 0 0.6em !important;
+  }
+
+
+  /* Homepage introduction */
+  .hero-content > p {
+    font-size: 12px !important;
+    line-height: 1.55 !important;
+    margin: 0 0 3em !important;
+  }
+
+
+  /* ---------- Social buttons ---------- */
+
+  .hero-content .hero-buttons {
+    display: flex !important;
+
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+
+    justify-content: center !important;
+    align-items: stretch !important;
+
+    gap: 5px;
+
+    width: 100%;
+  }
+
+
+  .hero-content .hero-buttons > a {
+    display: block !important;
+
+    flex: 1 1 0 !important;
+
+    min-width: 0 !important;
+
+    margin: 0 !important;
+  }
+
+
+  .hero-content .hero-buttons button.btn {
+    display: block !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+
+    margin: 0 !important;
+    padding: 8px 4px !important;
+
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+
+    white-space: nowrap !important;
+
+    box-sizing: border-box;
+  }
+
+
+  .hero-content .hero-buttons button.btn i {
+    margin-right: 3px !important;
+
+    font-size: 11px !important;
+  }
+
+
+  /* ---------- Homepage banner ---------- */
+
+  .home-banner {
+    position: relative;
+
+    left: 50%;
+
+    width: calc(100vw - 20px);
+    max-width: none;
+
+    margin: 5em 0 3em !important;
+
+    transform: translateX(-50%);
+  }
+
+
+  .home-banner img {
+    display: block;
+
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+  }
+
+
+  /* ---------- Homepage portfolio heading ---------- */
+
+  #portfolio .section-title {
+    font-size: 22px !important;
+    line-height: 1.25 !important;
+
+    margin: 0 auto 1em !important;
+
+    padding: 0 15px;
+  }
+
+
+  #portfolio .section-title::after {
+    display: block !important;
+
+    top: auto !important;
+    bottom: -0.4em !important;
+
+    width: 2.5em !important;
+  }
+
+
+  #portfolio .section-subtitle {
+    width: 100% !important;
+    max-width: 420px;
+
+    padding: 0 12px;
+
+    margin: 1.4em auto 2em !important;
+
+    font-size: 13px !important;
+    line-height: 1.55 !important;
+
+    box-sizing: border-box;
+  }
+
+
+  /* ---------- Homepage projects ---------- */
+
+  #portfolio .post-row {
+    display: block !important;
+
+    width: 100% !important;
+  }
+
+
+  #portfolio .post-row > [class*="col-"] {
+    display: block !important;
+
+    float: none !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+
+  /* Hide project images on homepage mobile */
+  #portfolio .content-wrap img.img-responsive {
+    display: none !important;
+  }
+
+
+  #portfolio .content-wrap .content {
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 0 15px !important;
+
+    box-sizing: border-box;
+  }
+
+
+  /* Homepage project title */
+  #portfolio .content h3.title {
+    font-size: 15px !important;
+    line-height: 1.3 !important;
+
+    margin: 0 0 1.2em !important;
+  }
+
+
+  #portfolio .content h3.title::after {
+    top: auto !important;
+    bottom: -0.5em !important;
+
+    width: 2.5em !important;
+  }
+
+
+  /* Homepage project description */
+  #portfolio .content p.excerpt {
+    width: 100% !important;
+    max-width: none !important;
+
+    font-size: 12px !important;
+    line-height: 1.6 !important;
+
+    margin: 0 0 1em !important;
+  }
+
+
+  /* Homepage project button */
+  #portfolio .content .project-link button {
+    width: auto !important;
+
+    margin: 0.5em 0 1em !important;
+    padding: 8px 13px !important;
+
+    font-size: 13px !important;
+  }
+
+
+  /* Homepage tags */
+  #portfolio .content .tags {
+    margin: 0.7em 0 1.5em !important;
+  }
+
+
+  #portfolio .content .tags span {
+    padding: 5px 9px !important;
+
+    margin: 0 4px 5px 0 !important;
+
+    font-size: 12px !important;
+  }
+
+
+  #portfolio .content-wrap {
+    margin-bottom: 3em !important;
+  }
+
+
+  /* ========================================================
+     11.2 STANDARD TABS — MOBILE
+     About / Research / Teaching
+     ======================================================== */
+
+
+  /* Main page title */
+  .standard-tab-page h1 {
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+
+    margin: 0 0 1.2em !important;
+  }
+
+
+  /* About portrait */
+  .about-photo {
+    width: 85% !important;
+    max-width: 320px !important;
+
+    margin: 1em auto 1.8em !important;
+  }
+
+
+  /* Major section headings */
+  .standard-tab-page h2 {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+
+    margin: 1.5em 0 0.5em !important;
+  }
+
+
+  /* Subsection headings */
+  .standard-tab-page h3 {
+    font-size: 18px !important;
+    line-height: 1.35 !important;
+
+    margin: 1.3em 0 0.4em !important;
+  }
+
+
+  /* Smaller headings */
+  .standard-tab-page h4 {
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+
+    margin: 1.1em 0 0.35em !important;
+  }
+
+
+  /* Standard body text */
+  .standard-tab-page p {
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+
+    margin: 0 0 0.9em !important;
+  }
+
+
+  /* Standard lists */
+  .standard-tab-page li {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+
+    margin-bottom: 0.35em;
+  }
+
+
+  /* ========================================================
+     11.3 CREATIVE PAGE — MOBILE
+     ======================================================== */
+
+
+  /* Creative Projects page title */
+  article h1 {
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+
+    margin: 0 0 1.2em !important;
+  }
+
+
+  /* Each creative project becomes vertical */
+  .creative-project-row,
+  .creative-project-row.reverse {
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    align-items: stretch !important;
+
+    gap: 0 !important;
+
+    width: 100% !important;
+
+    margin: 0 0 3em !important;
+
+    padding-bottom: 2.5em;
+
+    border-bottom: 1px solid $border-color;
+  }
+
+
+  /* Creative image first */
+  .creative-project-image {
+    order: 1 !important;
+
+    width: 48% !important;
+    max-width: 210px !important;
+
+    flex: none !important;
+
+    margin: 0 auto 1.3em !important;
+  }
+
+
+  .creative-project-image img {
+    display: block !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    margin: 0 !important;
+  }
+
+
+  /* Creative text second */
+  .creative-project-copy {
+    order: 2 !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+
+  /* Oneira / Heidiverse title */
+  .creative-project-copy h2 {
+    font-size: 22px !important;
+    line-height: 1.25 !important;
+
+    margin: 0 0 0.25em !important;
+  }
+
+
+  /* Creative body text */
+  .creative-project-copy p {
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+
+    margin: 0 0 0.9em !important;
+  }
+
+
+  /* Creative italic subtitle */
+  .creative-project-copy h2 + p {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+
+    margin: 0 0 1.2em !important;
+  }
+
+
+  /* Creative links */
+  .creative-project-copy a {
+    font-size: 13px !important;
+  }
+
+
+  /* ========================================================
+     11.4 RESEARCH CARDS — MOBILE
+     ======================================================== */
+
+
   .research-grid {
     grid-template-columns: 1fr;
+
     gap: 2em;
+
     margin-top: 2em;
   }
+
 
   .research-card {
     padding: 1.3em;
   }
 
+
   .research-card img {
     height: 200px !important;
   }
+
 
   .research-card h3 {
     font-size: 19px !important;
   }
 
+
   .research-card p {
     font-size: 13px !important;
     line-height: 1.6 !important;
   }
-}
 
-/* ==========================================================
-   Detailed research pages - PHONE ONLY
-   ========================================================== */
 
-@media (max-width: 767px) {
+  /* ========================================================
+     11.5 DETAILED RESEARCH PAGES — MOBILE
+     ======================================================== */
 
-  /* Main research-project title */
+
+  /* Main detailed research title */
   .research-detail-page h1 {
     font-size: 29px !important;
     line-height: 1.2 !important;
+
     margin: 0 0 1.1em !important;
   }
 
-  /* Major sections: Overview, Research Questions, etc. */
+
+  /* Major detailed research sections */
   .research-detail-page h2 {
     font-size: 21px !important;
     line-height: 1.3 !important;
+
     margin: 2em 0 0.7em !important;
   }
 
-  /* Smaller subsections */
+
+  /* Smaller research subsections */
   .research-detail-page h3 {
     font-size: 17px !important;
     line-height: 1.35 !important;
+
     margin: 1.5em 0 0.5em !important;
   }
 
-  /* Normal text */
+
+  /* Detailed research body text */
   .research-detail-page p {
     font-size: 14px !important;
     line-height: 1.7 !important;
+
     margin: 0 0 1em !important;
   }
 
-  /* Lists */
+
+  /* Detailed research lists */
   .research-detail-page li {
     font-size: 14px !important;
     line-height: 1.65 !important;
+
     margin-bottom: 0.4em;
   }
 
-  /* Intro subtitle, such as the CMB-S4 italic sentence */
+
+  /* Intro subtitle on detailed research page */
   .research-detail-page > p:first-of-type {
     font-size: 15px !important;
     line-height: 1.6 !important;
   }
 
-  /* Buttons such as View Interactive Poster */
+
+  /* Research buttons */
   .research-detail-page .btn {
     width: auto !important;
+
     padding: 9px 14px !important;
     margin: 1em 0 !important;
+
     font-size: 13px !important;
     line-height: 1.3 !important;
   }
+
 
   /* Research images */
   .research-detail-page img {
@@ -1092,11 +1390,14 @@ pre {
     height: auto !important;
   }
 
-  /* Keep equations from overflowing phone screen */
+
+  /* Prevent wide MathJax equations from breaking mobile layout */
   .research-detail-page mjx-container[display="true"] {
     overflow-x: auto;
     overflow-y: hidden;
+
     max-width: 100%;
+
     padding-bottom: 0.4em;
   }
 }
