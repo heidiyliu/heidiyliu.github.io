@@ -901,3 +901,88 @@ pre {
     margin-bottom: 0.35em;
   }
 }
+
+
+/* ==========================================================
+   Research project cards
+   ========================================================== */
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5em;
+  margin: 2.5em 0 4em;
+}
+
+.research-card {
+  background: #f4f4f6;
+  padding: 1.7em;
+  box-sizing: border-box;
+}
+
+.research-card img {
+  display: block;
+  width: 100% !important;
+  height: 260px !important;
+  object-fit: cover;
+  margin: 0 0 1.5em !important;
+}
+
+.research-card h3 {
+  margin: 0 0 0.45em;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.research-card h3 a {
+  color: inherit;
+}
+
+.research-card h3 a:hover {
+  color: #6078A8;
+}
+
+.research-card p {
+  font-size: 14px;
+  line-height: 1.65;
+  margin-bottom: 0.8em;
+}
+
+.research-card em {
+  color: #7a8290;
+}
+
+.research-card > p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ==========================================================
+   Phone Research project cards
+   ========================================================== */
+
+@media (max-width: 767px) {
+
+  .research-grid {
+    grid-template-columns: 1fr;
+    gap: 2em;
+    margin-top: 2em;
+  }
+
+  .research-card {
+    padding: 1.3em;
+  }
+
+  .research-card img {
+    height: 200px !important;
+  }
+
+  .research-card h3 {
+    font-size: 19px !important;
+  }
+
+  .research-card p {
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+  }
+}
