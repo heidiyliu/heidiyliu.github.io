@@ -25,19 +25,18 @@
           </p>
           {% endif %}
 
-          <div class="hero-buttons">
+          <div class="hero-buttons social-icons">
 
-            {% if site.github_username != '' %}
-              <a href="https://github.com/{{ site.github_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-github fa-lg"></i>Github</button></a>
+            {% if site.github_username != '' %}<a href="https://github.com/{{ site.github_username }}"target="_blank"rel="noopener noreferrer"aria-label="GitHub"title="GitHub"><i class="fa fa-github"></i></a>
             {% endif %}
             {% if site.twitter_username != '' %}
               <a href="https://twitter.com/{{ site.twitter_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-twitter fa-lg"></i>Twitter</button></a>
             {% endif %}
-            {% if site.instagram_username != '' %}<a href="https://www.instagram.com/{{ site.instagram_username }}/"target="_blank" rel="noopener noreferrer"><button class="btn btn-default btn-lg"><i class="fa fa-instagram fa-lg"></i> Instagram</button></a>
+            {% if site.instagram_username != '' %}<a href="https://instagram.com/{{ site.instagram_username }}"target="_blank"rel="noopener noreferrer"aria-label="Instagram"title="Instagram"><i class="fa fa-instagram"></i></a>
             {% endif %}
-            {% if site.rednote_url != '' %}<a href="{{ site.rednote_url }}"target="_blank"rel="noopener noreferrer"><button class="btn btn-default btn-lg"><i class="fa fa-book fa-lg"></i> RedNote</button></a>
+            {% if site.rednote_url != '' %}<a href="{{ site.rednote_url }}"target="_blank"rel="noopener noreferrer"aria-label="RedNote"title="RedNote"><i class="fa fa-book"></i></a>
             {% endif %}
-            {% if site.orcid_url != '' %}<a href="{{ site.orcid_url }}" target="_blank" rel="noopener noreferrer"><button class="btn btn-default btn-lg"><span class="orcid-icon">iD</span> ORCID</button></a>
+            {% if site.orcid_url != '' %}<a href="{{ site.orcid_url }}"target="_blank"rel="noopener noreferrer"aria-label="ORCID"title="ORCID"><span class="orcid-icon">iD</span></a>
             {% endif %}
             {% if site.medium_username != '' %}
               <a href="https://{{ site.medium_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-medium fa-lg"></i>Medium</button></a>
