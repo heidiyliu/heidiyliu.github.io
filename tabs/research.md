@@ -8,81 +8,123 @@ permalink: /research/
 
 # Research
 
-My research interests lie primarily in theoretical and computational cosmology. I am interested in how cosmic structure forms and evolves, how observations of galaxies and the cosmic microwave background can be used to test cosmological models, and how signatures of new physics may appear in astronomical data.
+My research interests lie primarily in theoretical and computational cosmology, with broader experience in nuclear astrophysics, dark-matter detection, astronomical instrumentation, and observational astronomy.
 
-My work has involved analytic calculations, numerical modeling, statistical forecasting, detector development, and observational instrumentation. Below is a selection of my current and previous research projects.
+My work has involved analytic calculations, numerical modeling, statistical forecasting, detector development, and astronomical instrumentation.
 
 <div style="height: 1em;"></div>
 
-## University of Arizona
+<div class="research-grid">
 
-### [Cosmological Structure Formation and UV Luminosity Functions]({{ '/research/rhct-structure-formation/' | relative_url }})
 
-*August 2025–Present*  
+<div class="research-card" markdown="1">
+
+<img src="/img/cosmology.jpg" alt="Cosmological structure formation">
+
+### [Cosmological Structure Formation and UV Luminosity Functions](/research/rhct-structure-formation/)
+
+*University of Arizona · August 2025–Present*
+
 **Advisor:** Prof. Fulvio Melia
 
-**Methods and tools:** Python, numerical integration, cosmological perturbation theory, matter power spectra, halo mass functions, galaxy luminosity functions, statistical comparison.
+Studying cosmological structure formation from the matter power spectrum through halo formation and high-redshift galaxy UV luminosity functions.
 
-<img class="research-photo" src="/img/cosmology.jpg" alt="rhct">
+**Methods:** Python · numerical integration · cosmological perturbation theory · matter power spectra · halo mass functions · UV luminosity functions
 
-<div style="height: 2em;"></div>
+[View Research →](/research/rhct-structure-formation/)
 
-## GSI Helmholtz Centre for Heavy Ion Research
+</div>
+
+
+<div class="research-card" markdown="1">
+
+<img src="/img/nuclides-chart.jpg" alt="Nuclear shell-model calculations">
 
 ### Nuclear Shell-Model Calculations for Astrophysical Processes
 
-*DAAD RISE Professional Fellow, June 2023–January 2024*  
-**Theory Department**  
+*GSI Helmholtz Centre for Heavy Ion Research · June 2023–January 2024*
+
+**DAAD RISE Professional Fellow**  
 **Advisor:** Dr. Thomas Neff
 
-**Methods and tools:** Fortran, Python, nuclear shell model, scientific data analysis, database generation, computational nuclear astrophysics.
+Performed computational nuclear shell-model calculations and developed tools for analyzing nuclear properties relevant to heavy-element astrophysics.
 
-<img class="research-photo" src="/img/nuclides-chart.jpg" alt="gsi">
+**Methods:** Fortran · Python · nuclear shell model · scientific data analysis · database generation
 
-<div style="height: 2em;"></div>
+</div>
 
-## University of Washington
 
-### [CMB-S4: Probing New Physics with the Cosmic Microwave Background]({{ '/research/cmb-s4/' | relative_url }})
+<div class="research-card" markdown="1">
 
-*March 2022–June 2023*  
+<img src="/img/cmb.jpg" alt="CMB-S4">
+
+### [CMB-S4: Forecasting Constraints on Primordial Gravitational Waves](/research/cmb-s4/)
+
+*University of Washington · March 2022–June 2023*
+
 **Advisor:** Prof. Marilena LoVerde
 
-**Methods and tools:** Python, CLASS, cosmological perturbation theory, CMB power spectra, Fisher matrices, MCMC, statistical forecasting.
+Forecasted constraints on primordial gravitational waves using CMB polarization and scale-dependent primordial tensor power spectra.
 
-<img class="research-photo" src="/img/cmb.jpg" alt="cmb-s4">
+**Methods:** Python · CLASS · CMB polarization · Fisher matrices · MCMC · statistical forecasting
 
-<div style="height: 1em;"></div>
+[View Research →](/research/cmb-s4/)
+
+</div>
+
+
+<div class="research-card" markdown="1">
+
+<img src="/img/CCD.jpg" alt="DAMIC-M CCD detector">
 
 ### DAMIC-M: Dark Matter in CCDs at Modane
 
-*January 2021–January 2022*  
+*University of Washington · January 2021–January 2022*
+
 **Advisor:** Prof. Alvaro Chavarria
 
-**Methods and tools:** Python, ROOT, Linux, Arduino, CCD image analysis, detector characterization, noise analysis.
+Worked on CCD detector characterization for low-mass dark-matter searches, including electrical-noise reduction and charge-collection performance.
 
-<img class="research-photo" src="/img/CCD.jpg" alt="DAMIC">
+**Methods:** Python · ROOT · Linux · Arduino · CCD image analysis · detector characterization
 
-<div style="height: 1em;"></div>
+</div>
+
+
+<div class="research-card" markdown="1">
+
+<img src="/img/MRO.jpg" alt="Manastash Ridge Observatory">
 
 ### Manastash Ridge Observatory
 
-*October 2020–June 2023*  
+*University of Washington · October 2020–June 2023*
+
 **Astronomy Undergraduate Engineering Group**  
 **Advisor:** Prof. Oliver Fraser
 
-**Methods and tools:** Telescope operation, astronomical observing, observatory software, stellar photometry, instrumentation maintenance.
+Contributed to observatory operations, telescope software and maintenance, and astronomical observations for advanced laboratory projects.
 
-<img class="research-photo" src="/img/MRO.jpg" alt="MRO">
+**Methods:** Telescope operation · astronomical observing · stellar photometry · observatory software · instrumentation
+
+</div>
 
 
-<div style="height: 1em;"></div>
+<div class="research-card" markdown="1">
+
+<img src="/img/sdss.jpg" alt="SDSS-V instrumentation">
 
 ### SDSS-V: Sloan Digital Sky Survey
 
-*June 2021–September 2021*  
+*University of Washington · June 2021–September 2021*
+
 **Advisors:** Prof. Sarah Tuttle and Prof. Scott Anderson
 
-**Methods and tools:** Fiber-optic instrumentation, astronomical spectroscopy, SDSS archival data, quasar classification, experimental design.
+Worked on fiber-optic instrumentation and archival spectroscopy, including searches for candidate changing-look quasars in multi-epoch SDSS data.
+
+**Methods:** Fiber optics · astronomical spectroscopy · SDSS archival data · quasar classification · experimental design
+
+</div>
+
+
+</div>
 
 </div>
