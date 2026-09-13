@@ -25,7 +25,7 @@ I grew up in a smaller inland city in China, where access to educational and sci
 <hr class="about-divider">
 
 
-<div style="height: 3em;"></div>
+<div style="height: 2.5em;"></div>
 
 
 ### Academic Journey
