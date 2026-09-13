@@ -4,6 +4,8 @@ title: "Forecasting Constraints on Primordial Gravitational Waves"
 permalink: /research/cmb-s4/
 ---
 
+<div class="research-detail-page" markdown="1">
+
 # Forecasting Constraints on Primordial Gravitational Waves
 
 *Using CMB-S4 B-mode polarization forecasts to study scale-dependent primordial tensor perturbations.*
@@ -374,3 +376,5 @@ The next stages identified in the project were:
 ---
 
 [← Back to Research]({{ '/research/' | relative_url }})
+
+</div>
