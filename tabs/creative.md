@@ -27,7 +27,7 @@ Through short-form videos, atmospheric sound, and surreal environments, the proj
 **Status:** Active
 
 [TikTok](https://www.tiktok.com/@oneiraarchive?_r=1&_t=ZT-99gbZayLRiX) ·
-[Xiaohongshu (RedNote)](https://xhslink.cn/o/ADo1da464q) ·
+[RedNote](https://xhslink.cn/o/ADo1da464q) ·
 [Instagram](https://www.instagram.com/oneiraarchive?stkn=MWd0b2lvMjBhNnNmcg%3D%3D&utm_source=qr)
 
 </div>
