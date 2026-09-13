@@ -5,88 +5,146 @@
    TABLE OF CONTENTS
    ==========================================================
 
-   1.  Imports & Site Palette
-   2.  Global / Base Styles
-   3.  Global Components
-       3.1 Buttons
-       3.2 Dividers
-   4.  Homepage
-       4.1 Hero
-       4.2 Social Buttons
-       4.3 Banner
-       4.4 Homepage Portfolio / Posts
-   5.  About Page
-   6.  Creative Page
-   7.  Research Page
-       7.1 Research Cards
-   8.  Footer
-   9.  Code Formatting
-   10. Syntax Highlighting
-   11. Mobile Styles
-       11.1 Homepage
-       11.2 Standard Tabs
-       11.3 Creative Page
-       11.4 Research Cards
-       11.5 Detailed Research Pages
+   1.  Imports
+   2.  Site Palette
+   3.  Typography
+   4.  Global / Base Styles
+   5.  Global Components
+       5.1 Buttons
+       5.2 Dividers
+       5.3 Contact Modal
+   6.  Homepage
+       6.1 Hero
+       6.2 Social Buttons
+       6.3 Homepage Banner
+       6.4 Selected Work / Portfolio
+   7.  About Page
+   8.  Creative Page
+   9.  Research Page
+       9.1 Research Cards
+   10. Footer
+   11. Code Formatting
+   12. Syntax Highlighting
+   13. Mobile Styles
+       13.1 Homepage
+       13.2 Standard Tabs
+       13.3 Creative Page
+       13.4 Research Cards
+       13.5 Detailed Research Pages
 
    ========================================================== */
 
 
 /* ==========================================================
-   1. IMPORTS & SITE PALETTE
+   1. IMPORTS
    ========================================================== */
 
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:wght@400;700&display=swap');
+
+/* Theme dependencies */
 @import '../_sass/bootstrap';
 @import '../_sass/mixins';
 
 
-/* ---------- Fonts ---------- */
+/* ==========================================================
+   2. SITE PALETTE
+   ==========================================================
+
+   To recolor the entire site later, this is the main section
+   you should edit.
+
+   ========================================================== */
+
+
+/* ---------- Backgrounds ---------- */
+
+$site-bg: #F1F3F5;
+/* Very pale cool gray.
+   Used outside the central page area. */
+
+$surface: #FCFCFD;
+/* Almost-white cool surface.
+   Used for the main page background and buttons. */
+
+$soft-fill: #ECEFF3;
+/* Whisper-gray.
+   Used for research cards, tags, and subtle filled areas. */
+
+
+/* ---------- Typography Colors ---------- */
+
+$heading-color: #626A78;
+/* Soft graphite-blue.
+   Used for headings and major titles. */
+
+$body-color: #747B85;
+/* Elegant cool gray.
+   Used for normal paragraphs and list text. */
+
+$muted-color: #A0A5AD;
+/* Light cool gray.
+   Used for subtitles, dates, metadata, and secondary text. */
+
+
+/* ---------- Links ---------- */
+
+$link-color: #7C8BA5;
+/* Refined muted blue.
+   Used for normal links. */
+
+$link-hover-color: #64748E;
+/* Deeper blue-gray.
+   Used when hovering over links. */
+
+
+/* ---------- Borders / Small Accents ---------- */
+
+$border-color: #E1E5EA;
+/* Very pale cool gray.
+   Used for dividers, borders, and subtle lines. */
+
+$tag-color: #969FAA;
+/* Soft blue-gray.
+   Used for tags and category labels. */
+
 
 /* ==========================================================
-   Typography
+   3. TYPOGRAPHY
+   ==========================================================
+
+   To change the site fonts later:
+
+   1. Change the Google Fonts import above.
+   2. Change $body-font and/or $heading-font below.
+
+   You do NOT need to change every individual heading rule.
+
    ========================================================== */
+
+$body-font: 'Inter', sans-serif;
+/* Body text, navigation, buttons, metadata */
+
+$heading-font: 'Libre Baskerville', serif;
+/* Main titles and section headings */
+
 
 %bodyfont {
-  font-family: 'Inter', sans-serif;
+  font-family: $body-font;
 }
+
 
 %headingfont {
-  font-family: 'Libre Baskerville', serif;
+  font-family: $heading-font;
 }
 
 
-/* ---------- Cool Minimalist Palette ---------- */
-
 /* ==========================================================
-   Ultra-Minimal Cool Luxury Palette
-   ========================================================== */
-
-/* Backgrounds */
-$site-bg: #F1F3F5;          /* very pale cool gray */
-$surface: #FCFCFD;          /* almost-white cool surface */
-$soft-fill: #ECEFF3;        /* whisper-gray cards */
-
-/* Typography */
-$heading-color: #626A78;    /* soft graphite-blue */
-$body-color: #747B85;       /* elegant medium cool gray */
-$muted-color: #A0A5AD;      /* subtle metadata */
-
-/* Links */
-$link-color: #7C8BA5;       /* refined muted blue */
-$link-hover-color: #64748E; /* deeper blue-gray */
-
-/* Borders / accents */
-$border-color: #E1E5EA;     /* nearly invisible divider */
-$tag-color: #969FAA;        /* soft tag text */
-This second version is more fashion/editorial/luxury, but slightly
-
-/* ==========================================================
-   2. GLOBAL / BASE STYLES
+   4. GLOBAL / BASE STYLES
    ========================================================== */
 
 
-/* ---------- Desktop container width ---------- */
+/* ---------- Large Desktop Width ---------- */
 
 @media (min-width: 1200px) {
   .container {
@@ -95,15 +153,19 @@ This second version is more fashion/editorial/luxury, but slightly
 }
 
 
-/* ---------- Page background & typography ---------- */
+/* ---------- Overall Page ---------- */
 
 body {
   color: $body-color;
   background-color: $site-bg;
+
   @extend %bodyfont;
+
   -webkit-font-smoothing: antialiased;
 }
 
+
+/* ---------- Headings ---------- */
 
 h1,
 h2,
@@ -112,19 +174,26 @@ h4,
 h5,
 h6 {
   color: $heading-color;
+
   @extend %headingfont;
 }
 
+
+/* Large titles:
+   lighter weight gives a more refined editorial appearance */
 h1 {
   font-weight: 400;
   letter-spacing: -0.025em;
 }
+
 
 h2 {
   font-weight: 400;
   letter-spacing: -0.015em;
 }
 
+
+/* Smaller headings retain more weight for hierarchy */
 h3,
 h4,
 h5,
@@ -133,26 +202,36 @@ h6 {
 }
 
 
+/* ---------- Main Article Spacing ---------- */
+
 article {
   margin: 5em 0;
 }
 
 
+/* ---------- Body Text ---------- */
+
 p {
   color: $body-color;
-  line-height: 1.8;
+
   font-size: 1.3em;
   font-weight: 400;
+
+  line-height: 1.8;
   letter-spacing: 0.005em;
 }
 
 
 li {
   color: $body-color;
+
   font-weight: 400;
+
   letter-spacing: 0.005em;
 }
 
+
+/* ---------- Secondary / Italic Text ---------- */
 
 em,
 small {
@@ -164,6 +243,7 @@ small {
 
 a {
   color: $link-color;
+
   @include transition(color .2s ease-in-out);
 
   &:hover {
@@ -173,19 +253,20 @@ a {
 }
 
 
-/* ---------- Global image behavior ---------- */
+/* ---------- Images ---------- */
 
 img {
   width: 100%;
 }
 
 
-/* ---------- Main white page surface ---------- */
+/* ---------- Main Central Page Surface ---------- */
 
 .main {
   background-color: $surface;
-  border-left: solid 1px $border-color;
-  border-right: solid 1px $border-color;
+
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
 
   &.container {
     padding: 0;
@@ -193,14 +274,18 @@ img {
 }
 
 
-/* ---------- Section jump arrow ---------- */
+/* ---------- Section Jump Arrow ---------- */
 
 .section-jump {
   position: relative;
   top: 0;
+
   color: $border-color;
+
   margin: 0 auto;
+
   display: table;
+
   @include transition(top .2s ease-in);
 
   &:hover {
@@ -210,36 +295,42 @@ img {
 
 
 /* ==========================================================
-   3. GLOBAL COMPONENTS
+   5. GLOBAL COMPONENTS
    ========================================================== */
 
 
 /* ==========================================================
-   3.1 BUTTONS
+   5.1 BUTTONS
    ========================================================== */
 
 button.btn,
 input.btn {
   padding: 12px 35px;
+
   margin: 2em 0.5em;
 
-  border: solid 1px $border-color;
-  border-radius: 4px;
+  border: 1px solid $border-color;
+  border-radius: 3px;
 
   background-color: $surface;
+
   color: $heading-color;
 
   font-weight: 600;
 
+  box-shadow: none;
+
   &:hover,
   &.btn-default:hover {
     background-color: #FFFFFF;
+
     border-color: #C5CED8;
+
     color: $link-hover-color;
 
-    -moz-box-shadow: 0 1px 0 #C5CED8;
-    -webkit-box-shadow: 0 1px 0 #C5CED8;
-    box-shadow: 0 1px 0 #C5CED8;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 
   i {
@@ -248,31 +339,110 @@ input.btn {
 
   @include bp-xsmall {
     @include horizontal-align;
+
     margin-bottom: 0.5em;
   }
 }
 
 
 /* ==========================================================
-   3.2 DIVIDERS
+   5.2 DIVIDERS
    ========================================================== */
 
 .about-divider {
+  width: 55%;
+
+  margin: 3em auto;
+
   border: 0;
   border-top: 1px solid $border-color;
-  width: 55%;
-  margin: 3em auto;
 }
 
 
 /* ==========================================================
-   4. HOMEPAGE
+   5.3 CONTACT MODAL
+   ========================================================== */
+
+.modal-header {
+  border-bottom: none;
+
+  button {
+    margin-bottom: 0;
+  }
+}
+
+
+.modal-content {
+  border-radius: 2px;
+}
+
+
+.modal-body {
+  margin: 0 20px;
+
+  label {
+    font-size: 24px;
+    font-weight: 300;
+
+    margin-bottom: 0.5em;
+  }
+
+  textarea,
+  input {
+    margin-bottom: 1em;
+
+    border-color: $border-color;
+    border-radius: 2px;
+
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .form-group {
+    margin: 0;
+  }
+
+  .form-control {
+    padding: 25px;
+
+    font-size: 16px;
+  }
+
+  input[type="submit"] {
+    float: right;
+
+    margin-right: 0;
+  }
+
+  ::-webkit-input-placeholder {
+    color: $muted-color;
+  }
+
+  :-moz-placeholder {
+    color: $muted-color;
+  }
+
+  ::-moz-placeholder {
+    color: $muted-color;
+  }
+
+  :-ms-input-placeholder {
+    color: $muted-color;
+  }
+}
+
+
+/* ==========================================================
+   6. HOMEPAGE
    ========================================================== */
 
 
 /* ==========================================================
-   4.1 HERO
+   6.1 HERO
    ========================================================== */
+
+
+/* ---------- Overall Hero Position ---------- */
 
 .hero-container {
   margin: 7em 0 2em 0;
@@ -286,31 +456,15 @@ input.btn {
   }
 }
 
-.hero-content h1 {
-  margin-bottom: 0.45em;
-}
 
-.hero-content p {
-  margin: 1em 0 1.7em 0;
-}
-
-.hero-content .hero-buttons button.btn {
-  margin: 1em 1.2em;
-}
-
-.home-banner {
-  margin: 3.5em auto 3em !important;
-}
-
-#portfolio .container {
-  margin-top: 3.5em;
-}
-
+/* ---------- Hero Width ---------- */
 
 .hero-content {
   width: 85%;
   max-width: none !important;
+
   margin: 0 auto;
+
   display: table;
 
   @include bp-medium {
@@ -329,51 +483,41 @@ input.btn {
   /* Homepage main title */
   h1 {
     color: $heading-color;
+
     font-size: 56px;
+    font-weight: 400;
+
+    letter-spacing: -0.025em;
+
+    margin-bottom: 0.45em;
   }
 
 
-  /* Homepage introductory sentence */
+  /* Homepage introduction */
   p {
     color: $muted-color;
+
     font-size: 22px;
+    font-weight: 400;
+
     line-height: 1.6;
-    margin: 2em 0 2em 0;
+    letter-spacing: 0.01em;
+
+    margin: 1em 0 1.7em 0;
   }
 }
 
-/* ==========================================================
-   Homepage Editorial Typography
-   ========================================================== */
-
-.hero-content h1 {
-  font-weight: 400;
-  letter-spacing: -0.025em;
-}
-
-.hero-content > p {
-  color: $muted-color;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-}
-
-.section-title {
-  font-weight: 400;
-  letter-spacing: -0.02em;
-}
-
-.section-subtitle {
-  color: $muted-color;
-  font-weight: 400;
-}
-
 
 /* ==========================================================
-   4.2 SOCIAL BUTTONS
+   6.2 SOCIAL BUTTONS
    ========================================================== */
+
+
+/* ---------- Button Group ---------- */
 
 .hero-content .hero-buttons {
   margin: 0 auto;
+
   display: table;
 
   i {
@@ -382,19 +526,23 @@ input.btn {
 }
 
 
-/* Homepage Social Links - Minimal Editorial Style */
+/* ---------- Individual Social Button ---------- */
 
 .hero-content .hero-buttons button.btn {
+  margin: 1em 1.2em;
+
+  padding: 8px 18px;
+
   background: transparent;
+
   border: 1px solid $border-color;
   border-radius: 2px;
 
   color: $muted-color;
 
-  padding: 8px 18px;
-
   font-size: 12px;
   font-weight: 500;
+
   letter-spacing: 0.02em;
 
   box-shadow: none;
@@ -402,25 +550,25 @@ input.btn {
   &:hover,
   &.btn-default:hover {
     background: transparent;
+
     border-color: $link-color;
+
     color: $link-color;
+
     box-shadow: none;
   }
 }
 
 
 /* ==========================================================
-   4.3 HOMEPAGE BANNER
+   6.3 HOMEPAGE BANNER
    ========================================================== */
 
 .home-banner {
   width: 100% !important;
   max-width: none !important;
 
-  margin: 5em auto 5em;
-
-  margin-left: auto;
-  margin-right: auto;
+  margin: 3.5em auto 3em !important;
 }
 
 
@@ -436,14 +584,14 @@ input.btn {
 
 
 /* ==========================================================
-   4.4 HOMEPAGE PORTFOLIO / POSTS
+   6.4 SELECTED WORK / PORTFOLIO
    ========================================================== */
 
 
-/* ---------- Overall portfolio spacing ---------- */
+/* ---------- Overall Section Spacing ---------- */
 
 #portfolio .container {
-  margin-top: 6em;
+  margin-top: 3.5em;
 
   @include bp-xsmall {
     margin-top: 2em;
@@ -459,23 +607,26 @@ input.btn {
 }
 
 
-/* ---------- Portfolio section heading ---------- */
+/* ---------- Section Title ---------- */
 
 .section-title {
-  color: $heading-color;
-
   position: relative;
 
-  margin: 0 auto;
-  margin-bottom: 1em;
+  color: $heading-color;
+
+  margin: 0 auto 1em;
 
   font-size: 40px;
+  font-weight: 400;
+
   line-height: 1.25;
+  letter-spacing: -0.02em;
 
   &:after {
     content: '';
 
     position: absolute;
+
     top: 1.35em;
     left: 50%;
 
@@ -491,16 +642,18 @@ input.btn {
 }
 
 
-/* ---------- Portfolio section subtitle ---------- */
+/* ---------- Section Subtitle ---------- */
 
 .section-subtitle {
-  color: $body-color;
-
   width: 40%;
 
-  margin: 1.5em auto 1.5em;
+  margin: 1.5em auto;
+
+  color: $muted-color;
 
   font-size: 20px;
+  font-weight: 400;
+
   line-height: 1.6;
 
   @include bp-xsmall {
@@ -513,7 +666,7 @@ input.btn {
 }
 
 
-/* ---------- Individual homepage project ---------- */
+/* ---------- Individual Homepage Project ---------- */
 
 .content-wrap {
   margin-bottom: 8em;
@@ -527,7 +680,7 @@ input.btn {
   }
 
 
-  /* Hide homepage project images on smaller screens */
+  /* Project image */
   img.img-responsive {
     @include bp-xsmall {
       display: none;
@@ -539,6 +692,7 @@ input.btn {
   }
 
 
+  /* Project text area */
   .content {
     margin-top: 5em;
     margin-left: 5em;
@@ -548,15 +702,17 @@ input.btn {
     }
 
 
-    /* Homepage project title */
+    /* Project title */
     h3.title {
       position: relative;
+
       margin-bottom: 1.5em;
 
       &:after {
         content: '';
 
         position: absolute;
+
         top: 1.5em;
         left: 0;
 
@@ -568,7 +724,7 @@ input.btn {
     }
 
 
-    /* Homepage project description */
+    /* Project description */
     .excerpt {
       width: 80%;
 
@@ -578,51 +734,55 @@ input.btn {
     }
 
 
-    /* Homepage project button */
+    /* Project button */
     button {
-      font-size: 16px;
-
-      margin-left: 0;
       margin-top: 1em;
+      margin-right: 0;
       margin-bottom: 1em;
+      margin-left: 0;
+
+      font-size: 16px;
     }
 
 
-    /* Tags / categories */
+    /* Tags / Categories */
     .tags,
     .categories {
       margin: 2em 0;
 
       span {
-        color: $tag-color;
-        background-color: $soft-fill;
-
-        padding: 0.5em 1.5em;
-
         display: inline-block;
 
         margin-bottom: 0.5em;
+
+        padding: 0.5em 1.5em;
+
+        background-color: $soft-fill;
+
+        color: $tag-color;
       }
     }
 
 
     .categories span {
-      color: $muted-color;
       background-color: $soft-fill;
+
+      color: $muted-color;
     }
   }
 }
 
 
-/* Vertically center homepage post rows */
+/* Vertically center desktop homepage project rows */
 .post-row {
-  align-items: center;
   display: flex;
+
+  align-items: center;
 }
 
 
 /* ==========================================================
-   5. ABOUT PAGE
+   7. ABOUT PAGE
    ========================================================== */
 
 
@@ -630,11 +790,14 @@ input.btn {
 
 .about-photo {
   display: block;
+
   width: 60% !important;
   max-width: 600px !important;
   height: auto !important;
+
   margin: 1.5em auto 2.5em !important;
 
+  /* Slightly cool and soften the warm original photograph */
   filter:
     saturate(0.82)
     contrast(0.96)
@@ -642,7 +805,7 @@ input.btn {
 }
 
 
-/* ---------- About typography ---------- */
+/* ---------- About Typography ---------- */
 
 .about-page em {
   color: $muted-color;
@@ -667,14 +830,15 @@ input.btn {
 
 
 /* ==========================================================
-   6. CREATIVE PAGE
+   8. CREATIVE PAGE
    ========================================================== */
 
 
-/* ---------- Project row ---------- */
+/* ---------- Project Row ---------- */
 
 .creative-project-row {
   display: flex;
+
   align-items: center;
 
   gap: 2.5em;
@@ -685,10 +849,11 @@ input.btn {
 }
 
 
-/* ---------- Project image ---------- */
+/* ---------- Project Image ---------- */
 
 .creative-project-image {
   flex: 0 0 32%;
+
   max-width: 300px;
 }
 
@@ -704,10 +869,11 @@ input.btn {
 }
 
 
-/* ---------- Project text ---------- */
+/* ---------- Project Text ---------- */
 
 .creative-project-copy {
   flex: 1 1 auto;
+
   min-width: 0;
 }
 
@@ -717,41 +883,50 @@ input.btn {
 }
 
 
-/* Heidiverse desktop ordering:
-   text on the left, image on the right */
+/* Heidiverse desktop:
+   text on left, image on right */
 .creative-project-row.reverse {
   flex-direction: row;
 }
 
 
 /* ==========================================================
-   7. RESEARCH PAGE
+   9. RESEARCH PAGE
    ========================================================== */
 
 
 /* ==========================================================
-   7.1 RESEARCH PROJECT CARDS
+   9.1 RESEARCH CARDS
    ========================================================== */
+
+
+/* ---------- Grid ---------- */
 
 .research-grid {
   display: grid;
 
   grid-template-columns: repeat(2, 1fr);
+
   gap: 2.5em;
 
   margin: 2.5em 0 4em;
 }
 
 
-.research-card {
-  background-color: $soft-fill;
-  border: 1px solid $border-color;
+/* ---------- Individual Card ---------- */
 
+.research-card {
   padding: 1.7em;
+
+  background-color: $soft-fill;
+
+  border: 1px solid $border-color;
 
   box-sizing: border-box;
 }
 
+
+/* ---------- Card Image ---------- */
 
 .research-card img {
   display: block;
@@ -765,10 +940,13 @@ input.btn {
 }
 
 
+/* ---------- Card Title ---------- */
+
 .research-card h3 {
   margin: 0 0 0.45em;
 
   font-size: 22px;
+
   line-height: 1.3;
 }
 
@@ -783,11 +961,14 @@ input.btn {
 }
 
 
-.research-card p {
-  font-size: 14px;
-  line-height: 1.65;
+/* ---------- Card Body ---------- */
 
+.research-card p {
   margin-bottom: 0.8em;
+
+  font-size: 14px;
+
+  line-height: 1.65;
 }
 
 
@@ -802,27 +983,28 @@ input.btn {
 
 
 /* ==========================================================
-   8. FOOTER
+   10. FOOTER
    ========================================================== */
 
 .site-footer {
-  font-size: 14px;
-
   margin-top: 2em;
-
-  border-top: 1px solid $border-color;
 
   padding: 1em 0;
 
+  border-top: 1px solid $border-color;
+
+  font-size: 14px;
+
 
   p {
-    font-size: 12px;
-    font-weight: 600;
+    margin: 0;
+
+    padding: 10px 0;
 
     color: $muted-color;
 
-    margin: 0;
-    padding: 10px 0;
+    font-size: 12px;
+    font-weight: 600;
 
     @include bp-xsmall {
       text-align: center;
@@ -841,19 +1023,19 @@ input.btn {
 
 
 /* ==========================================================
-   9. CODE FORMATTING
+   11. CODE FORMATTING
    ========================================================== */
 
 pre,
 code {
-  color: #262626;
+  color: #4D5561;
 
   font-size: 14px;
 
-  border: 1px solid #E5E5E5;
+  border: 1px solid $border-color;
   border-radius: 3px;
 
-  background-color: #FBFBFB;
+  background-color: #F7F8FA;
 }
 
 
@@ -870,107 +1052,213 @@ pre {
 
 
 pre > code {
-  border: 0;
-
   padding-right: 0;
   padding-left: 0;
+
+  border: 0;
 }
 
 
 /* ==========================================================
-   10. SYNTAX HIGHLIGHTING
-   ========================================================== */
+   12. SYNTAX HIGHLIGHTING
+   ==========================================================
 
-/*
-   These colors belong only to code blocks.
-   They do not control the normal website palette.
-*/
+   These colors affect code blocks only.
+   They do not control the normal website color palette.
+
+   ========================================================== */
 
 .highlight {
   background: #fff;
 }
 
+
 .highlighter-rouge .highlight {
   background: #eef;
 }
 
-.highlight .hll { background-color: #ffffcc }
-.highlight .c { color: #8f5902; font-style: italic }
-.highlight .err { color: #a40000 }
-.highlight .g { color: #000000 }
-.highlight .k { color: #204a87; font-weight: bold }
-.highlight .l { color: #000000 }
-.highlight .n { color: #000000 }
-.highlight .o { color: #ce5c00; font-weight: bold }
-.highlight .x { color: #000000 }
-.highlight .p { color: #000000; font-weight: bold }
-.highlight .cm { color: #8f5902; font-style: italic }
-.highlight .cp { color: #8f5902; font-style: italic }
-.highlight .c1 { color: #8f5902; font-style: italic }
-.highlight .cs { color: #8f5902; font-style: italic }
-.highlight .gd { color: #a40000 }
-.highlight .ge { color: #000000; font-style: italic }
-.highlight .gr { color: #ef2929 }
-.highlight .gh { color: #000080; font-weight: bold }
-.highlight .gi { color: #00A000 }
-.highlight .go { color: #000000; font-style: italic }
-.highlight .gp { color: #8f5902 }
-.highlight .gs { color: #000000; font-weight: bold }
-.highlight .gu { color: #800080; font-weight: bold }
-.highlight .gt { color: #a40000; font-weight: bold }
-.highlight .kc { color: #204a87; font-weight: bold }
-.highlight .kd { color: #204a87; font-weight: bold }
-.highlight .kn { color: #204a87; font-weight: bold }
-.highlight .kp { color: #204a87; font-weight: bold }
-.highlight .kr { color: #204a87; font-weight: bold }
-.highlight .kt { color: #204a87; font-weight: bold }
-.highlight .ld { color: #000000 }
-.highlight .m { color: #0000cf; font-weight: bold }
-.highlight .s { color: #4e9a06 }
-.highlight .na { color: #c4a000 }
-.highlight .nb { color: #204a87 }
-.highlight .nc { color: #000000 }
-.highlight .no { color: #000000 }
-.highlight .nd { color: #5c35cc; font-weight: bold }
-.highlight .ni { color: #ce5c00 }
-.highlight .ne { color: #cc0000; font-weight: bold }
-.highlight .nf { color: #000000 }
-.highlight .nl { color: #f57900 }
-.highlight .nn { color: #000000 }
-.highlight .nx { color: #000000 }
-.highlight .py { color: #000000 }
-.highlight .nt { color: #204a87; font-weight: bold }
-.highlight .nv { color: #000000 }
-.highlight .ow { color: #204a87; font-weight: bold }
-.highlight .w { color: #f8f8f8; text-decoration: underline }
-.highlight .mf { color: #0000cf; font-weight: bold }
-.highlight .mh { color: #0000cf; font-weight: bold }
-.highlight .mi { color: #0000cf; font-weight: bold }
-.highlight .mo { color: #0000cf; font-weight: bold }
-.highlight .sb { color: #4e9a06 }
-.highlight .sc { color: #4e9a06 }
-.highlight .sd { color: #8f5902; font-style: italic }
-.highlight .s2 { color: #4e9a06 }
-.highlight .se { color: #4e9a06 }
-.highlight .sh { color: #4e9a06 }
-.highlight .si { color: #4e9a06 }
-.highlight .sx { color: #4e9a06 }
-.highlight .sr { color: #4e9a06 }
-.highlight .s1 { color: #4e9a06 }
-.highlight .ss { color: #4e9a06 }
-.highlight .bp { color: #3465a4 }
-.highlight .vc { color: #000000 }
-.highlight .vg { color: #000000 }
-.highlight .vi { color: #000000 }
-.highlight .il { color: #0000cf; font-weight: bold }
+
+.highlight .hll { background-color: #ffffcc; }
+
+.highlight .c {
+  color: #8f5902;
+  font-style: italic;
+}
+
+.highlight .err { color: #a40000; }
+.highlight .g { color: #000000; }
+
+.highlight .k {
+  color: #204a87;
+  font-weight: bold;
+}
+
+.highlight .l { color: #000000; }
+.highlight .n { color: #000000; }
+
+.highlight .o {
+  color: #ce5c00;
+  font-weight: bold;
+}
+
+.highlight .x { color: #000000; }
+
+.highlight .p {
+  color: #000000;
+  font-weight: bold;
+}
+
+.highlight .cm {
+  color: #8f5902;
+  font-style: italic;
+}
+
+.highlight .cp {
+  color: #8f5902;
+  font-style: italic;
+}
+
+.highlight .c1 {
+  color: #8f5902;
+  font-style: italic;
+}
+
+.highlight .cs {
+  color: #8f5902;
+  font-style: italic;
+}
+
+.highlight .gd { color: #a40000; }
+
+.highlight .ge {
+  color: #000000;
+  font-style: italic;
+}
+
+.highlight .gr { color: #ef2929; }
+
+.highlight .gh {
+  color: #000080;
+  font-weight: bold;
+}
+
+.highlight .gi { color: #00A000; }
+
+.highlight .go {
+  color: #000000;
+  font-style: italic;
+}
+
+.highlight .gp { color: #8f5902; }
+
+.highlight .gs {
+  color: #000000;
+  font-weight: bold;
+}
+
+.highlight .gu {
+  color: #800080;
+  font-weight: bold;
+}
+
+.highlight .gt {
+  color: #a40000;
+  font-weight: bold;
+}
+
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt {
+  color: #204a87;
+  font-weight: bold;
+}
+
+.highlight .ld { color: #000000; }
+
+.highlight .m,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo,
+.highlight .il {
+  color: #0000cf;
+  font-weight: bold;
+}
+
+.highlight .s,
+.highlight .sb,
+.highlight .sc,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .s1,
+.highlight .ss {
+  color: #4e9a06;
+}
+
+.highlight .na { color: #c4a000; }
+.highlight .nb { color: #204a87; }
+.highlight .nc { color: #000000; }
+.highlight .no { color: #000000; }
+
+.highlight .nd {
+  color: #5c35cc;
+  font-weight: bold;
+}
+
+.highlight .ni { color: #ce5c00; }
+
+.highlight .ne {
+  color: #cc0000;
+  font-weight: bold;
+}
+
+.highlight .nf { color: #000000; }
+.highlight .nl { color: #f57900; }
+.highlight .nn { color: #000000; }
+.highlight .nx { color: #000000; }
+.highlight .py { color: #000000; }
+
+.highlight .nt {
+  color: #204a87;
+  font-weight: bold;
+}
+
+.highlight .nv { color: #000000; }
+
+.highlight .ow {
+  color: #204a87;
+  font-weight: bold;
+}
+
+.highlight .w {
+  color: #f8f8f8;
+  text-decoration: underline;
+}
+
+.highlight .sd {
+  color: #8f5902;
+  font-style: italic;
+}
+
+.highlight .bp { color: #3465a4; }
+.highlight .vc { color: #000000; }
+.highlight .vg { color: #000000; }
+.highlight .vi { color: #000000; }
 
 
 /* ==========================================================
-   11. MOBILE STYLES
+   13. MOBILE STYLES
    ==========================================================
 
    IMPORTANT:
-   Your existing mobile font sizes are preserved here.
+   These retain your existing phone font sizes.
 
    ========================================================== */
 
@@ -978,27 +1266,33 @@ pre > code {
 
 
   /* ========================================================
-     11.1 HOMEPAGE — MOBILE
+     13.1 HOMEPAGE — MOBILE
      ======================================================== */
 
 
-  /* Homepage title */
+  /* ---------- Homepage Main Title ---------- */
+
   .hero-content h1 {
     font-size: 24px !important;
+
     line-height: 1.2 !important;
+
     margin: 3em 0 0.6em !important;
   }
 
 
-  /* Homepage introduction */
+  /* ---------- Homepage Introduction ---------- */
+
   .hero-content > p {
     font-size: 12px !important;
+
     line-height: 1.55 !important;
+
     margin: 0 0 3em !important;
   }
 
 
-  /* ---------- Social buttons ---------- */
+  /* ---------- Social Buttons ---------- */
 
   .hero-content .hero-buttons {
     display: flex !important;
@@ -1033,9 +1327,11 @@ pre > code {
     min-width: 0 !important;
 
     margin: 0 !important;
+
     padding: 8px 4px !important;
 
     font-size: 11px !important;
+
     line-height: 1.2 !important;
 
     white-space: nowrap !important;
@@ -1051,7 +1347,7 @@ pre > code {
   }
 
 
-  /* ---------- Homepage banner ---------- */
+  /* ---------- Homepage Banner ---------- */
 
   .home-banner {
     position: relative;
@@ -1076,15 +1372,16 @@ pre > code {
   }
 
 
-  /* ---------- Homepage portfolio heading ---------- */
+  /* ---------- Selected Work Heading ---------- */
 
   #portfolio .section-title {
-    font-size: 22px !important;
-    line-height: 1.25 !important;
+    padding: 0 15px;
 
     margin: 0 auto 1em !important;
 
-    padding: 0 15px;
+    font-size: 22px !important;
+
+    line-height: 1.25 !important;
   }
 
 
@@ -1098,6 +1395,8 @@ pre > code {
   }
 
 
+  /* ---------- Selected Work Subtitle ---------- */
+
   #portfolio .section-subtitle {
     width: 100% !important;
     max-width: 420px;
@@ -1107,13 +1406,14 @@ pre > code {
     margin: 1.4em auto 2em !important;
 
     font-size: 13px !important;
+
     line-height: 1.55 !important;
 
     box-sizing: border-box;
   }
 
 
-  /* ---------- Homepage projects ---------- */
+  /* ---------- Homepage Project Layout ---------- */
 
   #portfolio .post-row {
     display: block !important;
@@ -1132,12 +1432,13 @@ pre > code {
   }
 
 
-  /* Hide project images on homepage mobile */
+  /* Hide project images on phone */
   #portfolio .content-wrap img.img-responsive {
     display: none !important;
   }
 
 
+  /* Project text uses full width */
   #portfolio .content-wrap .content {
     width: 100% !important;
 
@@ -1149,15 +1450,17 @@ pre > code {
   }
 
 
-  /* Homepage project title */
+  /* Project title */
   #portfolio .content h3.title {
-    font-size: 15px !important;
-    line-height: 1.3 !important;
-
     margin: 0 0 1.2em !important;
+
+    font-size: 15px !important;
+
+    line-height: 1.3 !important;
   }
 
 
+  /* Divider under project title */
   #portfolio .content h3.title::after {
     top: auto !important;
     bottom: -0.5em !important;
@@ -1166,65 +1469,72 @@ pre > code {
   }
 
 
-  /* Homepage project description */
+  /* Project description */
   #portfolio .content p.excerpt {
     width: 100% !important;
     max-width: none !important;
 
-    font-size: 12px !important;
-    line-height: 1.6 !important;
-
     margin: 0 0 1em !important;
+
+    font-size: 12px !important;
+
+    line-height: 1.6 !important;
   }
 
 
-  /* Homepage project button */
+  /* Project button */
   #portfolio .content .project-link button {
     width: auto !important;
 
     margin: 0.5em 0 1em !important;
+
     padding: 8px 13px !important;
 
     font-size: 13px !important;
   }
 
 
-  /* Homepage tags */
+  /* Tag container */
   #portfolio .content .tags {
     margin: 0.7em 0 1.5em !important;
   }
 
 
+  /* Individual tags */
   #portfolio .content .tags span {
-    padding: 5px 9px !important;
-
     margin: 0 4px 5px 0 !important;
+
+    padding: 5px 9px !important;
 
     font-size: 12px !important;
   }
 
 
+  /* Space between homepage projects */
   #portfolio .content-wrap {
     margin-bottom: 3em !important;
   }
 
 
   /* ========================================================
-     11.2 STANDARD TABS — MOBILE
+     13.2 STANDARD TABS — MOBILE
      About / Research / Teaching
      ======================================================== */
 
 
-  /* Main page title */
-  .standard-tab-page h1 {
-    font-size: 30px !important;
-    line-height: 1.2 !important;
+  /* ---------- Main Page Title ---------- */
 
+  .standard-tab-page h1 {
     margin: 0 0 1.2em !important;
+
+    font-size: 30px !important;
+
+    line-height: 1.2 !important;
   }
 
 
-  /* About portrait */
+  /* ---------- About Portrait ---------- */
+
   .about-photo {
     width: 85% !important;
     max-width: 320px !important;
@@ -1233,66 +1543,79 @@ pre > code {
   }
 
 
-  /* Major section headings */
+  /* ---------- Major Section Headings ---------- */
+
   .standard-tab-page h2 {
-    font-size: 22px !important;
-    line-height: 1.3 !important;
-
     margin: 1.5em 0 0.5em !important;
+
+    font-size: 22px !important;
+
+    line-height: 1.3 !important;
   }
 
 
-  /* Subsection headings */
+  /* ---------- Subsection Headings ---------- */
+
   .standard-tab-page h3 {
-    font-size: 18px !important;
-    line-height: 1.35 !important;
-
     margin: 1.3em 0 0.4em !important;
+
+    font-size: 18px !important;
+
+    line-height: 1.35 !important;
   }
 
 
-  /* Smaller headings */
+  /* ---------- Smaller Headings ---------- */
+
   .standard-tab-page h4 {
-    font-size: 15px !important;
-    line-height: 1.4 !important;
-
     margin: 1.1em 0 0.35em !important;
+
+    font-size: 15px !important;
+
+    line-height: 1.4 !important;
   }
 
 
-  /* Standard body text */
+  /* ---------- Standard Body Text ---------- */
+
   .standard-tab-page p {
-    font-size: 14px !important;
-    line-height: 1.65 !important;
-
     margin: 0 0 0.9em !important;
+
+    font-size: 14px !important;
+
+    line-height: 1.65 !important;
   }
 
 
-  /* Standard lists */
-  .standard-tab-page li {
-    font-size: 14px !important;
-    line-height: 1.6 !important;
+  /* ---------- Standard Lists ---------- */
 
+  .standard-tab-page li {
     margin-bottom: 0.35em;
+
+    font-size: 14px !important;
+
+    line-height: 1.6 !important;
   }
 
 
   /* ========================================================
-     11.3 CREATIVE PAGE — MOBILE
+     13.3 CREATIVE PAGE — MOBILE
      ======================================================== */
 
 
-  /* Creative Projects page title */
-  article h1 {
-    font-size: 30px !important;
-    line-height: 1.2 !important;
+  /* ---------- Creative Page Main Title ---------- */
 
+  article h1 {
     margin: 0 0 1.2em !important;
+
+    font-size: 30px !important;
+
+    line-height: 1.2 !important;
   }
 
 
-  /* Each creative project becomes vertical */
+  /* ---------- Creative Project Layout ---------- */
+
   .creative-project-row,
   .creative-project-row.reverse {
     display: flex !important;
@@ -1313,14 +1636,14 @@ pre > code {
   }
 
 
-  /* Creative image first */
+  /* Image always first */
   .creative-project-image {
     order: 1 !important;
 
+    flex: none !important;
+
     width: 48% !important;
     max-width: 210px !important;
-
-    flex: none !important;
 
     margin: 0 auto 1.3em !important;
   }
@@ -1336,7 +1659,7 @@ pre > code {
   }
 
 
-  /* Creative text second */
+  /* Text always second */
   .creative-project-copy {
     order: 2 !important;
 
@@ -1345,30 +1668,33 @@ pre > code {
   }
 
 
-  /* Oneira / Heidiverse title */
+  /* Oneira / Heidiverse headings */
   .creative-project-copy h2 {
-    font-size: 22px !important;
-    line-height: 1.25 !important;
-
     margin: 0 0 0.25em !important;
+
+    font-size: 22px !important;
+
+    line-height: 1.25 !important;
   }
 
 
   /* Creative body text */
   .creative-project-copy p {
-    font-size: 14px !important;
-    line-height: 1.65 !important;
-
     margin: 0 0 0.9em !important;
+
+    font-size: 14px !important;
+
+    line-height: 1.65 !important;
   }
 
 
   /* Creative italic subtitle */
   .creative-project-copy h2 + p {
-    font-size: 13px !important;
-    line-height: 1.4 !important;
-
     margin: 0 0 1.2em !important;
+
+    font-size: 13px !important;
+
+    line-height: 1.4 !important;
   }
 
 
@@ -1379,7 +1705,7 @@ pre > code {
 
 
   /* ========================================================
-     11.4 RESEARCH CARDS — MOBILE
+     13.4 RESEARCH CARDS — MOBILE
      ======================================================== */
 
 
@@ -1409,93 +1735,111 @@ pre > code {
 
   .research-card p {
     font-size: 13px !important;
+
     line-height: 1.6 !important;
   }
 
 
   /* ========================================================
-     11.5 DETAILED RESEARCH PAGES — MOBILE
+     13.5 DETAILED RESEARCH PAGES — MOBILE
      ======================================================== */
 
 
-  /* Main detailed research title */
+  /* ---------- Main Research Title ---------- */
+
   .research-detail-page h1 {
-    font-size: 29px !important;
-    line-height: 1.2 !important;
-
     margin: 0 0 1.1em !important;
+
+    font-size: 29px !important;
+
+    line-height: 1.2 !important;
   }
 
 
-  /* Major detailed research sections */
+  /* ---------- Major Research Sections ---------- */
+
   .research-detail-page h2 {
-    font-size: 21px !important;
-    line-height: 1.3 !important;
-
     margin: 2em 0 0.7em !important;
+
+    font-size: 21px !important;
+
+    line-height: 1.3 !important;
   }
 
 
-  /* Smaller research subsections */
+  /* ---------- Research Subsections ---------- */
+
   .research-detail-page h3 {
-    font-size: 17px !important;
-    line-height: 1.35 !important;
-
     margin: 1.5em 0 0.5em !important;
+
+    font-size: 17px !important;
+
+    line-height: 1.35 !important;
   }
 
 
-  /* Detailed research body text */
+  /* ---------- Research Body Text ---------- */
+
   .research-detail-page p {
-    font-size: 14px !important;
-    line-height: 1.7 !important;
-
     margin: 0 0 1em !important;
-  }
 
-
-  /* Detailed research lists */
-  .research-detail-page li {
     font-size: 14px !important;
-    line-height: 1.65 !important;
 
-    margin-bottom: 0.4em;
+    line-height: 1.7 !important;
   }
 
 
-  /* Intro subtitle on detailed research page */
+  /* ---------- Research Lists ---------- */
+
+  .research-detail-page li {
+    margin-bottom: 0.4em;
+
+    font-size: 14px !important;
+
+    line-height: 1.65 !important;
+  }
+
+
+  /* ---------- Research Intro Subtitle ---------- */
+
   .research-detail-page > p:first-of-type {
     font-size: 15px !important;
+
     line-height: 1.6 !important;
   }
 
 
-  /* Research buttons */
+  /* ---------- Research Buttons ---------- */
+
   .research-detail-page .btn {
     width: auto !important;
 
-    padding: 9px 14px !important;
     margin: 1em 0 !important;
 
+    padding: 9px 14px !important;
+
     font-size: 13px !important;
+
     line-height: 1.3 !important;
   }
 
 
-  /* Research images */
+  /* ---------- Research Images ---------- */
+
   .research-detail-page img {
     max-width: 100% !important;
     height: auto !important;
   }
 
 
-  /* Prevent wide MathJax equations from breaking mobile layout */
-  .research-detail-page mjx-container[display="true"] {
-    overflow-x: auto;
-    overflow-y: hidden;
+  /* ---------- Research Equations ---------- */
 
+  .research-detail-page mjx-container[display="true"] {
     max-width: 100%;
 
     padding-bottom: 0.4em;
+
+    overflow-x: auto;
+    overflow-y: hidden;
   }
 }
