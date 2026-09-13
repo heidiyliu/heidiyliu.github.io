@@ -23,13 +23,31 @@ $secondary: #FF7B7B;
 %merriweather { font-family: 'Merriweather', serif; }
 
 
-$heading-color: #2F3443;
+/*$heading-color: #2F3443;
 $body-color: #4B5260;
 $muted-color: #737D8D;
 $link-color: #6078A8;
 $link-hover-color: #7B6F91;
 $border-color: #D8E0E9;
-$tag-color: #8798AA;
+$tag-color: #8798AA;*/
+
+/* ==========================================================
+   Site color palette
+   ========================================================== */
+
+$site-bg: #F6F5F2;        /* soft ivory background */
+$surface: #FBFAF8;        /* main content surface */
+$soft-fill: #EFF0F2;      /* cards / tags */
+
+$heading-color: #343843;  /* deep ink */
+$body-color: #535A66;     /* soft charcoal */
+$muted-color: #7A818D;    /* dates / captions */
+
+$link-color: #687A9E;     /* muted slate blue */
+$link-hover-color: #4F607E;
+
+$border-color: #E3E5E8;
+$tag-color: #8793A4;
 
 /*--------------------------------------------------------------
 	1.0 Defaults
@@ -43,7 +61,7 @@ $tag-color: #8798AA;
 
 body {
   color: $body-color;
-  background-color: #e9edf0;
+  background-color: $site-bg;
   @extend %opensans;
   -webkit-font-smoothing: antialiased;
 }
@@ -64,6 +82,15 @@ p {
   font-size: 1.3em;
 }
 
+li {
+  color: $body-color;
+}
+
+em,
+small {
+  color: $muted-color;
+}
+
 a {
   color: $link-color;
   @include transition(color .2s ease-in-out);
@@ -77,23 +104,28 @@ img {
   width: 100%;
 }
 
-button.btn, input.btn {
+button.btn,
+input.btn {
   padding: 12px 35px;
   margin: 2em 0.5em;
-  border: solid 1px #d5e0e7;
+  border: solid 1px $border-color;
   border-radius: 4px;
-  color: #2E4453;
+  background-color: $surface;
+  color: $heading-color;
   font-weight: 600;
-  &:hover, &.btn-default:hover {
-    background-color: white;
-    border: solid 1px #b0c5d2;
-    -moz-box-shadow: 0 1px 0 #b0c5d2;
-    -webkit-box-shadow: 0 1px 0 #b0c5d2;
-    box-shadow: 0 1px 0 #b0c5d2;
+
+  &:hover,
+  &.btn-default:hover {
+    background-color: #FFFFFF;
+    border-color: #C9CED6;
+    color: $link-hover-color;
+    box-shadow: 0 1px 0 #C9CED6;
   }
+
   i {
     padding-right: 0.5em;
   }
+
   @include bp-xsmall {
     @include horizontal-align;
     margin-bottom: 0.5em;
@@ -101,9 +133,9 @@ button.btn, input.btn {
 }
 
 .main {
-  background-color: white;
-  border-left: solid 1px #cedfea;
-  border-right: solid 1px #cedfea;
+  background-color: $surface;
+  border-left: solid 1px $border-color;
+  border-right: solid 1px $border-color;
   &.container {
     padding: 0;
   }
@@ -256,7 +288,7 @@ button.btn, input.btn {
     top: 1.35em;
     width: 3em;
     height: 3px;
-    background-color: #ECEFF1;
+    background-color: $border-color;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -304,14 +336,13 @@ button.btn, input.btn {
       position: relative;
       margin-bottom: 1.5em;
       &:after {
-		background-color: $border-color;
         content: '';
         position: absolute;
         top: 1.5em;
         left: 0;
         width: 3em;
         height: 3px;
-        background-color: #ECEFF1;
+		background-color: $border-color;
       }
     }
     .excerpt {
@@ -327,18 +358,19 @@ button.btn, input.btn {
       margin-top: 1em;
     }
     .tags, .categories {
-      margin: 2em 0;
-      span {
-        color: $tag-color;
-        background-color: #ECEFF1;
-        padding: 0.5em 1.5em;
-        display: inline-block;
-        margin-bottom: 0.5em;
-      }
-    }
+  margin: 2em 0;
+
+  span {
+    color: $tag-color;
+    background-color: $soft-fill;
+    padding: 0.5em 1.5em;
+    display: inline-block;
+    margin-bottom: 0.5em;
+  }
+}
     .categories span {
-      color: #b9b1ad;
-      background-color: #EFEBE9;
+      color: $muted-color;
+      background-color: $soft-fill;
     }
   }
 }
@@ -355,12 +387,12 @@ button.btn, input.btn {
 .site-footer {
   font-size: 14px;
   margin-top: 2em;
-  border-top: 1px solid #efefef;
+  border-top: 1px solid $border-color;
   padding: 1em 0;
   p {
     font-size: 12px;
     font-weight: 600;
-    color: #9eb1bd;
+    color: $muted-color;
     margin: 0;
     padding: 10px 0;
     @include bp-xsmall {
@@ -711,7 +743,7 @@ pre {
 }
 
 .about-page em {
-  color: #8A92A0;
+  color: $muted-color;
 }
 
 .about-page h2 {
@@ -730,7 +762,7 @@ pre {
 
 .about-divider {
   border: 0;
-  border-top: 1px solid #e5e8ec;
+  border-top: 1px solid $border-color;
   width: 55%;
   margin: 3em auto;
 }
@@ -805,7 +837,7 @@ pre {
     margin: 0 0 3em !important;
     padding-bottom: 2.5em;
 
-    border-bottom: 1px solid #e8ebef;
+    border-bottom: 1px solid $border-color; 
   }
 
   /* Always put image FIRST on mobile */
@@ -925,7 +957,8 @@ pre {
 }
 
 .research-card {
-  background: #f4f4f6;
+  background: $soft-fill;
+  border: 1px solid $border-color;
   padding: 1.7em;
   box-sizing: border-box;
 }
@@ -959,7 +992,7 @@ pre {
 }
 
 .research-card em {
-  color: #7a8290;
+  color: $muted-color;
 }
 
 .research-card > p:last-child {
