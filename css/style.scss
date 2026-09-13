@@ -275,7 +275,7 @@ input.btn {
    ========================================================== */
 
 .hero-container {
-  margin: 12em 0 3em 0;
+  margin: 7em 0 2em 0;
 
   @include bp-xsmall {
     margin: 3em 0 2em 0;
@@ -284,6 +284,26 @@ input.btn {
   @include bp-small {
     margin: 4em 0 3em 0;
   }
+}
+
+.hero-content h1 {
+  margin-bottom: 0.45em;
+}
+
+.hero-content p {
+  margin: 1em 0 1.7em 0;
+}
+
+.hero-content .hero-buttons button.btn {
+  margin: 1em 1.2em;
+}
+
+.home-banner {
+  margin: 3.5em auto 3em !important;
+}
+
+#portfolio .container {
+  margin-top: 3.5em;
 }
 
 
@@ -322,6 +342,31 @@ input.btn {
   }
 }
 
+/* ==========================================================
+   Homepage Editorial Typography
+   ========================================================== */
+
+.hero-content h1 {
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+.hero-content > p {
+  color: $muted-color;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.section-title {
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  color: $muted-color;
+  font-weight: 400;
+}
+
 
 /* ==========================================================
    4.2 SOCIAL BUTTONS
@@ -337,9 +382,30 @@ input.btn {
 }
 
 
-/* Space between social-media buttons on desktop */
+/* Homepage Social Links - Minimal Editorial Style */
+
 .hero-content .hero-buttons button.btn {
-  margin: 2em 2em;
+  background: transparent;
+  border: 1px solid $border-color;
+  border-radius: 2px;
+
+  color: $muted-color;
+
+  padding: 8px 18px;
+
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  box-shadow: none;
+
+  &:hover,
+  &.btn-default:hover {
+    background: transparent;
+    border-color: $link-color;
+    color: $link-color;
+    box-shadow: none;
+  }
 }
 
 
