@@ -696,6 +696,46 @@ pre {
   }
 }
 
+
+/* ==========================================================
+   About Page
+   ========================================================== */
+
+/* About page photo */
+.about-photo {
+  display: block;
+  width: 60% !important;
+  max-width: 600px !important;
+  height: auto !important;
+  margin: 1.5em auto 2.5em !important;
+}
+
+.about-page em {
+  color: #8A92A0;
+}
+
+.about-page h2 {
+  margin-top: 3em;
+  margin-bottom: 1.2em;
+}
+
+.about-page h3 {
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+}
+
+.about-page p {
+  line-height: 1.8;
+}
+
+.about-divider {
+  border: 0;
+  border-top: 1px solid #e5e8ec;
+  width: 55%;
+  margin: 3em auto;
+}
+
+
 /* ==========================================================
    Creative Projects
    ========================================================== */
@@ -738,36 +778,6 @@ pre {
   flex-direction: row;
 }
 
-/* ==========================================================
-   About Page
-   ========================================================== */
-
-/* About page photo */
-.about-photo {
-  display: block;
-  width: 60% !important;
-  max-width: 600px !important;
-  height: auto !important;
-  margin: 1.5em auto 2.5em !important;
-}
-
-.about-page em {
-  color: #8A92A0;
-}
-
-.about-page h2 {
-  margin-top: 3em;
-  margin-bottom: 1.2em;
-}
-
-.about-page h3 {
-  margin-top: 2em;
-  margin-bottom: 0.6em;
-}
-
-.about-page p {
-  line-height: 1.8;
-}
 
 
 /* ==========================================================
