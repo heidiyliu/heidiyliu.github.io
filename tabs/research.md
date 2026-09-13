@@ -8,6 +8,8 @@ permalink: /research/
 
 # Research
 
+<div style="height: 1em;"></div>
+
 My research interests lie primarily in theoretical and computational cosmology, with broader experience in nuclear astrophysics, dark-matter detection, astronomical instrumentation, and observational astronomy.
 
 My work has involved analytic calculations, numerical modeling, statistical forecasting, detector development, and astronomical instrumentation.
