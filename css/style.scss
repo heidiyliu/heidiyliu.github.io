@@ -593,6 +593,26 @@ input.btn {
   background-color: $link-color;
 }
 
+/* ---------- Image-Based Social Logos ---------- */
+
+.hero-content .social-icons .social-logo {
+  display: block;
+
+  width: 30px !important;
+  height: 30px !important;
+
+  object-fit: contain;
+
+  margin: 0 !important;
+}
+
+
+/* RedNote keeps its original brand color */
+.hero-content .social-icons .rednote-logo {
+  width: 30px !important;
+  height: 30px !important;
+}
+
 /* ==========================================================
    6.3 HOMEPAGE BANNER
    ========================================================== */
@@ -1558,6 +1578,10 @@ pre > code {
     margin-bottom: 3em !important;
   }
 
+   .hero-content .social-icons .social-logo {
+  width: 26px !important;
+  height: 26px !important;
+}
 
   /* ========================================================
      13.2 STANDARD TABS — MOBILE
